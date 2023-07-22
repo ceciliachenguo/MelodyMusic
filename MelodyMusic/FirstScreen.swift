@@ -15,4 +15,3 @@ class FirstScreen: UIViewController {
         view.backgroundColor = .systemMint
     }
 }
-

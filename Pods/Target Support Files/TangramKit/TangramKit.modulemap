@@ -1,0 +1,6 @@
+framework module TangramKit {
+  umbrella header "TangramKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

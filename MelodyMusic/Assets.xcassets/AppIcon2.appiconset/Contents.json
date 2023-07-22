@@ -1,6 +1,7 @@
 {
   "images" : [
     {
+      "filename" : "AppIcon@3x.png 23-35-25-1024.png",
       "idiom" : "universal",
       "platform" : "ios",
       "size" : "1024x1024"

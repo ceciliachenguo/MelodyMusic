@@ -11,6 +11,10 @@
 		8D7E86692A6CE5A1008580A9 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7E86682A6CE5A1008580A9 /* R.generated.swift */; };
 		8D7E866C2A6CED2E008580A9 /* SuperUIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7E866B2A6CED2E008580A9 /* SuperUIColorExtension.swift */; };
 		8D7E866E2A6CF007008580A9 /* SuperUIThemeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7E866D2A6CF007008580A9 /* SuperUIThemeExtension.swift */; };
+		8D7E86712A6CF505008580A9 /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7E86702A6CF505008580A9 /* BaseController.swift */; };
+		8D7E86732A6CF58D008580A9 /* BaseCommonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7E86722A6CF58D008580A9 /* BaseCommonController.swift */; };
+		8D7E86752A6CF5E7008580A9 /* BaseLogicController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7E86742A6CF5E7008580A9 /* BaseLogicController.swift */; };
+		8D7E86772A6CFC79008580A9 /* BaseTitleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7E86762A6CFC79008580A9 /* BaseTitleController.swift */; };
 		8DA405C62A6CD8FE0033F979 /* SuperDateUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA405C52A6CD8FE0033F979 /* SuperDateUtil.swift */; };
 		8DA405CA2A6CDC460033F979 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8DA405CC2A6CDC460033F979 /* Localizable.strings */; };
 		8DEBED312A6C4F7A00303597 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEBED302A6C4F7A00303597 /* AppDelegate.swift */; };
@@ -48,6 +52,10 @@
 		8D7E86682A6CE5A1008580A9 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		8D7E866B2A6CED2E008580A9 /* SuperUIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperUIColorExtension.swift; sourceTree = "<group>"; };
 		8D7E866D2A6CF007008580A9 /* SuperUIThemeExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperUIThemeExtension.swift; sourceTree = "<group>"; };
+		8D7E86702A6CF505008580A9 /* BaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
+		8D7E86722A6CF58D008580A9 /* BaseCommonController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCommonController.swift; sourceTree = "<group>"; };
+		8D7E86742A6CF5E7008580A9 /* BaseLogicController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseLogicController.swift; sourceTree = "<group>"; };
+		8D7E86762A6CFC79008580A9 /* BaseTitleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTitleController.swift; sourceTree = "<group>"; };
 		8DA405C52A6CD8FE0033F979 /* SuperDateUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperDateUtil.swift; sourceTree = "<group>"; };
 		8DA405CB2A6CDC460033F979 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		8DA405CD2A6CDC5E0033F979 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
@@ -99,6 +107,17 @@
 				8D7E866D2A6CF007008580A9 /* SuperUIThemeExtension.swift */,
 			);
 			path = Config;
+			sourceTree = "<group>";
+		};
+		8D7E866F2A6CF4DF008580A9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8D7E86702A6CF505008580A9 /* BaseController.swift */,
+				8D7E86722A6CF58D008580A9 /* BaseCommonController.swift */,
+				8D7E86742A6CF5E7008580A9 /* BaseLogicController.swift */,
+				8D7E86762A6CFC79008580A9 /* BaseTitleController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		8D90166E2A6C5F8C00A4F688 /* Controller */ = {
@@ -174,6 +193,7 @@
 		8DEBED2F2A6C4F7A00303597 /* MelodyMusic */ = {
 			isa = PBXGroup;
 			children = (
+				8D7E866F2A6CF4DF008580A9 /* Controller */,
 				8D7E866A2A6CECFF008580A9 /* Config */,
 				8DA405C22A6CD8870033F979 /* Vendor */,
 				8DA405C12A6CD3300033F979 /* Component */,
@@ -420,9 +440,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				8DEBED352A6C4F7A00303597 /* SplashController.swift in Sources */,
+				8D7E86772A6CFC79008580A9 /* BaseTitleController.swift in Sources */,
 				8D7E866E2A6CF007008580A9 /* SuperUIThemeExtension.swift in Sources */,
+				8D7E86712A6CF505008580A9 /* BaseController.swift in Sources */,
+				8D7E86752A6CF5E7008580A9 /* BaseLogicController.swift in Sources */,
 				8DA405C62A6CD8FE0033F979 /* SuperDateUtil.swift in Sources */,
 				8DEBED312A6C4F7A00303597 /* AppDelegate.swift in Sources */,
+				8D7E86732A6CF58D008580A9 /* BaseCommonController.swift in Sources */,
 				8D7E86692A6CE5A1008580A9 /* R.generated.swift in Sources */,
 				8D7E866C2A6CED2E008580A9 /* SuperUIColorExtension.swift in Sources */,
 			);

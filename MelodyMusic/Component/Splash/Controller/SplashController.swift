@@ -8,19 +8,13 @@
 import UIKit
 import TangramKit
 
-class SplashController: UIViewController {
-    var container:UIView!
+class SplashController: BaseLogicController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .colorBackground
         
-        let container = TGRelativeLayout()
-        container.tg_top.equal(TGLayoutPos.tg_safeAreaMargin)
-        container.tg_leading.equal(TGLayoutPos.tg_safeAreaMargin)
-        container.tg_trailing.equal(TGLayoutPos.tg_safeAreaMargin)
-        container.tg_bottom.equal(TGLayoutPos.tg_safeAreaMargin)
-        view.addSubview(container)
+        self.initRelativeLayoutSafeArea()
         
         //banner
         let bannerView = UIImageView()

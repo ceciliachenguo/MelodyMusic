@@ -1,0 +1,403 @@
+/* 
+  Localizable.strings
+  MelodyMusic
+
+  Created by Cecilia Chen on 7/22/23.
+  
+*/
+
+//网络相关
+ErrorNetworkUnknownHost = "Server not found";
+ErrorNetworkConnect = "Failed to connect to the server";
+ErrorNetworkTimeout = "Connection server timeout";
+ErrorNetworkNotAuth = "Login information expired";
+ErrorNetworkNotPermission = "You do not have permission to access";
+ErrorNetworkNotFound = "The content you accessed does not exist";
+ErrorNetworkServer = "Server error";
+ErrorUnknown = "Unknown error";
+ErrorUnknownFormat = "Unknown error: %@";
+NetworkError= "Your Network seems to be suck";
+ErrorParameter = "Local parameter error";
+ErrorUploadfile = "Upload file error";
+ErrorResponsesign = "API signature error";
+ErrorResponsedecrypt = "API decryption error";
+SuperLoading="Loading.";
+ClickReload= "%@, click reload";
+
+//发现界面
+DayRecommend="Recommend";
+PersonFm="FM";
+Sheet="Playlist";
+Rank="Rank";
+DigitalAlbum="Album";
+RecommendSheet="Recommend sheet";
+RecommendSong="Recommend song";
+
+Discovery="Discovery";
+Video="Video";
+Me="My";
+Feed="Feed";
+Live="Live";
+
+More="More";
+
+ClickRefresh="Click to refresh";
+ChangeContent="Change content";
+CustomDiscovery="Custom Home";
+ActivityDetails="Activity Details";
+
+BuyVip="Buy VIP";
+MemberCenter="Member Center";
+VipHint="Add VIP to highlight different languages";
+VipHintPrice="Exclusive special offer, the first month of vinyl is only 0.01 yuan!";
+SecurityVerification="Security Verification";
+CompleteUserDataTip="Complete the data, the account is better and more secure";
+UpdateSuccess="Complete data successfully";
+CompleteUserData="Complete data";
+UserDetail="User Details";
+SendMessage="Send message";
+Follow="Follow users";
+CancelFollow="Cancel Follow";
+UserFriendInfo="Follow %d | Follower %d";
+
+//侧滑
+MyMessage="My message";
+Mall="Official Mall";
+MyOrder="My order";
+ShopCart="Shopping Cart";
+MyFriend="My friend";
+MyFans="My fans";
+Coupon="Coupon";
+MyCoupon="My Coupon";
+ReceivingAddress="Receiving Address";
+ReceivingAddressDetail="Receiving Address Details";
+
+Comprehensive="Comprehensive";
+PriceDesc="Price Desc";
+PriceAsc="Price Asc";
+IdAsc="Id Asc";
+
+Brand="Brand";
+
+Other="Other";
+Setting="Setting";
+DarkMode="Night";
+TimedOff="Timed Off";
+PersonDress="Personal Dress";
+CacheWhileList="Cache listening";
+MusicAlarmClock="Alarm Clock";
+
+MyCustomerService="Customer Service";
+ShareApp="Share App";
+Share="Share";
+About="About";
+NotOpen="Not open";
+
+//扫码
+NoResult="No content";
+MyCode="My QR code";
+ErrorEmptyQrcode="The QR code has no content";
+SanResult="Scan result";
+Scan="Sweep";
+SuccessSave="Save successfully";
+FailedSave="Save failed";
+HintScanMyCode="Scan the QR code add me friend";
+ErrorNotSupportQRCodeFormat="This format is not supported";
+
+ShortVideo="Short video";
+HintSearchValue="Search";
+
+//歌单详情
+PlayAll="Play All";
+MusicCount="(Total %1$d songs)";
+Download="Download";
+MultiSelect="Multiple selection";
+CancelCollect="Cancel Collection(%1$d)";
+Collect="Collect Playlist(%1$d)";
+CancelSuccess="Cancel success";
+CollectionSuccess="Collection success";
+Search="Search";
+Sort="Sort";
+Report="Report";
+
+Rlay="Play";
+Pause="Pause";
+
+//登录/注册
+ExperienceNow="Experience Now";
+LoginOrRegister="Login/Register";
+Login="Login";
+LoginError="Login failed: %@";
+PhoneLogin="Mobile phone number login";
+UsernameLogin="Login with username and password";
+LoginNow="Login now";
+RegisterAndLogin="Register and login";
+Logout="Logout";
+ConfirmLogout="Confirm logout?";
+CloseApp="Close application";
+RegisterNow="Register now";
+OtherLogin="Other login methods";
+EnterUsername="Please enter phone number/email";
+EnterName="Please enter a name";
+EnterPassword="Please enter a password (6~15 digits)";
+EnterDescription="Please enter a personal introduction";
+ForgotPassword="Forgot Password";
+SetPassword="Reset Password";
+ErrorUsernameFormat="Username format is incorrect";
+ErrorPasswordFormat="The password format is incorrect";
+EnterNickname="Please enter a nickname (2~10 digits)";
+EnterPhone="Please enter the phone number";
+EnterPhoneOrEmail="Please enter a phone number or email";
+EnterEmail="Please enter your email";
+EnterConfirmPassword="Please enter a confirmation password";
+EnterCode="Please enter the verification code";
+ErrorNicknameFormat="Nickname format is incorrect";
+ErrorPhoneFormat="The phone number format is incorrect";
+ErrorEmailFormat="The email format is incorrect";
+ErrorConfirmPasswordFormat="Confirm password format is incorrect";
+ErrorConfirmPassword="Incorrect password twice";
+Register2="Supplementary Information";
+CompleteRegister="Complete registration";
+Complete="Complete";
+CountSecond="%1$d";
+UserAgreement="By logging in, you agree to the User Agreement and Privacy Policy";
+HintForceLogout="Your account is logged in on another device and you have been forced to log out";
+UserService="User Agreement";
+
+//验证码
+SendCode="Send verification code";
+VerificationCode="Please enter verification code";
+VerificationCodeSentTo="Verification code sent to %@";
+Resend="Resend";
+ResendCount="%1$d to resend";
+ErrorCodeFormat="The format of the verification code is incorrect";
+Confirm="Confirm";
+SuperCancel="Cancel";
+
+AdClickTip="Click to jump to the details page to see more";
+SkipAdCount="Skip Ad %d";
+WifiPreload="WiFi Preload";
+
+//评论
+HintComment="Please enter a comment.";
+Comment="comment";
+Send="Send";
+CommentCreateSuccess="Comment posted successfully!";
+ReplyHint="Reply %@: ";
+Reply="Reply";
+CopySuccess="Copy successfully!";
+ReplyComment="Reply to Comment";
+ShareComment="Share Comment";
+CopyComment="Copy Comment";
+ReportComment="Report Comment";
+DeleteComment="Delete Comment";
+
+VideoCreatedAt="Published: %@";
+VideoClicksCount="Play: %d";
+RelatedRecomment="Related Recommendations";
+HotComment="Hot comment";
+VideoInfo="%d plays, by %@";
+SongCount="%d";
+
+//话题
+JoinCount="%d people participated";
+
+CreatedSheet="Created sheet";
+CreateSheet="Create playlist";
+CollectedSheet="Collected sheet";
+HintEnterSheetName="Please enter the sheet name";
+
+DownloadManager="Download Manager";
+PlayHistory="Recently Played";
+MyRadio="My Radio";
+MyCollect="My Collection";
+Sati="Sati space";
+Delete="Delete";
+
+Publish="Publish";
+HintFeed="Please enter what you want to say.";
+CurrentPosition="Current position";
+NotShowPosition="Do not show position";
+HintCurrentPosition="Location:";
+ErrorContentLength="Content cannot exceed 140 characters.";
+ErrorUploadImage="Upload image error";
+PublishFeed="Publish Feed";
+
+//我的资料
+SuperEdit="Edit";
+MyProfile="My Profile";
+SuperSave="Save";
+Avatar="Avatar";
+Nickname="Nickname";
+Gender="Gender";
+Birthday="Birthday";
+Area="Area";
+Detail="Personal introduction";
+HintDescription="Please introduce yourself to everyone";
+Phone="Phone number";
+Email="Mail";
+ThirdAccount="Third Party Account";
+Qq="QQ";
+Bind="Bind";
+Unbind="Unbind";
+Weibo="Weibo";
+SelectGender="Please select a gender";
+SuccessBind="Binding success";
+BindError="Binding failed";
+ConfirmUnbind="Are you sure to unbind?";
+SuccessUnbind="Unbind successfully!";
+Add="Add";
+UploadFailed="Upload failed, please try again later";
+LoadingUpload="Upload the %d picture.";
+
+SearchPoi="Search for places";
+NoData="No data";
+SelectLocationAddress="%dm | %@";
+
+//导航
+MapTencent="Tencent Map";
+MapBaidu="Baidu Map";
+MapAMap="Amap Map";
+MapSogou="Sogou Map";
+SelectLocationNavigation="Please select a navigation application";
+NotInstallMap="Please install the corresponding map software first";
+MapSystem="System Map";
+
+//聊天
+ErrorMessageLogin="Login to the chat server failed, you can register a new account and try, if you still have problems, contact customer service";
+HintEnterMessage="Please enter the message you want to send";
+ErrorSendMessage="Send failed";
+
+//商城
+Price="￥%.2f";
+PriceInt="￥%d";
+ShopDetail="Product Details";
+GoBuy="Buy Now";
+GoStudy="Study Now";
+SuccessBuy="Already purchased!";
+ActivityOrderDetail="Order Details";
+GoPay="Go to pay";
+ErrorPayChannel="Payment channel error";
+HintPayWait="Payment confirmation";
+ErrorPayCancel="Payment Cancelled";
+ErrorPayFailed="Payment failed";
+BuyCount="%1$d people bought";
+Reset="Reset";
+ChangeStyle="Switch style";
+CollectCoupon="Collect coupon";
+BuyNow="Buy Now";
+AddCart="Add to cart";
+AddCartSuccess="Add to cart successfully";
+Product="Commodity";
+Detail="Details";
+Recommend="Recommend";
+ValidUntil="%@valid";
+GetNow="Get it now";
+Received="Received";
+Total="Total:";
+SettleAccount="Settle";
+SettleAccountCount="Settle(%d)";
+ProductTotalPrice="Total price of product";
+Freight="Shipping";
+FreeFreight="Free Freight";
+NoAvailable="No Availability";
+NoCoupon="No Coupon";
+TotalCount="Total %d pieces, total: ";
+AvailableCount="%d available";
+ConfirmOrder="Confirm order";
+ConfirmCancelOrder="Confirm to cancel the order?";
+OrderDetail="Order Details";
+PayOrder="Pay Order";
+ConfirmPayPrice="Confirm Payment";
+PayRemainingTime="Payment remaining time %@";
+PaymentBefore="Please complete payment before %@";
+Alipay="Alipay";
+Wechat="WeChat";
+HuabeiStages="Flower stage";
+ConfirmExitPay="Confirm to abandon payment?";
+ConfirmExitPayMessage="The order will be cancelled after the time limit for payment has expired";
+ConfirmDeparture="Confirm to leave";
+ContinuePay="Continue to pay";
+CancelOrder="Cancel order";
+DeleteOrder="Delete order";
+ChangeAddress="Modify address";
+Evaluate="Evaluate";
+Whole="All";
+WaitPay="Pending payment";
+OrderClose="Closed";
+WaitShipped="Waiting to Ship";
+WaitReceived="Waiting to receive";
+WaitComment="To be evaluated";
+AmountPay="Amount payable";
+OrderTime="Order time";
+OrderNo="Order number";
+OrderSource="Order Source";
+PayPlatform="Payment platform";
+PayChannel="Payment Channel";
+RecognitionAddressTip="Paste text, name, phone number and address can be automatically recognized\nFor example: 801, Unit 1, Building 9, Yuanda Central Park, Muhua Road, Tianfu New District, Chengdu, Sichuan, Li Wei 13141111222";
+Recognition="Recognition";
+ReceiveName="Receiver Name";
+ReceiveTelephone="Receive phone";
+ReceiveArea="Receipt Area";
+DetailAddress="Detailed address";
+DefaultAddress="Default address";
+EnterReceiveName="Please enter the receiving name";
+EnterReceiveTelephone="Please enter the receiving phone";
+EnterReceiveArea="Please select the receiving area";
+EnterDetailAddress="Please enter detailed address";
+SelectAddress="Please select the shipping address";
+OcrError="Baidu OCR error: %@, error code: %d";
+VoiceInput="Voice Input";
+StopVoiceInput="Stop Voice Input";
+VoiceErrorNoResult="No recognition result, please speak louder and avoid noisy environments, etc.";
+VoiceError="Baidu voice recognition error: %1$s";
+ProductCount="x%d";
+Retry="Retry";
+CustomerService="Customer Service";
+DefaultAddressText="[Default]";
+SelectAll="Select all";
+EnterContent="Please enter content";
+SuccessDelete="Delete successful";
+
+TermServicePrivacy="Terms of Service and Privacy Notice";
+Agree="Agree";
+Disagree="Disagree and exit the app";
+
+CurrentVersion="Current version";
+FunctionIntroduction="Function introduction";
+UnplugHeadsetStopMusic="Unplug the headset to stop music playback";
+DownloadMobileNetwork="download using mobile network";
+
+AlreadyDownloaded="Already downloaded";
+AlreadyDownloading="Already downloading";
+AddedSuccessfully="Added successfully";
+ClickDownload="Paused, click to resume download";
+DownloadFailed="Download failed, click to retry";
+WaitDownload="Waiting to download";
+PauseAll="Pause all";
+DownloadAll="Start All";
+DeleteAll="Delete all";
+DownloadComplete="download complete";
+Downloading="Downloading";
+AlreadyDownloaded="Already downloaded";
+AlreadyInDownloadList="Already in the download list";
+AddSuccess="Add success";
+ErrorNotDownload="No download task";
+LocalMusic="Local Music";
+BatchEdit="Batch Edit";
+CancelEdit="Cancel Edit";
+NoLocalMusic="No local music";
+CancelSelectAll="Cancel Select All";
+JSTest="JS Test";
+CallMethod1="Call method 1";
+CallMethod2="Call Method 2";
+
+SelectLyric="Select Lyrics";
+ShareTextLyric="Share Text";
+ShareImageLyric="Share Image";
+SaveAlbum="Save Album";
+ShareLyricInfo="From my cloud music Lyrics sharing";
+ShareSuccess="Share Success";
+ShareFailed="Share failed";
+ShareCancel="Share Cancel";
+CauseError="Cause of error: %@";

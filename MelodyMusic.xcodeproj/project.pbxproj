@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8D9016732A6C60A000A4F688 /* SettingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9016722A6C60A000A4F688 /* SettingController.swift */; };
-		8D9016772A6C614000A4F688 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9016762A6C614000A4F688 /* SettingView.swift */; };
+		8D7E86632A6CE18F008580A9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8D7E86652A6CE18F008580A9 /* InfoPlist.strings */; };
+		8DA405C62A6CD8FE0033F979 /* SuperDateUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA405C52A6CD8FE0033F979 /* SuperDateUtil.swift */; };
+		8DA405CA2A6CDC460033F979 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8DA405CC2A6CDC460033F979 /* Localizable.strings */; };
 		8DEBED312A6C4F7A00303597 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEBED302A6C4F7A00303597 /* AppDelegate.swift */; };
-		8DEBED352A6C4F7A00303597 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEBED342A6C4F7A00303597 /* ViewController.swift */; };
+		8DEBED352A6C4F7A00303597 /* SplashController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEBED342A6C4F7A00303597 /* SplashController.swift */; };
 		8DEBED3A2A6C4F7B00303597 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DEBED392A6C4F7B00303597 /* Assets.xcassets */; };
 		8DEBED3D2A6C4F7B00303597 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DEBED3B2A6C4F7B00303597 /* LaunchScreen.storyboard */; };
 		8DEBED482A6C4F7B00303597 /* MelodyMusicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEBED472A6C4F7B00303597 /* MelodyMusicTests.swift */; };
@@ -39,11 +40,15 @@
 /* Begin PBXFileReference section */
 		0C2BD0C475118F21AFA06524 /* Pods-MelodyMusic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MelodyMusic.release.xcconfig"; path = "Target Support Files/Pods-MelodyMusic/Pods-MelodyMusic.release.xcconfig"; sourceTree = "<group>"; };
 		309120CF9AD7639157F05755 /* Pods-MelodyMusic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MelodyMusic.debug.xcconfig"; path = "Target Support Files/Pods-MelodyMusic/Pods-MelodyMusic.debug.xcconfig"; sourceTree = "<group>"; };
-		8D9016722A6C60A000A4F688 /* SettingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingController.swift; sourceTree = "<group>"; };
-		8D9016762A6C614000A4F688 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		8D7E86642A6CE18F008580A9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8D7E86662A6CE191008580A9 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		8DA405C52A6CD8FE0033F979 /* SuperDateUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperDateUtil.swift; sourceTree = "<group>"; };
+		8DA405CB2A6CDC460033F979 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		8DA405CD2A6CDC5E0033F979 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		8DA405CE2A6CDC5E0033F979 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		8DEBED2D2A6C4F7A00303597 /* MelodyMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MelodyMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DEBED302A6C4F7A00303597 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8DEBED342A6C4F7A00303597 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8DEBED342A6C4F7A00303597 /* SplashController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashController.swift; sourceTree = "<group>"; };
 		8DEBED392A6C4F7B00303597 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8DEBED3C2A6C4F7B00303597 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8DEBED3E2A6C4F7B00303597 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -84,17 +89,49 @@
 		8D90166E2A6C5F8C00A4F688 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				8D9016722A6C60A000A4F688 /* SettingController.swift */,
+				8DEBED342A6C4F7A00303597 /* SplashController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		8D90166F2A6C5F9400A4F688 /* View */ = {
+		8DA405C02A6CD3130033F979 /* Splash */ = {
 			isa = PBXGroup;
 			children = (
-				8D9016762A6C614000A4F688 /* SettingView.swift */,
+				8D90166E2A6C5F8C00A4F688 /* Controller */,
 			);
-			path = View;
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		8DA405C12A6CD3300033F979 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				8DA405C02A6CD3130033F979 /* Splash */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		8DA405C22A6CD8870033F979 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				8DA405C32A6CD8920033F979 /* SuperSwift */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		8DA405C32A6CD8920033F979 /* SuperSwift */ = {
+			isa = PBXGroup;
+			children = (
+				8DA405C42A6CD89C0033F979 /* Date */,
+			);
+			path = SuperSwift;
+			sourceTree = "<group>";
+		};
+		8DA405C42A6CD89C0033F979 /* Date */ = {
+			isa = PBXGroup;
+			children = (
+				8DA405C52A6CD8FE0033F979 /* SuperDateUtil.swift */,
+			);
+			path = Date;
 			sourceTree = "<group>";
 		};
 		8DEBED242A6C4F7A00303597 = {
@@ -122,13 +159,14 @@
 		8DEBED2F2A6C4F7A00303597 /* MelodyMusic */ = {
 			isa = PBXGroup;
 			children = (
-				8D90166F2A6C5F9400A4F688 /* View */,
-				8D90166E2A6C5F8C00A4F688 /* Controller */,
+				8DA405C22A6CD8870033F979 /* Vendor */,
+				8DA405C12A6CD3300033F979 /* Component */,
 				8DEBED302A6C4F7A00303597 /* AppDelegate.swift */,
-				8DEBED342A6C4F7A00303597 /* ViewController.swift */,
 				8DEBED392A6C4F7B00303597 /* Assets.xcassets */,
 				8DEBED3B2A6C4F7B00303597 /* LaunchScreen.storyboard */,
 				8DEBED3E2A6C4F7B00303597 /* Info.plist */,
+				8DA405CC2A6CDC460033F979 /* Localizable.strings */,
+				8D7E86652A6CE18F008580A9 /* InfoPlist.strings */,
 			);
 			path = MelodyMusic;
 			sourceTree = "<group>";
@@ -255,6 +293,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 8DEBED242A6C4F7A00303597;
 			productRefGroup = 8DEBED2E2A6C4F7A00303597 /* Products */;
@@ -274,7 +313,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8DEBED3D2A6C4F7B00303597 /* LaunchScreen.storyboard in Resources */,
+				8DA405CA2A6CDC460033F979 /* Localizable.strings in Resources */,
 				8DEBED3A2A6C4F7B00303597 /* Assets.xcassets in Resources */,
+				8D7E86632A6CE18F008580A9 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,9 +382,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D9016732A6C60A000A4F688 /* SettingController.swift in Sources */,
-				8D9016772A6C614000A4F688 /* SettingView.swift in Sources */,
-				8DEBED352A6C4F7A00303597 /* ViewController.swift in Sources */,
+				8DEBED352A6C4F7A00303597 /* SplashController.swift in Sources */,
+				8DA405C62A6CD8FE0033F979 /* SuperDateUtil.swift in Sources */,
 				8DEBED312A6C4F7A00303597 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -381,10 +421,29 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		8D7E86652A6CE18F008580A9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8D7E86642A6CE18F008580A9 /* en */,
+				8D7E86662A6CE191008580A9 /* zh-Hans */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		8DA405CC2A6CDC460033F979 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8DA405CB2A6CDC460033F979 /* en */,
+				8DA405CE2A6CDC5E0033F979 /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		8DEBED3B2A6C4F7B00303597 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				8DEBED3C2A6C4F7B00303597 /* Base */,
+				8DA405CD2A6CDC5E0033F979 /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -396,6 +455,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -456,6 +516,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";

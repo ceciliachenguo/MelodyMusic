@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8D7E86632A6CE18F008580A9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8D7E86652A6CE18F008580A9 /* InfoPlist.strings */; };
+		8D7E86692A6CE5A1008580A9 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7E86682A6CE5A1008580A9 /* R.generated.swift */; };
 		8DA405C62A6CD8FE0033F979 /* SuperDateUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA405C52A6CD8FE0033F979 /* SuperDateUtil.swift */; };
 		8DA405CA2A6CDC460033F979 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8DA405CC2A6CDC460033F979 /* Localizable.strings */; };
 		8DEBED312A6C4F7A00303597 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEBED302A6C4F7A00303597 /* AppDelegate.swift */; };
@@ -42,6 +43,7 @@
 		309120CF9AD7639157F05755 /* Pods-MelodyMusic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MelodyMusic.debug.xcconfig"; path = "Target Support Files/Pods-MelodyMusic/Pods-MelodyMusic.debug.xcconfig"; sourceTree = "<group>"; };
 		8D7E86642A6CE18F008580A9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8D7E86662A6CE191008580A9 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		8D7E86682A6CE5A1008580A9 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		8DA405C52A6CD8FE0033F979 /* SuperDateUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperDateUtil.swift; sourceTree = "<group>"; };
 		8DA405CB2A6CDC460033F979 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		8DA405CD2A6CDC5E0033F979 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
@@ -162,6 +164,7 @@
 				8DA405C22A6CD8870033F979 /* Vendor */,
 				8DA405C12A6CD3300033F979 /* Component */,
 				8DEBED302A6C4F7A00303597 /* AppDelegate.swift */,
+				8D7E86682A6CE5A1008580A9 /* R.generated.swift */,
 				8DEBED392A6C4F7B00303597 /* Assets.xcassets */,
 				8DEBED3B2A6C4F7B00303597 /* LaunchScreen.storyboard */,
 				8DEBED3E2A6C4F7B00303597 /* Info.plist */,
@@ -213,6 +216,7 @@
 			buildConfigurationList = 8DEBED572A6C4F7B00303597 /* Build configuration list for PBXNativeTarget "MelodyMusic" */;
 			buildPhases = (
 				AD47A546CFDBCBE4C530CC40 /* [CP] Check Pods Manifest.lock */,
+				8D7E86672A6CE3FD008580A9 /* ShellScript */,
 				8DEBED292A6C4F7A00303597 /* Sources */,
 				8DEBED2A2A6C4F7A00303597 /* Frameworks */,
 				8DEBED2B2A6C4F7A00303597 /* Resources */,
@@ -353,6 +357,25 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MelodyMusic/Pods-MelodyMusic-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		8D7E86672A6CE3FD008580A9 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
+		};
 		AD47A546CFDBCBE4C530CC40 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -385,6 +408,7 @@
 				8DEBED352A6C4F7A00303597 /* SplashController.swift in Sources */,
 				8DA405C62A6CD8FE0033F979 /* SuperDateUtil.swift in Sources */,
 				8DEBED312A6C4F7A00303597 /* AppDelegate.swift in Sources */,
+				8D7E86692A6CE5A1008580A9 /* R.generated.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

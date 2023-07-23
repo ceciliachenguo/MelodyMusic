@@ -3,7 +3,12 @@
 
 target 'MelodyMusic' do
   use_frameworks!
+  
+  #https://github.com/youngsoft/TangramKit
   pod 'TangramKit'
+  
+  #https://github.com/mac-cain13/R.swift
+  pod 'R.swift'
 
   post_install do |installer|
       installer.generated_projects.each do |project|

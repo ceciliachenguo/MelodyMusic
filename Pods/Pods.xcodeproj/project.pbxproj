@@ -7,29 +7,72 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0CF071FB4323AE5ACA3B8BB2F3FCE3BA /* TGFrameLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B63BD03B320EF431FCBC0403DA938CD /* TGFrameLayout.swift */; };
-		3AA651A279C5C1D2FA3615B6993690B9 /* TGLayoutSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8ACACCBA344023DD9824C8DF311B682 /* TGLayoutSize.swift */; };
-		493D91E33DCA2212EEDBDB098724D52E /* TangramKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C23D19CB632F83CCF72D5A943992FA2 /* TangramKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5501978527161FF0FC1836F19C6B61F6 /* TGFloatLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F4D9F09E04DF6F9AC76335A8EA4C78 /* TGFloatLayout.swift */; };
-		6F7C7ACAA78F3F3DC54C584C8E6BF778 /* TGPathLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A524BA9BC583FA50D185A26907A0B5C /* TGPathLayout.swift */; };
-		7755BF89B91974CA1CFC4EC7DC5FD79A /* TGLayoutSizeClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70ED52BC487D35AD55A0712C9D959C07 /* TGLayoutSizeClass.swift */; };
-		86BC4D12302E2F2FCF236CE1C8C97A2A /* Pods-MelodyMusic-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 109F2C319ED9A4A35825BB0F3249CA86 /* Pods-MelodyMusic-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		96995A4721B85EA2D152C7E937287F62 /* TangramKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = F889C937A370FB6DD2F2E04EF31D5208 /* TangramKit.swift */; };
-		9ED860E59868E2CA2C5861E8D1653359 /* TGDimeAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA997BE9CEB398A27AAE2759881A5919 /* TGDimeAdapter.swift */; };
-		A8DBF2B29E5A136EFBAB7E377237A75E /* TGRelativeLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D8747C6984F989B3A923760F36BBEB /* TGRelativeLayout.swift */; };
-		AEE7E2F3DD58742B5CADEC0EB7C91ACE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		B7014A8AB667229A9697A0401CFF1211 /* TGFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5345C616A105C706BF940E37FBB7A2 /* TGFlowLayout.swift */; };
+		07B9D17D1AD0F6FE19159602968D60EF /* StringsTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54641548DC63E54A4BE881ABC4652149 /* StringsTable.swift */; };
+		0CF071FB4323AE5ACA3B8BB2F3FCE3BA /* TGFrameLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A089693F5117B6B5034E6779D01EF9C /* TGFrameLayout.swift */; };
+		187716BED8574FDCDF81C1942FB6680E /* Unifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D91A9597F8FA6A74B8E0816766F8C1E /* Unifiable.swift */; };
+		1A88F48BAD8814EEBF0312260CC4C5F5 /* Pods-MelodyMusic-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A01EAB8C3190A8F98B205E74575A095C /* Pods-MelodyMusic-dummy.m */; };
+		2697A63C1692F5BFE0B7ECE116E62D1E /* R.swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 94EDDDF4C9D80F0AD41F6F57711657A8 /* R.swift-dummy.m */; };
+		288A8A212DAB75E497FCE5CBBF998203 /* StringParam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0966F768D718EDF0F6384ABD59F1B0E1 /* StringParam.swift */; };
+		36CFCBEBCF750E47621FFBFE3B8190B6 /* NibReference+Integrations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C614BE106768478909A13A8357DD367 /* NibReference+Integrations.swift */; };
+		3AA651A279C5C1D2FA3615B6993690B9 /* TGLayoutSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303E41041716F4F3AD30F4328E15898D /* TGLayoutSize.swift */; };
+		45D7A769C9F7BB5F3D9672E7735BF249 /* StoryboardResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E5A3EC45CDE161C2147DD8606B4636 /* StoryboardResource.swift */; };
+		493D91E33DCA2212EEDBDB098724D52E /* TangramKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 10143B67E2816AC265E6E2F8EE8747CF /* TangramKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		49A28ED2F484F91FED534660D03703FD /* SegueIdentifier+Integrations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77EF26AD4FC3542CEBF8110A5CC2B876 /* SegueIdentifier+Integrations.swift */; };
+		535131E1FD0B3E84D752497919ECE490 /* StringParam+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397CC6DE4960D0CCB3549711392AFF76 /* StringParam+Extensions.swift */; };
+		53823D18FE8E68990F500FDE7B840AAF /* ReuseIdentifier+Integrations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DEBBF23D6E264D7D4B8609CD3A345F /* ReuseIdentifier+Integrations.swift */; };
+		5501978527161FF0FC1836F19C6B61F6 /* TGFloatLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA7FBDB8B79AC767C574B27BDD00795 /* TGFloatLayout.swift */; };
+		5FD17D2B5FFE1CFC09FA6026D1603089 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574B4D4DBA31E76A49A998DFFD0B354B /* Reusable.swift */; };
+		659D3672D3C6A5B0FEBA23005115BDD4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		68B4C6D7FFABFA1ECEC3986778257FBF /* StringResource+Integrations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5175A703E568105491626F65D348DB /* StringResource+Integrations.swift */; };
+		6AA8A1C42185AE89F02A6C14740958EF /* TypeReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E01AB77EBC3E4575723E84BD14FED2 /* TypeReference.swift */; };
+		6F7C7ACAA78F3F3DC54C584C8E6BF778 /* TGPathLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09ADA55C8AB6E819064C6BFC4B7D01BD /* TGPathLayout.swift */; };
+		720ACF09B80E590AFDC6062E73AA0797 /* ColorResource+Integrations.swift in Sources */ = {isa = PBXBuildFile; fileRef = D678482BB65FF2F1D41A8A3052AF54F0 /* ColorResource+Integrations.swift */; };
+		763AC4019BE4E941989F986CF30EE6AD /* NibResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98BCA4255EE9B897981D38DB50DE01B /* NibResource.swift */; };
+		7755BF89B91974CA1CFC4EC7DC5FD79A /* TGLayoutSizeClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2511553FA6BA75A16F05727FC9472561 /* TGLayoutSizeClass.swift */; };
+		80C669B139FCBE1646D9664930640DD8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		8A1A9BCF376C253932BBF398A62CF289 /* DataResource+Integrations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25647BB94720465A50BE15AEF96F170D /* DataResource+Integrations.swift */; };
+		9114FCC4E77EE0180F8B3BF5983FE068 /* ValidationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17EA6E1FC79876B2B2EFDBAD0B42114E /* ValidationError.swift */; };
+		941FD612E9ED6F63C1582BAC34E5410E /* Pods-MelodyMusic-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 109F2C319ED9A4A35825BB0F3249CA86 /* Pods-MelodyMusic-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		94EFE958A356CA4630020B74BCE68365 /* AssetCatalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7DFD6BBC399068F058C0854C4156B1 /* AssetCatalog.swift */; };
+		96995A4721B85EA2D152C7E937287F62 /* TangramKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A79589461805263096350F946EEF817 /* TangramKit.swift */; };
+		9ED860E59868E2CA2C5861E8D1653359 /* TGDimeAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5A3D23393DA7330716272B67BF4999 /* TGDimeAdapter.swift */; };
+		A58BF183F8F28DD4E372A3CF95D616C2 /* DataResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA3E83E0E2B87323118877A911D0866 /* DataResource.swift */; };
+		A8DBF2B29E5A136EFBAB7E377237A75E /* TGRelativeLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361B155A72C13031F34FD97AF0C6EEBC /* TGRelativeLayout.swift */; };
+		B0A82BAB87A465086658CF159841B8F2 /* StoryboardReference+Integrations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FF6E9F0D7E420F92627667EDE6E5F1 /* StoryboardReference+Integrations.swift */; };
+		B45D0C99CB6D98CEC740C73824E54A5C /* FileResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEEEEBA7B2D6E540EAC7932CDB648B7 /* FileResource.swift */; };
+		B7014A8AB667229A9697A0401CFF1211 /* TGFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA54F12DF15A4C249B5AABD5D4FC2B52 /* TGFlowLayout.swift */; };
+		B8BCB750566AB8240F56ED46F19016FE /* ColorResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4C06AE3F16313192A54E9F64141854 /* ColorResource.swift */; };
+		C2CE49962A4B84B347B21FC9A50A3A14 /* NameCatalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D4F1702FDAE780963664711FA75924 /* NameCatalog.swift */; };
+		C9552E95EC3D5F35CCC9F5A5649AC28E /* LocaleReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D63CF0DF230922E7E5E6E9B1B3EC055 /* LocaleReference.swift */; };
+		CA12D2143097D3A0548FCC326944EA40 /* ImageResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F741D6E1FF3203E24E99E41E5532CD65 /* ImageResource.swift */; };
 		CBC90ED26453144BCFC219160F93DBFC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		D5F4D193D6F6650009072719A8D2CBF8 /* TGBaseLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB4F9DAEC9F7194244171B489604377 /* TGBaseLayout.swift */; };
-		DF2DC45961D438303139F4A75CAF1550 /* TGLayoutPos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9881F69870A091A5FBFD3A5077327570 /* TGLayoutPos.swift */; };
-		E15B6E70679CFD6ADEBC5B1D80BB8311 /* TangramKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FF53EA8C86CB7F49CB74C4A5A66FE04 /* TangramKit-dummy.m */; };
-		EAA84AF436642350AD4EBAAE84A0754A /* TGTableLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83740C48DCFEC62D97C65A527A174F9 /* TGTableLayout.swift */; };
-		FDE62B5C82E017C35A334D000E90C1B5 /* Pods-MelodyMusic-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A01EAB8C3190A8F98B205E74575A095C /* Pods-MelodyMusic-dummy.m */; };
-		FE71167731197CE2797D3F7C72BA3224 /* TGLinearLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31AF812994794FEC85FA8D8BC17BE533 /* TGLinearLayout.swift */; };
+		CE73EB779730BF15943261BFEE3F3428 /* Bundle+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5828B6F939DB60AC74008D1323DC52E /* Bundle+Extensions.swift */; };
+		CF9CA5E3F7A243A0C0F326E61417C88D /* StringResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4416FFC50DF70025B35610E2901E2E8D /* StringResource.swift */; };
+		D5F4D193D6F6650009072719A8D2CBF8 /* TGBaseLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4784FA8C6AC6E49A87CA6BC34FF2E332 /* TGBaseLayout.swift */; };
+		D733CD41172DA35454CC60695C9B7817 /* FontResource+Integrations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD09DAF7651A64DDD2D9449B836115B /* FontResource+Integrations.swift */; };
+		D7C2C07839FFB8659DA74FF089DDC0A6 /* PropertyListResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0CF20575C7D24AABA694C3CF2E5826 /* PropertyListResource.swift */; };
+		DEF4ACACC5A5B37535DF580680565955 /* FontResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830A31292CD4473E96FA8CF78626693A /* FontResource.swift */; };
+		DF2DC45961D438303139F4A75CAF1550 /* TGLayoutPos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFE628E511979E9393BCD92F3960B79 /* TGLayoutPos.swift */; };
+		E15B6E70679CFD6ADEBC5B1D80BB8311 /* TangramKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B44027AF556A71EA25C460AB3013456 /* TangramKit-dummy.m */; };
+		E820ADDBA83E30CA5343C611C9322DCB /* ModuleReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5582ACEC523882154FCD199F709EFFE7 /* ModuleReference.swift */; };
+		EAA84AF436642350AD4EBAAE84A0754A /* TGTableLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82FFC294CA73774DE15CAE371C414E58 /* TGTableLayout.swift */; };
+		EB1F2E500A57F64D6CCC51711C8EBB15 /* StoryboardReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB97806E00B6B5713F320C5BC3792A8D /* StoryboardReference.swift */; };
+		F0C81C55D3DE46CB72D72748DE7EE647 /* DeploymentTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB70AEDFE76327CED7E969343523DF7 /* DeploymentTarget.swift */; };
+		F31ED122B84C87DFC36A3A7C53039BFB /* ImageResource+Integrations.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D595622C900BECE80E418675556D65 /* ImageResource+Integrations.swift */; };
+		F4C1ABC5CA0D5EF0ABD3CA73DAA77D9D /* R.swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4627DA6D83FF480152698108AED971DE /* R.swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA92EE26A49D694C31E588F0BE950A33 /* FileResource+Integrations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE8D6AC5CA0240A2B15BC023F53FB48 /* FileResource+Integrations.swift */; };
+		FE71167731197CE2797D3F7C72BA3224 /* TGLinearLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDF1E321BB9B4015B99BCA4C3609E80 /* TGLinearLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		6C062542BE74DD840EE6EB855A2297BF /* PBXContainerItemProxy */ = {
+		02C1A6F0B63665ED5307CB0077DE281E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 230984053C6652DFF510F450F21C5CF7;
+			remoteInfo = R.swift;
+		};
+		F833F14B00BF2F6733928A82FB4371C9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -39,42 +82,91 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0966F768D718EDF0F6384ABD59F1B0E1 /* StringParam.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StringParam.swift; path = Sources/RswiftResources/Shared/StringParam.swift; sourceTree = "<group>"; };
+		09ADA55C8AB6E819064C6BFC4B7D01BD /* TGPathLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TGPathLayout.swift; path = TangramKit/TGPathLayout.swift; sourceTree = "<group>"; };
 		0C33AE588D78F2747676D5D634C7537E /* Pods-MelodyMusic-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MelodyMusic-frameworks.sh"; sourceTree = "<group>"; };
-		0FF53EA8C86CB7F49CB74C4A5A66FE04 /* TangramKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TangramKit-dummy.m"; sourceTree = "<group>"; };
+		10143B67E2816AC265E6E2F8EE8747CF /* TangramKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TangramKit-umbrella.h"; sourceTree = "<group>"; };
 		109F2C319ED9A4A35825BB0F3249CA86 /* Pods-MelodyMusic-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MelodyMusic-umbrella.h"; sourceTree = "<group>"; };
-		1E5B3DD8744BEC498176A0639F145849 /* TangramKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TangramKit-Info.plist"; sourceTree = "<group>"; };
-		2A524BA9BC583FA50D185A26907A0B5C /* TGPathLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TGPathLayout.swift; path = TangramKit/TGPathLayout.swift; sourceTree = "<group>"; };
-		31AF812994794FEC85FA8D8BC17BE533 /* TGLinearLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TGLinearLayout.swift; path = TangramKit/TGLinearLayout.swift; sourceTree = "<group>"; };
+		15FF6E9F0D7E420F92627667EDE6E5F1 /* StoryboardReference+Integrations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "StoryboardReference+Integrations.swift"; path = "Sources/RswiftResources/Integrations/StoryboardReference+Integrations.swift"; sourceTree = "<group>"; };
+		17EA6E1FC79876B2B2EFDBAD0B42114E /* ValidationError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ValidationError.swift; path = Sources/RswiftResources/Shared/ValidationError.swift; sourceTree = "<group>"; };
+		2511553FA6BA75A16F05727FC9472561 /* TGLayoutSizeClass.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TGLayoutSizeClass.swift; path = TangramKit/TGLayoutSizeClass.swift; sourceTree = "<group>"; };
+		25647BB94720465A50BE15AEF96F170D /* DataResource+Integrations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DataResource+Integrations.swift"; path = "Sources/RswiftResources/Integrations/DataResource+Integrations.swift"; sourceTree = "<group>"; };
+		2C5175A703E568105491626F65D348DB /* StringResource+Integrations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "StringResource+Integrations.swift"; path = "Sources/RswiftResources/Integrations/StringResource+Integrations.swift"; sourceTree = "<group>"; };
+		2C614BE106768478909A13A8357DD367 /* NibReference+Integrations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NibReference+Integrations.swift"; path = "Sources/RswiftResources/Integrations/NibReference+Integrations.swift"; sourceTree = "<group>"; };
+		2D91A9597F8FA6A74B8E0816766F8C1E /* Unifiable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Unifiable.swift; path = Sources/RswiftResources/Shared/Unifiable.swift; sourceTree = "<group>"; };
+		303E41041716F4F3AD30F4328E15898D /* TGLayoutSize.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TGLayoutSize.swift; path = TangramKit/TGLayoutSize.swift; sourceTree = "<group>"; };
+		30DEBBF23D6E264D7D4B8609CD3A345F /* ReuseIdentifier+Integrations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ReuseIdentifier+Integrations.swift"; path = "Sources/RswiftResources/Integrations/ReuseIdentifier+Integrations.swift"; sourceTree = "<group>"; };
+		361B155A72C13031F34FD97AF0C6EEBC /* TGRelativeLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TGRelativeLayout.swift; path = TangramKit/TGRelativeLayout.swift; sourceTree = "<group>"; };
+		37D4F1702FDAE780963664711FA75924 /* NameCatalog.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NameCatalog.swift; path = Sources/RswiftResources/Shared/NameCatalog.swift; sourceTree = "<group>"; };
+		397CC6DE4960D0CCB3549711392AFF76 /* StringParam+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "StringParam+Extensions.swift"; path = "Sources/RswiftResources/Shared/StringParam+Extensions.swift"; sourceTree = "<group>"; };
+		3A089693F5117B6B5034E6779D01EF9C /* TGFrameLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TGFrameLayout.swift; path = TangramKit/TGFrameLayout.swift; sourceTree = "<group>"; };
 		3A84BE6A41AE5C7B5BDE84F03BF7C947 /* TangramKit */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TangramKit; path = TangramKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3EA5BDD6DA462D45C28EA963654D95D3 /* R.swift */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = R.swift; path = RswiftResources.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FA7FBDB8B79AC767C574B27BDD00795 /* TGFloatLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TGFloatLayout.swift; path = TangramKit/TGFloatLayout.swift; sourceTree = "<group>"; };
+		4416FFC50DF70025B35610E2901E2E8D /* StringResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StringResource.swift; path = Sources/RswiftResources/StringResource.swift; sourceTree = "<group>"; };
+		4627DA6D83FF480152698108AED971DE /* R.swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "R.swift-umbrella.h"; sourceTree = "<group>"; };
+		4784FA8C6AC6E49A87CA6BC34FF2E332 /* TGBaseLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TGBaseLayout.swift; path = TangramKit/TGBaseLayout.swift; sourceTree = "<group>"; };
+		4A901CED17814B7F84F30C7A503E325D /* R.swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = R.swift.debug.xcconfig; sourceTree = "<group>"; };
 		4B846FA0379F2C1306F1B96280E2E088 /* Pods-MelodyMusic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MelodyMusic.debug.xcconfig"; sourceTree = "<group>"; };
-		51C1B387327FEFC4096B753F1A679247 /* TangramKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TangramKit-prefix.pch"; sourceTree = "<group>"; };
-		5B63BD03B320EF431FCBC0403DA938CD /* TGFrameLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TGFrameLayout.swift; path = TangramKit/TGFrameLayout.swift; sourceTree = "<group>"; };
+		51E5A3EC45CDE161C2147DD8606B4636 /* StoryboardResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StoryboardResource.swift; path = Sources/RswiftResources/StoryboardResource.swift; sourceTree = "<group>"; };
+		54641548DC63E54A4BE881ABC4652149 /* StringsTable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StringsTable.swift; path = Sources/RswiftResources/Shared/StringsTable.swift; sourceTree = "<group>"; };
+		5582ACEC523882154FCD199F709EFFE7 /* ModuleReference.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ModuleReference.swift; path = Sources/RswiftResources/Shared/ModuleReference.swift; sourceTree = "<group>"; };
+		574B4D4DBA31E76A49A998DFFD0B354B /* Reusable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Reusable.swift; path = Sources/RswiftResources/Shared/Reusable.swift; sourceTree = "<group>"; };
+		575135E66DA7E924EC600F036C5F3DF4 /* R.swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = R.swift.modulemap; sourceTree = "<group>"; };
 		5D19FCE263A30E294AE4717C89179E6A /* Pods-MelodyMusic */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-MelodyMusic"; path = Pods_MelodyMusic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		70ED52BC487D35AD55A0712C9D959C07 /* TGLayoutSizeClass.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TGLayoutSizeClass.swift; path = TangramKit/TGLayoutSizeClass.swift; sourceTree = "<group>"; };
+		5EA3E83E0E2B87323118877A911D0866 /* DataResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataResource.swift; path = Sources/RswiftResources/DataResource.swift; sourceTree = "<group>"; };
+		6219EB3CC4DFB626CF0D72EB23B5D187 /* TangramKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TangramKit.debug.xcconfig; sourceTree = "<group>"; };
+		69BD10451237AF32A2B8E1F333E1EB2B /* R.swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = R.swift.release.xcconfig; sourceTree = "<group>"; };
+		6B44027AF556A71EA25C460AB3013456 /* TangramKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TangramKit-dummy.m"; sourceTree = "<group>"; };
+		6BFE628E511979E9393BCD92F3960B79 /* TGLayoutPos.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TGLayoutPos.swift; path = TangramKit/TGLayoutPos.swift; sourceTree = "<group>"; };
+		6D97DC48D60B637B720BD48541D3F403 /* TangramKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TangramKit.modulemap; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		7B5345C616A105C706BF940E37FBB7A2 /* TGFlowLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TGFlowLayout.swift; path = TangramKit/TGFlowLayout.swift; sourceTree = "<group>"; };
-		8C23D19CB632F83CCF72D5A943992FA2 /* TangramKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TangramKit-umbrella.h"; sourceTree = "<group>"; };
+		77E01AB77EBC3E4575723E84BD14FED2 /* TypeReference.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TypeReference.swift; path = Sources/RswiftResources/Shared/TypeReference.swift; sourceTree = "<group>"; };
+		77EF26AD4FC3542CEBF8110A5CC2B876 /* SegueIdentifier+Integrations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SegueIdentifier+Integrations.swift"; path = "Sources/RswiftResources/Integrations/SegueIdentifier+Integrations.swift"; sourceTree = "<group>"; };
+		82FFC294CA73774DE15CAE371C414E58 /* TGTableLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TGTableLayout.swift; path = TangramKit/TGTableLayout.swift; sourceTree = "<group>"; };
+		830A31292CD4473E96FA8CF78626693A /* FontResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontResource.swift; path = Sources/RswiftResources/FontResource.swift; sourceTree = "<group>"; };
+		8CE8D6AC5CA0240A2B15BC023F53FB48 /* FileResource+Integrations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "FileResource+Integrations.swift"; path = "Sources/RswiftResources/Integrations/FileResource+Integrations.swift"; sourceTree = "<group>"; };
 		8F04285EECA6BF120C50FEF5281A3D9D /* Pods-MelodyMusic-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MelodyMusic-acknowledgements.plist"; sourceTree = "<group>"; };
-		9881F69870A091A5FBFD3A5077327570 /* TGLayoutPos.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TGLayoutPos.swift; path = TangramKit/TGLayoutPos.swift; sourceTree = "<group>"; };
-		9CAA85969EEA7E9FF62007D8A094D560 /* TangramKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TangramKit.modulemap; sourceTree = "<group>"; };
+		94ACD668DE148BEC2878750DFB837744 /* TangramKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TangramKit-Info.plist"; sourceTree = "<group>"; };
+		94EDDDF4C9D80F0AD41F6F57711657A8 /* R.swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "R.swift-dummy.m"; sourceTree = "<group>"; };
+		9A79589461805263096350F946EEF817 /* TangramKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TangramKit.swift; path = TangramKit/TangramKit.swift; sourceTree = "<group>"; };
+		9BD09DAF7651A64DDD2D9449B836115B /* FontResource+Integrations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "FontResource+Integrations.swift"; path = "Sources/RswiftResources/Integrations/FontResource+Integrations.swift"; sourceTree = "<group>"; };
+		9D63CF0DF230922E7E5E6E9B1B3EC055 /* LocaleReference.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LocaleReference.swift; path = Sources/RswiftResources/Shared/LocaleReference.swift; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9EE4F9245ADD1C8AD7BF8C387F3064E1 /* TangramKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TangramKit.release.xcconfig; sourceTree = "<group>"; };
 		A01EAB8C3190A8F98B205E74575A095C /* Pods-MelodyMusic-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MelodyMusic-dummy.m"; sourceTree = "<group>"; };
-		A8ACACCBA344023DD9824C8DF311B682 /* TGLayoutSize.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TGLayoutSize.swift; path = TangramKit/TGLayoutSize.swift; sourceTree = "<group>"; };
-		B6C93282C4B55EC70387F743E12ACD13 /* TangramKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TangramKit.release.xcconfig; sourceTree = "<group>"; };
+		AD4C06AE3F16313192A54E9F64141854 /* ColorResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ColorResource.swift; path = Sources/RswiftResources/ColorResource.swift; sourceTree = "<group>"; };
+		BB97806E00B6B5713F320C5BC3792A8D /* StoryboardReference.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StoryboardReference.swift; path = Sources/RswiftResources/Shared/StoryboardReference.swift; sourceTree = "<group>"; };
+		BDEF5E8AC021ACC916966CD4DF587215 /* R.swift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "R.swift-Info.plist"; sourceTree = "<group>"; };
+		BE5A3D23393DA7330716272B67BF4999 /* TGDimeAdapter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TGDimeAdapter.swift; path = TangramKit/TGDimeAdapter.swift; sourceTree = "<group>"; };
 		C7B95851BA51DEDE1718E5BF5609E159 /* Pods-MelodyMusic.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MelodyMusic.modulemap"; sourceTree = "<group>"; };
-		CBB4F9DAEC9F7194244171B489604377 /* TGBaseLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TGBaseLayout.swift; path = TangramKit/TGBaseLayout.swift; sourceTree = "<group>"; };
+		CA54F12DF15A4C249B5AABD5D4FC2B52 /* TGFlowLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TGFlowLayout.swift; path = TangramKit/TGFlowLayout.swift; sourceTree = "<group>"; };
+		CD7DFD6BBC399068F058C0854C4156B1 /* AssetCatalog.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AssetCatalog.swift; path = Sources/RswiftResources/AssetCatalog.swift; sourceTree = "<group>"; };
 		CE95DA400FA6C7402A2D1E05B4EA66A9 /* Pods-MelodyMusic-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MelodyMusic-acknowledgements.markdown"; sourceTree = "<group>"; };
-		D0D6D7FF59C883F9BC93C8A5C491D5D0 /* TangramKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TangramKit.debug.xcconfig; sourceTree = "<group>"; };
-		E2F4D9F09E04DF6F9AC76335A8EA4C78 /* TGFloatLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TGFloatLayout.swift; path = TangramKit/TGFloatLayout.swift; sourceTree = "<group>"; };
-		E4D8747C6984F989B3A923760F36BBEB /* TGRelativeLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TGRelativeLayout.swift; path = TangramKit/TGRelativeLayout.swift; sourceTree = "<group>"; };
-		E83740C48DCFEC62D97C65A527A174F9 /* TGTableLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TGTableLayout.swift; path = TangramKit/TGTableLayout.swift; sourceTree = "<group>"; };
+		D07AA73DDAAD0C1AA940BBD190B15790 /* R.swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "R.swift-prefix.pch"; sourceTree = "<group>"; };
+		D678482BB65FF2F1D41A8A3052AF54F0 /* ColorResource+Integrations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ColorResource+Integrations.swift"; path = "Sources/RswiftResources/Integrations/ColorResource+Integrations.swift"; sourceTree = "<group>"; };
+		D98BCA4255EE9B897981D38DB50DE01B /* NibResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NibResource.swift; path = Sources/RswiftResources/NibResource.swift; sourceTree = "<group>"; };
+		DB0CF20575C7D24AABA694C3CF2E5826 /* PropertyListResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PropertyListResource.swift; path = Sources/RswiftResources/PropertyListResource.swift; sourceTree = "<group>"; };
+		E5828B6F939DB60AC74008D1323DC52E /* Bundle+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bundle+Extensions.swift"; path = "Sources/RswiftResources/Integrations/Bundle+Extensions.swift"; sourceTree = "<group>"; };
 		E8F7BCA7940D27838CCBCAB3350FBAC6 /* Pods-MelodyMusic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MelodyMusic.release.xcconfig"; sourceTree = "<group>"; };
-		F889C937A370FB6DD2F2E04EF31D5208 /* TangramKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TangramKit.swift; path = TangramKit/TangramKit.swift; sourceTree = "<group>"; };
-		FA997BE9CEB398A27AAE2759881A5919 /* TGDimeAdapter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TGDimeAdapter.swift; path = TangramKit/TGDimeAdapter.swift; sourceTree = "<group>"; };
+		ECDF1E321BB9B4015B99BCA4C3609E80 /* TGLinearLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TGLinearLayout.swift; path = TangramKit/TGLinearLayout.swift; sourceTree = "<group>"; };
+		EFEEEEBA7B2D6E540EAC7932CDB648B7 /* FileResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FileResource.swift; path = Sources/RswiftResources/FileResource.swift; sourceTree = "<group>"; };
+		F24F1D27E9F925F0358CE544B958CC34 /* TangramKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TangramKit-prefix.pch"; sourceTree = "<group>"; };
+		F6D595622C900BECE80E418675556D65 /* ImageResource+Integrations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ImageResource+Integrations.swift"; path = "Sources/RswiftResources/Integrations/ImageResource+Integrations.swift"; sourceTree = "<group>"; };
+		F741D6E1FF3203E24E99E41E5532CD65 /* ImageResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageResource.swift; path = Sources/RswiftResources/ImageResource.swift; sourceTree = "<group>"; };
 		FD6FB6FDD867917F9B31E486BDF59B4D /* Pods-MelodyMusic-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MelodyMusic-Info.plist"; sourceTree = "<group>"; };
+		FFB70AEDFE76327CED7E969343523DF7 /* DeploymentTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DeploymentTarget.swift; path = Sources/RswiftResources/Shared/DeploymentTarget.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		43FDA328C80B080E2975E677606897D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80C669B139FCBE1646D9664930640DD8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4E5BCF8D652BE266461E5B496E687736 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -83,25 +175,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		73B53A33A812F68C05B109E5BFF463BD /* Frameworks */ = {
+		C095843C3AEA58FD001205660E2945F0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AEE7E2F3DD58742B5CADEC0EB7C91ACE /* Foundation.framework in Frameworks */,
+				659D3672D3C6A5B0FEBA23005115BDD4 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		032DA3EAA7124BD71C0D6A810DE7D4BA /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				4005FF951A78720560FFDAAB489E3FB7 /* TangramKit */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		1A264A4E273DC8E237F09D9C99728F9D /* Pods-MelodyMusic */ = {
 			isa = PBXGroup;
 			children = (
@@ -119,26 +203,46 @@
 			path = "Target Support Files/Pods-MelodyMusic";
 			sourceTree = "<group>";
 		};
-		4005FF951A78720560FFDAAB489E3FB7 /* TangramKit */ = {
+		2ABED0736395F34417D7DAB7853F661F /* R.swift */ = {
 			isa = PBXGroup;
 			children = (
-				F889C937A370FB6DD2F2E04EF31D5208 /* TangramKit.swift */,
-				CBB4F9DAEC9F7194244171B489604377 /* TGBaseLayout.swift */,
-				FA997BE9CEB398A27AAE2759881A5919 /* TGDimeAdapter.swift */,
-				E2F4D9F09E04DF6F9AC76335A8EA4C78 /* TGFloatLayout.swift */,
-				7B5345C616A105C706BF940E37FBB7A2 /* TGFlowLayout.swift */,
-				5B63BD03B320EF431FCBC0403DA938CD /* TGFrameLayout.swift */,
-				9881F69870A091A5FBFD3A5077327570 /* TGLayoutPos.swift */,
-				A8ACACCBA344023DD9824C8DF311B682 /* TGLayoutSize.swift */,
-				70ED52BC487D35AD55A0712C9D959C07 /* TGLayoutSizeClass.swift */,
-				31AF812994794FEC85FA8D8BC17BE533 /* TGLinearLayout.swift */,
-				2A524BA9BC583FA50D185A26907A0B5C /* TGPathLayout.swift */,
-				E4D8747C6984F989B3A923760F36BBEB /* TGRelativeLayout.swift */,
-				E83740C48DCFEC62D97C65A527A174F9 /* TGTableLayout.swift */,
-				C44F71F1B76F1694C1617F5FE72E0CDE /* Support Files */,
+				CD7DFD6BBC399068F058C0854C4156B1 /* AssetCatalog.swift */,
+				E5828B6F939DB60AC74008D1323DC52E /* Bundle+Extensions.swift */,
+				AD4C06AE3F16313192A54E9F64141854 /* ColorResource.swift */,
+				D678482BB65FF2F1D41A8A3052AF54F0 /* ColorResource+Integrations.swift */,
+				5EA3E83E0E2B87323118877A911D0866 /* DataResource.swift */,
+				25647BB94720465A50BE15AEF96F170D /* DataResource+Integrations.swift */,
+				FFB70AEDFE76327CED7E969343523DF7 /* DeploymentTarget.swift */,
+				EFEEEEBA7B2D6E540EAC7932CDB648B7 /* FileResource.swift */,
+				8CE8D6AC5CA0240A2B15BC023F53FB48 /* FileResource+Integrations.swift */,
+				830A31292CD4473E96FA8CF78626693A /* FontResource.swift */,
+				9BD09DAF7651A64DDD2D9449B836115B /* FontResource+Integrations.swift */,
+				F741D6E1FF3203E24E99E41E5532CD65 /* ImageResource.swift */,
+				F6D595622C900BECE80E418675556D65 /* ImageResource+Integrations.swift */,
+				9D63CF0DF230922E7E5E6E9B1B3EC055 /* LocaleReference.swift */,
+				5582ACEC523882154FCD199F709EFFE7 /* ModuleReference.swift */,
+				37D4F1702FDAE780963664711FA75924 /* NameCatalog.swift */,
+				2C614BE106768478909A13A8357DD367 /* NibReference+Integrations.swift */,
+				D98BCA4255EE9B897981D38DB50DE01B /* NibResource.swift */,
+				DB0CF20575C7D24AABA694C3CF2E5826 /* PropertyListResource.swift */,
+				574B4D4DBA31E76A49A998DFFD0B354B /* Reusable.swift */,
+				30DEBBF23D6E264D7D4B8609CD3A345F /* ReuseIdentifier+Integrations.swift */,
+				77EF26AD4FC3542CEBF8110A5CC2B876 /* SegueIdentifier+Integrations.swift */,
+				BB97806E00B6B5713F320C5BC3792A8D /* StoryboardReference.swift */,
+				15FF6E9F0D7E420F92627667EDE6E5F1 /* StoryboardReference+Integrations.swift */,
+				51E5A3EC45CDE161C2147DD8606B4636 /* StoryboardResource.swift */,
+				0966F768D718EDF0F6384ABD59F1B0E1 /* StringParam.swift */,
+				397CC6DE4960D0CCB3549711392AFF76 /* StringParam+Extensions.swift */,
+				4416FFC50DF70025B35610E2901E2E8D /* StringResource.swift */,
+				2C5175A703E568105491626F65D348DB /* StringResource+Integrations.swift */,
+				54641548DC63E54A4BE881ABC4652149 /* StringsTable.swift */,
+				77E01AB77EBC3E4575723E84BD14FED2 /* TypeReference.swift */,
+				2D91A9597F8FA6A74B8E0816766F8C1E /* Unifiable.swift */,
+				17EA6E1FC79876B2B2EFDBAD0B42114E /* ValidationError.swift */,
+				70C074223574698E29CA1927861C8DA9 /* Support Files */,
 			);
-			name = TangramKit;
-			path = TangramKit;
+			name = R.swift;
+			path = R.swift;
 			sourceTree = "<group>";
 		};
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
@@ -149,16 +253,53 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		C44F71F1B76F1694C1617F5FE72E0CDE /* Support Files */ = {
+		5B28BCBC129002DE8CB76FC2098C03C9 /* TangramKit */ = {
 			isa = PBXGroup;
 			children = (
-				9CAA85969EEA7E9FF62007D8A094D560 /* TangramKit.modulemap */,
-				0FF53EA8C86CB7F49CB74C4A5A66FE04 /* TangramKit-dummy.m */,
-				1E5B3DD8744BEC498176A0639F145849 /* TangramKit-Info.plist */,
-				51C1B387327FEFC4096B753F1A679247 /* TangramKit-prefix.pch */,
-				8C23D19CB632F83CCF72D5A943992FA2 /* TangramKit-umbrella.h */,
-				D0D6D7FF59C883F9BC93C8A5C491D5D0 /* TangramKit.debug.xcconfig */,
-				B6C93282C4B55EC70387F743E12ACD13 /* TangramKit.release.xcconfig */,
+				9A79589461805263096350F946EEF817 /* TangramKit.swift */,
+				4784FA8C6AC6E49A87CA6BC34FF2E332 /* TGBaseLayout.swift */,
+				BE5A3D23393DA7330716272B67BF4999 /* TGDimeAdapter.swift */,
+				3FA7FBDB8B79AC767C574B27BDD00795 /* TGFloatLayout.swift */,
+				CA54F12DF15A4C249B5AABD5D4FC2B52 /* TGFlowLayout.swift */,
+				3A089693F5117B6B5034E6779D01EF9C /* TGFrameLayout.swift */,
+				6BFE628E511979E9393BCD92F3960B79 /* TGLayoutPos.swift */,
+				303E41041716F4F3AD30F4328E15898D /* TGLayoutSize.swift */,
+				2511553FA6BA75A16F05727FC9472561 /* TGLayoutSizeClass.swift */,
+				ECDF1E321BB9B4015B99BCA4C3609E80 /* TGLinearLayout.swift */,
+				09ADA55C8AB6E819064C6BFC4B7D01BD /* TGPathLayout.swift */,
+				361B155A72C13031F34FD97AF0C6EEBC /* TGRelativeLayout.swift */,
+				82FFC294CA73774DE15CAE371C414E58 /* TGTableLayout.swift */,
+				718D7E6F7B777BF42B256F3C4E053AB2 /* Support Files */,
+			);
+			name = TangramKit;
+			path = TangramKit;
+			sourceTree = "<group>";
+		};
+		70C074223574698E29CA1927861C8DA9 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				575135E66DA7E924EC600F036C5F3DF4 /* R.swift.modulemap */,
+				94EDDDF4C9D80F0AD41F6F57711657A8 /* R.swift-dummy.m */,
+				BDEF5E8AC021ACC916966CD4DF587215 /* R.swift-Info.plist */,
+				D07AA73DDAAD0C1AA940BBD190B15790 /* R.swift-prefix.pch */,
+				4627DA6D83FF480152698108AED971DE /* R.swift-umbrella.h */,
+				4A901CED17814B7F84F30C7A503E325D /* R.swift.debug.xcconfig */,
+				69BD10451237AF32A2B8E1F333E1EB2B /* R.swift.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/R.swift";
+			sourceTree = "<group>";
+		};
+		718D7E6F7B777BF42B256F3C4E053AB2 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6D97DC48D60B637B720BD48541D3F403 /* TangramKit.modulemap */,
+				6B44027AF556A71EA25C460AB3013456 /* TangramKit-dummy.m */,
+				94ACD668DE148BEC2878750DFB837744 /* TangramKit-Info.plist */,
+				F24F1D27E9F925F0358CE544B958CC34 /* TangramKit-prefix.pch */,
+				10143B67E2816AC265E6E2F8EE8747CF /* TangramKit-umbrella.h */,
+				6219EB3CC4DFB626CF0D72EB23B5D187 /* TangramKit.debug.xcconfig */,
+				9EE4F9245ADD1C8AD7BF8C387F3064E1 /* TangramKit.release.xcconfig */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/TangramKit";
@@ -169,8 +310,8 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				032DA3EAA7124BD71C0D6A810DE7D4BA /* Pods */,
-				EDD97A3D4B212BF0BB4B34818A673258 /* Products */,
+				DA744007C0CAB2DA0EF16FB4856B0ECB /* Pods */,
+				F0EB633BACF7C698D2EC039F32FC6F82 /* Products */,
 				E3FC7BC8503566BBD0A73C2830E7026E /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -183,6 +324,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		DA744007C0CAB2DA0EF16FB4856B0ECB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2ABED0736395F34417D7DAB7853F661F /* R.swift */,
+				5B28BCBC129002DE8CB76FC2098C03C9 /* TangramKit */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		E3FC7BC8503566BBD0A73C2830E7026E /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -191,10 +341,11 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		EDD97A3D4B212BF0BB4B34818A673258 /* Products */ = {
+		F0EB633BACF7C698D2EC039F32FC6F82 /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				5D19FCE263A30E294AE4717C89179E6A /* Pods-MelodyMusic */,
+				3EA5BDD6DA462D45C28EA963654D95D3 /* R.swift */,
 				3A84BE6A41AE5C7B5BDE84F03BF7C947 /* TangramKit */,
 			);
 			name = Products;
@@ -203,6 +354,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		1C06DDD0A004A886CE4FEFC9B707EC68 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4C1ABC5CA0D5EF0ABD3CA73DAA77D9D /* R.swift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1E674DC2C64AE0A2170A76B42EBD2EF0 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -211,17 +370,35 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		61FDEC1CD054E58975F422CAD4B5B390 /* Headers */ = {
+		EFAD72D7F570B468999898BE94E4E914 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				86BC4D12302E2F2FCF236CE1C8C97A2A /* Pods-MelodyMusic-umbrella.h in Headers */,
+				941FD612E9ED6F63C1582BAC34E5410E /* Pods-MelodyMusic-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		230984053C6652DFF510F450F21C5CF7 /* R.swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 45ACCCCF8CC33655906616597BD5C5AF /* Build configuration list for PBXNativeTarget "R.swift" */;
+			buildPhases = (
+				1C06DDD0A004A886CE4FEFC9B707EC68 /* Headers */,
+				111A0A6C8471AA8DC579130F99AB411B /* Sources */,
+				43FDA328C80B080E2975E677606897D8 /* Frameworks */,
+				CE5FD50732E33C3926840B9A93B183C3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = R.swift;
+			productName = RswiftResources;
+			productReference = 3EA5BDD6DA462D45C28EA963654D95D3 /* R.swift */;
+			productType = "com.apple.product-type.framework";
+		};
 		3E6ED8BD47AE620F69E17C0AB4190847 /* TangramKit */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0056F7347667D4A4D8FAD56CE2E6683A /* Build configuration list for PBXNativeTarget "TangramKit" */;
@@ -242,17 +419,18 @@
 		};
 		906E2039364038783E786C93AD7FC5E5 /* Pods-MelodyMusic */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8CBABF92EB931D9096E1053700CC46F8 /* Build configuration list for PBXNativeTarget "Pods-MelodyMusic" */;
+			buildConfigurationList = A9AF283BE255CFC1D861B1C96BEE0D23 /* Build configuration list for PBXNativeTarget "Pods-MelodyMusic" */;
 			buildPhases = (
-				61FDEC1CD054E58975F422CAD4B5B390 /* Headers */,
-				229767F6BEEF3F6AC2CD4A3B20429D1E /* Sources */,
-				73B53A33A812F68C05B109E5BFF463BD /* Frameworks */,
-				EBEA6946C9381A01CABF4F24F1258C95 /* Resources */,
+				EFAD72D7F570B468999898BE94E4E914 /* Headers */,
+				0C694DF52C7E01F34FC0246C432DD253 /* Sources */,
+				C095843C3AEA58FD001205660E2945F0 /* Frameworks */,
+				E5E058739C2EE6E6646080C1D24DAC40 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				369BEDF136670900AED0FC8CB85F89D7 /* PBXTargetDependency */,
+				A005BA99025F8A7A6EBE21A6F561C725 /* PBXTargetDependency */,
+				A4F02C644E59431E408F0DC9B7EE9002 /* PBXTargetDependency */,
 			);
 			name = "Pods-MelodyMusic";
 			productName = Pods_MelodyMusic;
@@ -277,18 +455,26 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = EDD97A3D4B212BF0BB4B34818A673258 /* Products */;
+			productRefGroup = F0EB633BACF7C698D2EC039F32FC6F82 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				906E2039364038783E786C93AD7FC5E5 /* Pods-MelodyMusic */,
+				230984053C6652DFF510F450F21C5CF7 /* R.swift */,
 				3E6ED8BD47AE620F69E17C0AB4190847 /* TangramKit */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		EBEA6946C9381A01CABF4F24F1258C95 /* Resources */ = {
+		CE5FD50732E33C3926840B9A93B183C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5E058739C2EE6E6646080C1D24DAC40 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -305,11 +491,52 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		229767F6BEEF3F6AC2CD4A3B20429D1E /* Sources */ = {
+		0C694DF52C7E01F34FC0246C432DD253 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FDE62B5C82E017C35A334D000E90C1B5 /* Pods-MelodyMusic-dummy.m in Sources */,
+				1A88F48BAD8814EEBF0312260CC4C5F5 /* Pods-MelodyMusic-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		111A0A6C8471AA8DC579130F99AB411B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94EFE958A356CA4630020B74BCE68365 /* AssetCatalog.swift in Sources */,
+				CE73EB779730BF15943261BFEE3F3428 /* Bundle+Extensions.swift in Sources */,
+				B8BCB750566AB8240F56ED46F19016FE /* ColorResource.swift in Sources */,
+				720ACF09B80E590AFDC6062E73AA0797 /* ColorResource+Integrations.swift in Sources */,
+				A58BF183F8F28DD4E372A3CF95D616C2 /* DataResource.swift in Sources */,
+				8A1A9BCF376C253932BBF398A62CF289 /* DataResource+Integrations.swift in Sources */,
+				F0C81C55D3DE46CB72D72748DE7EE647 /* DeploymentTarget.swift in Sources */,
+				B45D0C99CB6D98CEC740C73824E54A5C /* FileResource.swift in Sources */,
+				FA92EE26A49D694C31E588F0BE950A33 /* FileResource+Integrations.swift in Sources */,
+				DEF4ACACC5A5B37535DF580680565955 /* FontResource.swift in Sources */,
+				D733CD41172DA35454CC60695C9B7817 /* FontResource+Integrations.swift in Sources */,
+				CA12D2143097D3A0548FCC326944EA40 /* ImageResource.swift in Sources */,
+				F31ED122B84C87DFC36A3A7C53039BFB /* ImageResource+Integrations.swift in Sources */,
+				C9552E95EC3D5F35CCC9F5A5649AC28E /* LocaleReference.swift in Sources */,
+				E820ADDBA83E30CA5343C611C9322DCB /* ModuleReference.swift in Sources */,
+				C2CE49962A4B84B347B21FC9A50A3A14 /* NameCatalog.swift in Sources */,
+				36CFCBEBCF750E47621FFBFE3B8190B6 /* NibReference+Integrations.swift in Sources */,
+				763AC4019BE4E941989F986CF30EE6AD /* NibResource.swift in Sources */,
+				D7C2C07839FFB8659DA74FF089DDC0A6 /* PropertyListResource.swift in Sources */,
+				2697A63C1692F5BFE0B7ECE116E62D1E /* R.swift-dummy.m in Sources */,
+				5FD17D2B5FFE1CFC09FA6026D1603089 /* Reusable.swift in Sources */,
+				53823D18FE8E68990F500FDE7B840AAF /* ReuseIdentifier+Integrations.swift in Sources */,
+				49A28ED2F484F91FED534660D03703FD /* SegueIdentifier+Integrations.swift in Sources */,
+				EB1F2E500A57F64D6CCC51711C8EBB15 /* StoryboardReference.swift in Sources */,
+				B0A82BAB87A465086658CF159841B8F2 /* StoryboardReference+Integrations.swift in Sources */,
+				45D7A769C9F7BB5F3D9672E7735BF249 /* StoryboardResource.swift in Sources */,
+				288A8A212DAB75E497FCE5CBBF998203 /* StringParam.swift in Sources */,
+				535131E1FD0B3E84D752497919ECE490 /* StringParam+Extensions.swift in Sources */,
+				CF9CA5E3F7A243A0C0F326E61417C88D /* StringResource.swift in Sources */,
+				68B4C6D7FFABFA1ECEC3986778257FBF /* StringResource+Integrations.swift in Sources */,
+				07B9D17D1AD0F6FE19159602968D60EF /* StringsTable.swift in Sources */,
+				6AA8A1C42185AE89F02A6C14740958EF /* TypeReference.swift in Sources */,
+				187716BED8574FDCDF81C1942FB6680E /* Unifiable.swift in Sources */,
+				9114FCC4E77EE0180F8B3BF5983FE068 /* ValidationError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,18 +564,62 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		369BEDF136670900AED0FC8CB85F89D7 /* PBXTargetDependency */ = {
+		A005BA99025F8A7A6EBE21A6F561C725 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = R.swift;
+			target = 230984053C6652DFF510F450F21C5CF7 /* R.swift */;
+			targetProxy = 02C1A6F0B63665ED5307CB0077DE281E /* PBXContainerItemProxy */;
+		};
+		A4F02C644E59431E408F0DC9B7EE9002 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = TangramKit;
 			target = 3E6ED8BD47AE620F69E17C0AB4190847 /* TangramKit */;
-			targetProxy = 6C062542BE74DD840EE6EB855A2297BF /* PBXContainerItemProxy */;
+			targetProxy = F833F14B00BF2F6733928A82FB4371C9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		675DC2B51B9D7E1E2A84905922091361 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8F7BCA7940D27838CCBCAB3350FBAC6 /* Pods-MelodyMusic.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MelodyMusic/Pods-MelodyMusic-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MelodyMusic/Pods-MelodyMusic.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		700E76A974B606820FE3B989AA30C1B5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D0D6D7FF59C883F9BC93C8A5C491D5D0 /* TangramKit.debug.xcconfig */;
+			baseConfigurationReference = 6219EB3CC4DFB626CF0D72EB23B5D187 /* TangramKit.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -379,6 +650,42 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		749F1D6194F44C8C381AE4C57D66D383 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69BD10451237AF32A2B8E1F333E1EB2B /* R.swift.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/R.swift/R.swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/R.swift/R.swift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/R.swift/R.swift.modulemap";
+				PRODUCT_MODULE_NAME = RswiftResources;
+				PRODUCT_NAME = RswiftResources;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.7;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		90D4D09BCB6A4660E43ACBE9ECB6FE9A /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -510,7 +817,7 @@
 		};
 		A315D5C203543F247114F06F2063D5B1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B6C93282C4B55EC70387F743E12ACD13 /* TangramKit.release.xcconfig */;
+			baseConfigurationReference = 9EE4F9245ADD1C8AD7BF8C387F3064E1 /* TangramKit.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -543,45 +850,7 @@
 			};
 			name = Release;
 		};
-		CA8868C1D1531CAF58B85BBC0E68EE2D /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E8F7BCA7940D27838CCBCAB3350FBAC6 /* Pods-MelodyMusic.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-MelodyMusic/Pods-MelodyMusic-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-MelodyMusic/Pods-MelodyMusic.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		D3FD4B60C83877546D4277C486650E2D /* Debug */ = {
+		AF6BD9B074F41506F8F0DAEC8F35A7BC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4B846FA0379F2C1306F1B96280E2E088 /* Pods-MelodyMusic.debug.xcconfig */;
 			buildSettings = {
@@ -618,6 +887,41 @@
 			};
 			name = Debug;
 		};
+		CCD5E5F9210C57BDC07652A24E5359DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A901CED17814B7F84F30C7A503E325D /* R.swift.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/R.swift/R.swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/R.swift/R.swift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/R.swift/R.swift.modulemap";
+				PRODUCT_MODULE_NAME = RswiftResources;
+				PRODUCT_NAME = RswiftResources;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.7;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -626,6 +930,15 @@
 			buildConfigurations = (
 				700E76A974B606820FE3B989AA30C1B5 /* Debug */,
 				A315D5C203543F247114F06F2063D5B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		45ACCCCF8CC33655906616597BD5C5AF /* Build configuration list for PBXNativeTarget "R.swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCD5E5F9210C57BDC07652A24E5359DB /* Debug */,
+				749F1D6194F44C8C381AE4C57D66D383 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -639,11 +952,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8CBABF92EB931D9096E1053700CC46F8 /* Build configuration list for PBXNativeTarget "Pods-MelodyMusic" */ = {
+		A9AF283BE255CFC1D861B1C96BEE0D23 /* Build configuration list for PBXNativeTarget "Pods-MelodyMusic" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D3FD4B60C83877546D4277C486650E2D /* Debug */,
-				CA8868C1D1531CAF58B85BBC0E68EE2D /* Release */,
+				AF6BD9B074F41506F8F0DAEC8F35A7BC /* Debug */,
+				675DC2B51B9D7E1E2A84905922091361 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

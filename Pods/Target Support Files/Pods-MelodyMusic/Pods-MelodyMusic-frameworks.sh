@@ -176,9 +176,11 @@ code_sign_if_enabled() {
 }
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/R.swift/RswiftResources.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/TangramKit/TangramKit.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/R.swift/RswiftResources.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/TangramKit/TangramKit.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then

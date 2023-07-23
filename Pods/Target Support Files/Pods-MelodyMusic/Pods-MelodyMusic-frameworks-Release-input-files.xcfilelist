@@ -1,2 +1,3 @@
 ${PODS_ROOT}/Target Support Files/Pods-MelodyMusic/Pods-MelodyMusic-frameworks.sh
+${BUILT_PRODUCTS_DIR}/R.swift/RswiftResources.framework
 ${BUILT_PRODUCTS_DIR}/TangramKit/TangramKit.framework

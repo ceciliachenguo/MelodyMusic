@@ -45,6 +45,7 @@ class SplashController: BaseLogicController {
         logoView.tg_centerX.equal(0)
         logoView.contentMode = .scaleAspectFill
         container.addSubview(logoView)
+        
     }
 }
 

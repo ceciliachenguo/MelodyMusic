@@ -12,6 +12,10 @@ target 'MelodyMusic' do
   
   #https://github.com/yannickl/DynamicColor
   pod "DynamicColor"
+  
+  #https:https://github.com/QMUI/QMUIDemo_iOS
+  #https://qmuiteam.com/ios/get-started
+  pod "QMUIKit"
 
   post_install do |installer|
       installer.generated_projects.each do |project|

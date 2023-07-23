@@ -1,2 +1,3 @@
+${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DynamicColor.framework
 ${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RswiftResources.framework
 ${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TangramKit.framework

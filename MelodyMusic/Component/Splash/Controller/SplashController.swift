@@ -13,7 +13,7 @@ class SplashController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .white
+        view.backgroundColor = .colorBackground
         
         let container = TGRelativeLayout()
         container.tg_top.equal(TGLayoutPos.tg_safeAreaMargin)

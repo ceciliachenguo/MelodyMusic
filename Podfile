@@ -9,6 +9,9 @@ target 'MelodyMusic' do
   
   #https://github.com/mac-cain13/R.swift
   pod 'R.swift'
+  
+  #https://github.com/yannickl/DynamicColor
+  pod "DynamicColor"
 
   post_install do |installer|
       installer.generated_projects.each do |project|

@@ -2275,12 +2275,12 @@ struct _R {
       /// Locales: en, zh-Hans
       var superSave: RswiftResources.StringResource { .init(key: "SuperSave", tableName: "Localizable", source: source, developmentValue: "Save", comment: nil) }
 
-      /// en translation: Terms of Service and Privacy Notice
+      /// en translation: Terms of Service & Privacy
       ///
       /// Key: TermServicePrivacy
       ///
       /// Locales: en, zh-Hans
-      var termServicePrivacy: RswiftResources.StringResource { .init(key: "TermServicePrivacy", tableName: "Localizable", source: source, developmentValue: "Terms of Service and Privacy Notice", comment: nil) }
+      var termServicePrivacy: RswiftResources.StringResource { .init(key: "TermServicePrivacy", tableName: "Localizable", source: source, developmentValue: "Terms of Service & Privacy", comment: nil) }
 
       /// en translation: Third Party Account
       ///

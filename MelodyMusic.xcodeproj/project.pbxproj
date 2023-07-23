@@ -15,6 +15,10 @@
 		8D7E86732A6CF58D008580A9 /* BaseCommonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7E86722A6CF58D008580A9 /* BaseCommonController.swift */; };
 		8D7E86752A6CF5E7008580A9 /* BaseLogicController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7E86742A6CF5E7008580A9 /* BaseLogicController.swift */; };
 		8D7E86772A6CFC79008580A9 /* BaseTitleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7E86762A6CFC79008580A9 /* BaseTitleController.swift */; };
+		8D7E867C2A6D0042008580A9 /* TermServiceDialogController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7E867B2A6D0042008580A9 /* TermServiceDialogController.swift */; };
+		8D7E867F2A6D049C008580A9 /* ViewFactoryUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7E867E2A6D049C008580A9 /* ViewFactoryUtil.swift */; };
+		8D7E86812A6D0578008580A9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7E86802A6D0578008580A9 /* Constants.swift */; };
+		8D7E86852A6D0CEB008580A9 /* GuideController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7E86842A6D0CEB008580A9 /* GuideController.swift */; };
 		8DA405C62A6CD8FE0033F979 /* SuperDateUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA405C52A6CD8FE0033F979 /* SuperDateUtil.swift */; };
 		8DA405CA2A6CDC460033F979 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8DA405CC2A6CDC460033F979 /* Localizable.strings */; };
 		8DEBED312A6C4F7A00303597 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEBED302A6C4F7A00303597 /* AppDelegate.swift */; };
@@ -57,6 +61,10 @@
 		8D7E86742A6CF5E7008580A9 /* BaseLogicController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseLogicController.swift; sourceTree = "<group>"; };
 		8D7E86762A6CFC79008580A9 /* BaseTitleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTitleController.swift; sourceTree = "<group>"; };
 		8D7E86782A6CFE46008580A9 /* MelodyMusic-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MelodyMusic-Bridging-Header.h"; sourceTree = "<group>"; };
+		8D7E867B2A6D0042008580A9 /* TermServiceDialogController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermServiceDialogController.swift; sourceTree = "<group>"; };
+		8D7E867E2A6D049C008580A9 /* ViewFactoryUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewFactoryUtil.swift; sourceTree = "<group>"; };
+		8D7E86802A6D0578008580A9 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		8D7E86842A6D0CEB008580A9 /* GuideController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideController.swift; sourceTree = "<group>"; };
 		8DA405C52A6CD8FE0033F979 /* SuperDateUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperDateUtil.swift; sourceTree = "<group>"; };
 		8DA405CB2A6CDC460033F979 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		8DA405CD2A6CDC5E0033F979 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
@@ -121,10 +129,36 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		8D7E867D2A6D0486008580A9 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				8D7E867E2A6D049C008580A9 /* ViewFactoryUtil.swift */,
+				8D7E86802A6D0578008580A9 /* Constants.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		8D7E86822A6D0CB6008580A9 /* Guide */ = {
+			isa = PBXGroup;
+			children = (
+				8D7E86832A6D0CC4008580A9 /* Controller */,
+			);
+			path = Guide;
+			sourceTree = "<group>";
+		};
+		8D7E86832A6D0CC4008580A9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8D7E86842A6D0CEB008580A9 /* GuideController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		8D90166E2A6C5F8C00A4F688 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				8DEBED342A6C4F7A00303597 /* SplashController.swift */,
+				8D7E867B2A6D0042008580A9 /* TermServiceDialogController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -140,6 +174,7 @@
 		8DA405C12A6CD3300033F979 /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				8D7E86822A6D0CB6008580A9 /* Guide */,
 				8DA405C02A6CD3130033F979 /* Splash */,
 			);
 			path = Component;
@@ -194,6 +229,7 @@
 		8DEBED2F2A6C4F7A00303597 /* MelodyMusic */ = {
 			isa = PBXGroup;
 			children = (
+				8D7E867D2A6D0486008580A9 /* Util */,
 				8D7E866F2A6CF4DF008580A9 /* Controller */,
 				8D7E866A2A6CECFF008580A9 /* Config */,
 				8DA405C22A6CD8870033F979 /* Vendor */,
@@ -449,7 +485,11 @@
 				8D7E86752A6CF5E7008580A9 /* BaseLogicController.swift in Sources */,
 				8DA405C62A6CD8FE0033F979 /* SuperDateUtil.swift in Sources */,
 				8DEBED312A6C4F7A00303597 /* AppDelegate.swift in Sources */,
+				8D7E86812A6D0578008580A9 /* Constants.swift in Sources */,
+				8D7E867C2A6D0042008580A9 /* TermServiceDialogController.swift in Sources */,
 				8D7E86732A6CF58D008580A9 /* BaseCommonController.swift in Sources */,
+				8D7E86852A6D0CEB008580A9 /* GuideController.swift in Sources */,
+				8D7E867F2A6D049C008580A9 /* ViewFactoryUtil.swift in Sources */,
 				8D7E86692A6CE5A1008580A9 /* R.generated.swift in Sources */,
 				8D7E866C2A6CED2E008580A9 /* SuperUIColorExtension.swift in Sources */,
 			);

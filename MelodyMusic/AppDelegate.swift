@@ -11,10 +11,18 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    
+    
+    
+    open class var shared:AppDelegate {
+        get {
+            return UIApplication.shared.delegate as! AppDelegate
+        }
+    }
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        //设置默认显示界面
+        //setting default page
         let controller = SplashController()
         
         self.window = UIWindow(frame: UIScreen.main.bounds)
@@ -22,6 +30,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window!.makeKeyAndVisible()
         
         return true
+    }
+    
+    
+    func toGuide() {
+        let r = GuideController()
+        setRootViewController(r)
+    }
+    
+    func setRootViewController(_ data:UIViewController) {
+        window!.rootViewController = data
     }
 
 }

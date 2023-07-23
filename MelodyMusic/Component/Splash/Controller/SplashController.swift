@@ -47,6 +47,30 @@ class SplashController: BaseLogicController {
         container.addSubview(logoView)
         
     }
+    
+    override func initDatum() {
+        super.initDatum()
+        showTermsServiceAgreementDialog()
+    }
+
+    /// show terms of use pop-up
+    func showTermsServiceAgreementDialog() {
+        dialogController.show()
+    }
+
+    @objc func primaryClick() {
+        dialogController.hide()
+        
+        AppDelegate.shared.toGuide()
+    }
+
+    lazy var dialogController: TermServiceDialogController = {
+        let r = TermServiceDialogController()
+        r.titleView.text = R.string.localizable.termServicePrivacy()
+        r.primaryButton.addTarget(self, action: #selector(primaryClick), for: .touchUpInside)
+        return r
+    }()
+
 }
 
 

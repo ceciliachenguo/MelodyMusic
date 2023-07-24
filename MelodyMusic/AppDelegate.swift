@@ -12,8 +12,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     
-    
-    
     open class var shared:AppDelegate {
         get {
             return UIApplication.shared.delegate as! AppDelegate
@@ -35,6 +33,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func toGuide() {
         let r = GuideController()
+        setRootViewController(r)
+    }
+    
+    // redirect to main page
+    func toMain() {
+        let r = MainController()
         setRootViewController(r)
     }
     

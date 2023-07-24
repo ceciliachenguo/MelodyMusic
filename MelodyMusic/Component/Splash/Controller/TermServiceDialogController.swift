@@ -54,6 +54,9 @@ class TermServiceDialogController: BaseController, QMUIModalPresentationContentV
     
     @objc func disagreeClick(_ sender:QMUIButton) {
         hide()
+        
+        //Exit the APP
+        exit(0)
     }
     
     func show() {

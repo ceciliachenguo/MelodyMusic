@@ -21,6 +21,8 @@
 		8D7E86852A6D0CEB008580A9 /* GuideController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7E86842A6D0CEB008580A9 /* GuideController.swift */; };
 		8DA405C62A6CD8FE0033F979 /* SuperDateUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA405C52A6CD8FE0033F979 /* SuperDateUtil.swift */; };
 		8DA405CA2A6CDC460033F979 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8DA405CC2A6CDC460033F979 /* Localizable.strings */; };
+		8DD33B472A6F28B700A34010 /* DefaultPreferenceUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD33B462A6F28B700A34010 /* DefaultPreferenceUtil.swift */; };
+		8DD33B4B2A6F2B7E00A34010 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD33B4A2A6F2B7E00A34010 /* MainController.swift */; };
 		8DEBED312A6C4F7A00303597 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEBED302A6C4F7A00303597 /* AppDelegate.swift */; };
 		8DEBED352A6C4F7A00303597 /* SplashController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEBED342A6C4F7A00303597 /* SplashController.swift */; };
 		8DEBED3A2A6C4F7B00303597 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DEBED392A6C4F7B00303597 /* Assets.xcassets */; };
@@ -69,6 +71,8 @@
 		8DA405CB2A6CDC460033F979 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		8DA405CD2A6CDC5E0033F979 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		8DA405CE2A6CDC5E0033F979 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		8DD33B462A6F28B700A34010 /* DefaultPreferenceUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultPreferenceUtil.swift; sourceTree = "<group>"; };
+		8DD33B4A2A6F2B7E00A34010 /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
 		8DEBED2D2A6C4F7A00303597 /* MelodyMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MelodyMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DEBED302A6C4F7A00303597 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8DEBED342A6C4F7A00303597 /* SplashController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashController.swift; sourceTree = "<group>"; };
@@ -134,6 +138,7 @@
 			children = (
 				8D7E867E2A6D049C008580A9 /* ViewFactoryUtil.swift */,
 				8D7E86802A6D0578008580A9 /* Constants.swift */,
+				8DD33B462A6F28B700A34010 /* DefaultPreferenceUtil.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -174,6 +179,7 @@
 		8DA405C12A6CD3300033F979 /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				8DD33B482A6F2B5500A34010 /* Main */,
 				8D7E86822A6D0CB6008580A9 /* Guide */,
 				8DA405C02A6CD3130033F979 /* Splash */,
 			);
@@ -202,6 +208,22 @@
 				8DA405C52A6CD8FE0033F979 /* SuperDateUtil.swift */,
 			);
 			path = Date;
+			sourceTree = "<group>";
+		};
+		8DD33B482A6F2B5500A34010 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				8DD33B492A6F2B6100A34010 /* Controller */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		8DD33B492A6F2B6100A34010 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8DD33B4A2A6F2B7E00A34010 /* MainController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		8DEBED242A6C4F7A00303597 = {
@@ -486,8 +508,10 @@
 				8DA405C62A6CD8FE0033F979 /* SuperDateUtil.swift in Sources */,
 				8DEBED312A6C4F7A00303597 /* AppDelegate.swift in Sources */,
 				8D7E86812A6D0578008580A9 /* Constants.swift in Sources */,
+				8DD33B4B2A6F2B7E00A34010 /* MainController.swift in Sources */,
 				8D7E867C2A6D0042008580A9 /* TermServiceDialogController.swift in Sources */,
 				8D7E86732A6CF58D008580A9 /* BaseCommonController.swift in Sources */,
+				8DD33B472A6F28B700A34010 /* DefaultPreferenceUtil.swift in Sources */,
 				8D7E86852A6D0CEB008580A9 /* GuideController.swift in Sources */,
 				8D7E867F2A6D049C008580A9 /* ViewFactoryUtil.swift in Sources */,
 				8D7E86692A6CE5A1008580A9 /* R.generated.swift in Sources */,

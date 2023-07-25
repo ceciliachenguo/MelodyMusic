@@ -29,6 +29,8 @@ target 'MelodyMusic' do
   #https:https://github.com/RxSwiftCommunity/NSObject-Rx
   pod "NSObject+Rx"
 
+  # https:https://github.com/alibaba/HandyJSON
+  pod "HandyJSON"
 
   post_install do |installer|
       installer.generated_projects.each do |project|

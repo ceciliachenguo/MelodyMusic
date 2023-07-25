@@ -94,12 +94,18 @@ class GuideController: BaseLogicController {
                 let statusCode = response.statusCode // Int - 200, 401, 500, etc
 
                 let dataString = String(data: data, encoding: .utf8)!
-                print("request network success \(statusCode) \(dataString)")
+                
+                //Serialize structured JSON data
+                if let r = SheetListResponse.deserialize(from: dataString) {
+                    print(r.status)
+                    print(r.data.data[0].title!)
+                }
+
             case let .failure(error):
                 print("request network error \(error)")
             }
         }.disposed(by: rx.disposeBag) //release memory recourse relate to rxSwift .subscribe
-
+        
     }
 }
 

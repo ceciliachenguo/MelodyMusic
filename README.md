@@ -4,9 +4,11 @@ MelodyMusic
 This is my personal project, created to showcase my iOS development capabilities. Although it is not a commercialized project, I have approached it with the same level of professionalism and adherence to industry standards as if it were.
 
 
-## Tools & Frameworkd & Conventions
+## Language & Tools/Frameworks & Conventions
+- Swift5
+- MVVM Architecture
 - UIKit; CocoaPods; RxSwift Reactive Programming; Import Objective C frameworks into Swift project; Handling Network calls with Moya; Capture Packets; Database; APIs testing using Postman; RxCocoa; WebView; 
-- MVVM Architecture; Naming Conventions & Documentation & Organization Convention; Network call Architexture Encapsulation; Top-level Exception Handler; UITesting; Assets Management Conventions
+- Naming Conventions & Documentation & Organization Convention; Network call Architexture Encapsulation; Top-level Exception Handler; UITesting; Assets Management Conventions
 
 
 ## App Features

@@ -4,3 +4,9 @@
 
 // Tencent's free UI Framework
 #import <QMUIKit/QMUIKit.h>
+
+// Component for automactically Scrolling for Onboarding Page（written in OC）
+#import "YJBannerView.h"
+#import "YJBannerViewCell.h"
+
+#import "SDWebImage/UIImageView+WebCache.h"

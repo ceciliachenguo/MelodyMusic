@@ -15,6 +15,7 @@ struct _R {
   var string: string { .init(bundle: bundle, preferredLanguages: nil, locale: nil) }
   var color: color { .init(bundle: bundle) }
   var image: image { .init(bundle: bundle) }
+  var file: file { .init(bundle: bundle) }
   var storyboard: storyboard { .init(bundle: bundle) }
 
   func string(bundle: Foundation.Bundle) -> string {
@@ -30,6 +31,9 @@ struct _R {
     .init(bundle: bundle)
   }
   func image(bundle: Foundation.Bundle) -> image {
+    .init(bundle: bundle)
+  }
+  func file(bundle: Foundation.Bundle) -> file {
     .init(bundle: bundle)
   }
   func storyboard(bundle: Foundation.Bundle) -> storyboard {
@@ -2530,7 +2534,7 @@ struct _R {
     var accentColor: RswiftResources.ColorResource { .init(name: "AccentColor", path: [], bundle: bundle) }
   }
 
-  /// This `_R.image` struct is generated, and contains static references to 3 images.
+  /// This `_R.image` struct is generated, and contains static references to 8 images.
   struct image {
     let bundle: Foundation.Bundle
 
@@ -2540,8 +2544,31 @@ struct _R {
     /// Image `LogoAndSlogan`.
     var logoAndSlogan: RswiftResources.ImageResource { .init(name: "LogoAndSlogan", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
 
+    /// Image `Placeholder`.
+    var placeholder: RswiftResources.ImageResource { .init(name: "Placeholder", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `PlaceholderError`.
+    var placeholderError: RswiftResources.ImageResource { .init(name: "PlaceholderError", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
     /// Image `Slogan`.
     var slogan: RswiftResources.ImageResource { .init(name: "Slogan", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `guide1`.
+    var guide1: RswiftResources.ImageResource { .init(name: "guide1", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `guide2`.
+    var guide2: RswiftResources.ImageResource { .init(name: "guide2", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `guide3`.
+    var guide3: RswiftResources.ImageResource { .init(name: "guide3", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+  }
+
+  /// This `_R.file` struct is generated, and contains static references to 1 resource files.
+  struct file {
+    let bundle: Foundation.Bundle
+
+    /// Resource file `YJBannerView.bundle`.
+    var yjBannerViewBundle: RswiftResources.FileResource { .init(name: "YJBannerView", pathExtension: "bundle", bundle: bundle, locale: LocaleReference.none) }
   }
 
   /// This `_R.storyboard` struct is generated, and contains static references to 1 storyboards.

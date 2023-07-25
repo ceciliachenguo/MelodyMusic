@@ -297,12 +297,16 @@ PODS:
   - QMUIKit/QMUIResources (4.6.3)
   - QMUIKit/QMUIWeakObjectContainer (4.6.3)
   - R.swift (7.3.2)
+  - SDWebImage (5.17.0):
+    - SDWebImage/Core (= 5.17.0)
+  - SDWebImage/Core (5.17.0)
   - TangramKit (1.4.2)
 
 DEPENDENCIES:
   - DynamicColor
   - QMUIKit
   - R.swift
+  - SDWebImage
   - TangramKit
 
 SPEC REPOS:
@@ -310,14 +314,16 @@ SPEC REPOS:
     - DynamicColor
     - QMUIKit
     - R.swift
+    - SDWebImage
     - TangramKit
 
 SPEC CHECKSUMS:
   DynamicColor: d049834ef86d8ecf150b0ca1ebe54ee733a0ec22
   QMUIKit: b831835f33d7fb3494809042225e6256eb22b892
   R.swift: 0af0d882f49f03711415cb4e5215daa977d8a480
+  SDWebImage: 750adf017a315a280c60fde706ab1e552a3ae4e9
   TangramKit: aad3ab8f9617418c9da96d59cddd71134ae8af83
 
-PODFILE CHECKSUM: 4ec43822d2ea2cf76a5ba6167857000f77fabbbd
+PODFILE CHECKSUM: 26d4f61e1ecf33a2b8497e1fab1ea2b614c96b7d
 
 COCOAPODS: 1.12.1

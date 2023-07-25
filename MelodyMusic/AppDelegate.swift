@@ -38,8 +38,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     // redirect to main page
     func toMain() {
-        let r = MainController()
+        let r = UINavigationController(rootViewController: MainController())
         setRootViewController(r)
+    }
+    
+    // redirect to Login page
+    func toLogin() {
+        toMain()
+        
+        //make sure toMain() finished executing
+        DispatchQueue.main.async {
+            NotificationCenter.default.post(name: NSNotification.Name(Constants.EVENT_LOGIN_CLICK), object: nil)
+        }
     }
     
     func setRootViewController(_ data:UIViewController) {

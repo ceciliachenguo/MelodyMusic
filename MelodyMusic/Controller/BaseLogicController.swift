@@ -36,6 +36,22 @@ class BaseLogicController: BaseCommonController {
         initFooterContainer()
     }
     
+    /// initialize LinearLayout container，4 borders are within the safe area
+    func initLinearLayoutSafeArea() {
+        initLinearLayout()
+        
+        //header
+        initHeaderContainer()
+         
+        container = TGLinearLayout(.vert)
+        container.tg_width.equal(.fill)
+        container.tg_height.equal(.fill)
+        container.backgroundColor = .clear
+        rootContainer.addSubview(container)
+        
+        initFooterContainer()
+    }
+    
     func initLinearLayout() {
         rootContainer = TGLinearLayout(.vert)
         rootContainer.tg_width.equal(.fill)

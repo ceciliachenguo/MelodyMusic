@@ -30,6 +30,17 @@ class ViewFactoryUtil {
         return r
     }
     
+    static func primaryOutlineButton() -> QMUIButton {
+        let r = primaryButton()
+        r.layer.cornerRadius = SMALL_RADIUS
+        r.tintColor = .black130
+        r.layer.borderWidth = 1
+        r.layer.borderColor = UIColor.black130.cgColor
+        r.backgroundColor = .clear
+        r.setTitleColor(.colorPrimary, for: .normal)
+        return r
+    }
+    
     static func linkButton() -> QMUIButton {
         let r = QMUIButton()
         r.adjustsTitleTintColorAutomatically = false

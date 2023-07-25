@@ -16,6 +16,9 @@ target 'MelodyMusic' do
   #https:https://github.com/QMUI/QMUIDemo_iOS
   #https://qmuiteam.com/ios/get-started
   pod "QMUIKit"
+  
+  #https://github.com/SDWebImage/SDWebImage
+  pod 'SDWebImage'
 
   post_install do |installer|
       installer.generated_projects.each do |project|

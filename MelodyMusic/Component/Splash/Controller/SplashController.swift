@@ -12,10 +12,8 @@ class SplashController: BaseLogicController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .colorBackground
-        
         self.initRelativeLayoutSafeArea()
-        
+            
         //banner
         let bannerView = UIImageView()
         bannerView.tg_width.equal(320)

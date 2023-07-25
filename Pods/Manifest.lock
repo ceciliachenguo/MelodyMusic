@@ -2,6 +2,7 @@ PODS:
   - Alamofire (5.7.1)
   - DynamicColor (5.0.1)
   - HandyJSON (5.0.2)
+  - MBProgressHUD (1.2.0)
   - Moya/Core (15.0.0):
     - Alamofire (~> 5.0)
   - Moya/RxSwift (15.0.0):
@@ -315,6 +316,7 @@ PODS:
 DEPENDENCIES:
   - DynamicColor
   - HandyJSON
+  - MBProgressHUD
   - Moya/RxSwift
   - "NSObject+Rx"
   - QMUIKit
@@ -327,6 +329,7 @@ SPEC REPOS:
     - Alamofire
     - DynamicColor
     - HandyJSON
+    - MBProgressHUD
     - Moya
     - "NSObject+Rx"
     - QMUIKit
@@ -339,6 +342,7 @@ SPEC CHECKSUMS:
   Alamofire: 0123a34370cb170936ae79a8df46cc62b2edeb88
   DynamicColor: d049834ef86d8ecf150b0ca1ebe54ee733a0ec22
   HandyJSON: 9e4e236f5d2dbefad5155a77417bbea438201c03
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
   Moya: 138f0573e53411fb3dc17016add0b748dfbd78ee
   "NSObject+Rx": 61cf1f7306a73dcef8b36649198af0813ec18dfd
   QMUIKit: b831835f33d7fb3494809042225e6256eb22b892
@@ -347,6 +351,6 @@ SPEC CHECKSUMS:
   SDWebImage: 750adf017a315a280c60fde706ab1e552a3ae4e9
   TangramKit: aad3ab8f9617418c9da96d59cddd71134ae8af83
 
-PODFILE CHECKSUM: 6d63d285dade22397b705648f476f3691aaf9b13
+PODFILE CHECKSUM: 9a661db38d094cbde7f44bdc290ee3e92e34d66d
 
 COCOAPODS: 1.12.1

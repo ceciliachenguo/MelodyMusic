@@ -31,6 +31,9 @@ target 'MelodyMusic' do
 
   # https:https://github.com/alibaba/HandyJSON
   pod "HandyJSON"
+  
+  #https:https://github.com/jdg/MBProgressHUD
+  pod 'MBProgressHUD'
 
   post_install do |installer|
       installer.generated_projects.each do |project|

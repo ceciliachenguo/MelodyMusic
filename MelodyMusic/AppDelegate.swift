@@ -19,6 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
         // Override point for customization after application launch.
         //setting default page
         let controller = SplashController()
@@ -29,7 +30,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         return true
     }
-    
     
     func toGuide() {
         let r = GuideController()

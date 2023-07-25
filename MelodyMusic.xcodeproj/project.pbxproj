@@ -49,6 +49,7 @@
 		8DD33B932A6F83B800A34010 /* DetailResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD33B922A6F83B800A34010 /* DetailResponse.swift */; };
 		8DD33B952A6F846F00A34010 /* Meta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD33B942A6F846F00A34010 /* Meta.swift */; };
 		8DD33B992A6F86CA00A34010 /* Ad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD33B982A6F86CA00A34010 /* Ad.swift */; };
+		8DD33B9D2A7041B700A34010 /* SuperToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD33B9C2A7041B700A34010 /* SuperToast.swift */; };
 		8DEBED312A6C4F7A00303597 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEBED302A6C4F7A00303597 /* AppDelegate.swift */; };
 		8DEBED352A6C4F7A00303597 /* SplashController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEBED342A6C4F7A00303597 /* SplashController.swift */; };
 		8DEBED3A2A6C4F7B00303597 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DEBED392A6C4F7B00303597 /* Assets.xcassets */; };
@@ -133,6 +134,7 @@
 		8DD33B922A6F83B800A34010 /* DetailResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailResponse.swift; sourceTree = "<group>"; };
 		8DD33B942A6F846F00A34010 /* Meta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meta.swift; sourceTree = "<group>"; };
 		8DD33B982A6F86CA00A34010 /* Ad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ad.swift; sourceTree = "<group>"; };
+		8DD33B9C2A7041B700A34010 /* SuperToast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperToast.swift; sourceTree = "<group>"; };
 		8DEBED2D2A6C4F7A00303597 /* MelodyMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MelodyMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DEBED302A6C4F7A00303597 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8DEBED342A6C4F7A00303597 /* SplashController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashController.swift; sourceTree = "<group>"; };
@@ -186,7 +188,6 @@
 		8D7E866F2A6CF4DF008580A9 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				8DD33B502A6F392400A34010 /* YJBannerView */,
 				8D7E86702A6CF505008580A9 /* BaseController.swift */,
 				8D7E86722A6CF58D008580A9 /* BaseCommonController.swift */,
 				8D7E86742A6CF5E7008580A9 /* BaseLogicController.swift */,
@@ -256,6 +257,8 @@
 		8DA405C22A6CD8870033F979 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				8DD33B502A6F392400A34010 /* YJBannerView */,
+				8DD33B9A2A70414200A34010 /* SuperUI */,
 				8DA405C32A6CD8920033F979 /* SuperSwift */,
 			);
 			path = Vendor;
@@ -319,8 +322,7 @@
 				8DD33B5E2A6F392400A34010 /* Resource */,
 				8DD33B602A6F392400A34010 /* Views */,
 			);
-			name = YJBannerView;
-			path = ../Vendor/YJBannerView;
+			path = YJBannerView;
 			sourceTree = "<group>";
 		};
 		8DD33B512A6F392400A34010 /* Tools */ = {
@@ -460,6 +462,22 @@
 				8DD33B982A6F86CA00A34010 /* Ad.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		8DD33B9A2A70414200A34010 /* SuperUI */ = {
+			isa = PBXGroup;
+			children = (
+				8DD33B9B2A7041A300A34010 /* Toast */,
+			);
+			path = SuperUI;
+			sourceTree = "<group>";
+		};
+		8DD33B9B2A7041A300A34010 /* Toast */ = {
+			isa = PBXGroup;
+			children = (
+				8DD33B9C2A7041B700A34010 /* SuperToast.swift */,
+			);
+			path = Toast;
 			sourceTree = "<group>";
 		};
 		8DEBED242A6C4F7A00303597 = {
@@ -741,6 +759,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8DEBED352A6C4F7A00303597 /* SplashController.swift in Sources */,
+				8DD33B9D2A7041B700A34010 /* SuperToast.swift in Sources */,
 				8D7E86772A6CFC79008580A9 /* BaseTitleController.swift in Sources */,
 				8DD33B692A6F392400A34010 /* YJHollowPageControl.m in Sources */,
 				8DD33B6F2A6F392400A34010 /* YJBannerViewFooter.m in Sources */,

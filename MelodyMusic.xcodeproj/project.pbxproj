@@ -40,6 +40,7 @@
 		8DD33B7D2A6F73E400A34010 /* SheetListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD33B7C2A6F73E400A34010 /* SheetListResponse.swift */; };
 		8DD33B7F2A6F748A00A34010 /* PageResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD33B7E2A6F748A00A34010 /* PageResponse.swift */; };
 		8DD33B832A6F74E500A34010 /* Sheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD33B822A6F74E500A34010 /* Sheet.swift */; };
+		8DD33B862A6F7CC300A34010 /* ObservableMoyaExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD33B852A6F7CC300A34010 /* ObservableMoyaExtension.swift */; };
 		8DEBED312A6C4F7A00303597 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEBED302A6C4F7A00303597 /* AppDelegate.swift */; };
 		8DEBED352A6C4F7A00303597 /* SplashController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEBED342A6C4F7A00303597 /* SplashController.swift */; };
 		8DEBED3A2A6C4F7B00303597 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DEBED392A6C4F7B00303597 /* Assets.xcassets */; };
@@ -115,6 +116,7 @@
 		8DD33B7C2A6F73E400A34010 /* SheetListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetListResponse.swift; sourceTree = "<group>"; };
 		8DD33B7E2A6F748A00A34010 /* PageResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageResponse.swift; sourceTree = "<group>"; };
 		8DD33B822A6F74E500A34010 /* Sheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sheet.swift; sourceTree = "<group>"; };
+		8DD33B852A6F7CC300A34010 /* ObservableMoyaExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableMoyaExtension.swift; sourceTree = "<group>"; };
 		8DEBED2D2A6C4F7A00303597 /* MelodyMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MelodyMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DEBED302A6C4F7A00303597 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8DEBED342A6C4F7A00303597 /* SplashController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashController.swift; sourceTree = "<group>"; };
@@ -404,6 +406,14 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		8DD33B842A6F7C8600A34010 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				8DD33B852A6F7CC300A34010 /* ObservableMoyaExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		8DEBED242A6C4F7A00303597 = {
 			isa = PBXGroup;
 			children = (
@@ -429,6 +439,7 @@
 		8DEBED2F2A6C4F7A00303597 /* MelodyMusic */ = {
 			isa = PBXGroup;
 			children = (
+				8DD33B842A6F7C8600A34010 /* Extension */,
 				8DD33B7B2A6F73C400A34010 /* Model */,
 				8DD33B722A6F642B00A34010 /* Service */,
 				8D7E867D2A6D0486008580A9 /* Util */,
@@ -687,6 +698,7 @@
 				8DD33B6F2A6F392400A34010 /* YJBannerViewFooter.m in Sources */,
 				8D7E866E2A6CF007008580A9 /* SuperUIThemeExtension.swift in Sources */,
 				8DD33B6B2A6F392400A34010 /* YJAnimatedDotView.m in Sources */,
+				8DD33B862A6F7CC300A34010 /* ObservableMoyaExtension.swift in Sources */,
 				8DD33B6D2A6F392400A34010 /* YJBannerViewCollectionView.m in Sources */,
 				8DD33B4F2A6F34E100A34010 /* LoginHomeController.swift in Sources */,
 				8D7E86712A6CF505008580A9 /* BaseController.swift in Sources */,

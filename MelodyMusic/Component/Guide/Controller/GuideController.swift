@@ -83,26 +83,17 @@ class GuideController: BaseLogicController {
         //Use Moya RxSwift
         let moyaProvider = MoyaProvider<DefaultService>()
         moyaProvider.rx.request(.sheets(size: 10))
-//            .filter({
-//                
-//            })
-//            .map()
+            .asObservable()
+            .mapString()
+            .mapObject(SheetListResponse.self)
             .subscribe { event in
             switch event {
-            case let .success(response):
-                let data = response.data // Data, JSON response is in here!
-                let statusCode = response.statusCode // Int - 200, 401, 500, etc
-
-                let dataString = String(data: data, encoding: .utf8)!
-                
-                //Serialize structured JSON data
-                if let r = SheetListResponse.deserialize(from: dataString) {
-                    print(r.status)
-                    print(r.data.data[0].title!)
-                }
-
-            case let .failure(error):
-                print("request network error \(error)")
+            case .next(let data):
+                print(data.data.data[0].title!)
+            case .error(let error):
+                print("Error \(error)")
+            case .completed:
+                print("completed")
             }
         }.disposed(by: rx.disposeBag) //release memory recourse relate to rxSwift .subscribe
         

@@ -921,12 +921,12 @@ struct _R {
       /// Locales: en, zh-Hans
       var errorNetworkNotAuth: RswiftResources.StringResource { .init(key: "ErrorNetworkNotAuth", tableName: "Localizable", source: source, developmentValue: "Login information expired", comment: nil) }
 
-      /// en translation: The content you accessed does not exist
+      /// en translation: Content do not exist
       ///
       /// Key: ErrorNetworkNotFound
       ///
       /// Locales: en, zh-Hans
-      var errorNetworkNotFound: RswiftResources.StringResource { .init(key: "ErrorNetworkNotFound", tableName: "Localizable", source: source, developmentValue: "The content you accessed does not exist", comment: nil) }
+      var errorNetworkNotFound: RswiftResources.StringResource { .init(key: "ErrorNetworkNotFound", tableName: "Localizable", source: source, developmentValue: "Content do not exist", comment: nil) }
 
       /// en translation: You do not have permission to access
       ///
@@ -1488,12 +1488,12 @@ struct _R {
       /// Locales: en, zh-Hans
       var myRadio: RswiftResources.StringResource { .init(key: "MyRadio", tableName: "Localizable", source: source, developmentValue: "My Radio", comment: nil) }
 
-      /// en translation: Your Network seems to be suck
+      /// en translation: Internet too slow
       ///
       /// Key: NetworkError
       ///
       /// Locales: en, zh-Hans
-      var networkError: RswiftResources.StringResource { .init(key: "NetworkError", tableName: "Localizable", source: source, developmentValue: "Your Network seems to be suck", comment: nil) }
+      var networkError: RswiftResources.StringResource { .init(key: "NetworkError", tableName: "Localizable", source: source, developmentValue: "Internet too slow", comment: nil) }
 
       /// en translation: Nickname
       ///

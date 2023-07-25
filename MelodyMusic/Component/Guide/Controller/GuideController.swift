@@ -80,31 +80,16 @@ class GuideController: BaseLogicController {
     @objc func enterClick(_ sender:QMUIButton) {
 //        AppDelegate.shared.toMain()
         
-        //Use Moya RxSwift
-//        let moyaProvider = MoyaProvider<DefaultService>()
-//        moyaProvider.rx.request(.ads(position: 0))
-//            .asObservable()
-//            .mapString()
-//            .mapObject(ListResponse<Ad>.self)
-//            .subscribe { event in
-//            switch event {
-//            case .next(let data):
-//                print(data.data.data![0].title)
-//            case .error(let error):
-//                print("Error \(error)")
-//            case .completed:
-//                print("completed")
-//            }
-//        }
-//        .disposed(by: rx.disposeBag) //release memory recourse relate to rxSwift .subscribe
-        
-//        SuperToast.show(title: R.string.localizable.errorPasswordFormat())
-        
-        
-        SuperToast.showLoading()
-        DispatchQueue.main.asyncAfter(deadline: .now()+3) {
-            SuperToast.hideLoading()
-        }
+//        DefaultRepository.shared
+//            .sheets(size: 10)
+//            .subscribeSuccess { data in
+//                print(data)
+//            }.disposed(by: rx.disposeBag)
+        DefaultRepository.shared
+            .sheetDetail("1")
+            .subscribeSuccess { data in
+                print(data)
+            }.disposed(by: rx.disposeBag)
         
     }
 }

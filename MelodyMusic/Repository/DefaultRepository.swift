@@ -34,13 +34,36 @@ class DefaultRepository {
     }
     
     private init() {
-        
         var plugins:[PluginType] = []
         
         if Config.DEBUG {
             plugins.append(NetworkLoggerPlugin(configuration: NetworkLoggerPlugin.Configuration(logOptions: .verbose)))
         }
         
+        //automatically show/hide toast loading warning according to Network Activity status
+        let networkActivityPlugin = NetworkActivityPlugin { change, target in
+            if change == .began {
+                //start requesting
+                let targetType = target as! DefaultService
+                switch targetType {
+                case .sheetDetails, .register:
+                    DispatchQueue.main.async {
+                        //to main thread
+                        SuperToast.showLoading()
+                    }
+                default:
+                    break
+                }
+            } else {
+                //end request
+                DispatchQueue.main.async {
+                    SuperToast.hideLoading()
+                }
+            }
+        }
+                                                          
+        plugins.append(networkActivityPlugin)
+                                                          
         moyaProvider = MoyaProvider<DefaultService>(plugins: plugins)
     }
 }

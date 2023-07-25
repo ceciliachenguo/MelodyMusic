@@ -80,11 +80,7 @@ class GuideController: BaseLogicController {
     @objc func enterClick(_ sender:QMUIButton) {
 //        AppDelegate.shared.toMain()
         
-//        DefaultRepository.shared
-//            .sheets(size: 10)
-//            .subscribeSuccess { data in
-//                print(data)
-//            }.disposed(by: rx.disposeBag)
+        
         DefaultRepository.shared
             .sheetDetail("1")
             .subscribeSuccess { data in

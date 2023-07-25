@@ -33,6 +33,10 @@
 		8DD33B6D2A6F392400A34010 /* YJBannerViewCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DD33B612A6F392400A34010 /* YJBannerViewCollectionView.m */; };
 		8DD33B6E2A6F392400A34010 /* YJBannerViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DD33B622A6F392400A34010 /* YJBannerViewCell.m */; };
 		8DD33B6F2A6F392400A34010 /* YJBannerViewFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DD33B652A6F392400A34010 /* YJBannerViewFooter.m */; };
+		8DD33B712A6F53D900A34010 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD33B702A6F53D900A34010 /* Config.swift */; };
+		8DD33B742A6F645000A34010 /* DefaultService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD33B732A6F645000A34010 /* DefaultService.swift */; };
+		8DD33B782A6F650400A34010 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD33B772A6F650400A34010 /* User.swift */; };
+		8DD33B7A2A6F677700A34010 /* ParamUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD33B792A6F677700A34010 /* ParamUtil.swift */; };
 		8DEBED312A6C4F7A00303597 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEBED302A6C4F7A00303597 /* AppDelegate.swift */; };
 		8DEBED352A6C4F7A00303597 /* SplashController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEBED342A6C4F7A00303597 /* SplashController.swift */; };
 		8DEBED3A2A6C4F7B00303597 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DEBED392A6C4F7B00303597 /* Assets.xcassets */; };
@@ -101,6 +105,10 @@
 		8DD33B642A6F392400A34010 /* YJBannerViewCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJBannerViewCollectionView.h; sourceTree = "<group>"; };
 		8DD33B652A6F392400A34010 /* YJBannerViewFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJBannerViewFooter.m; sourceTree = "<group>"; };
 		8DD33B662A6F392400A34010 /* YJBannerViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJBannerViewCell.h; sourceTree = "<group>"; };
+		8DD33B702A6F53D900A34010 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		8DD33B732A6F645000A34010 /* DefaultService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultService.swift; sourceTree = "<group>"; };
+		8DD33B772A6F650400A34010 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		8DD33B792A6F677700A34010 /* ParamUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParamUtil.swift; sourceTree = "<group>"; };
 		8DEBED2D2A6C4F7A00303597 /* MelodyMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MelodyMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DEBED302A6C4F7A00303597 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8DEBED342A6C4F7A00303597 /* SplashController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashController.swift; sourceTree = "<group>"; };
@@ -146,6 +154,7 @@
 			children = (
 				8D7E866B2A6CED2E008580A9 /* SuperUIColorExtension.swift */,
 				8D7E866D2A6CF007008580A9 /* SuperUIThemeExtension.swift */,
+				8DD33B702A6F53D900A34010 /* Config.swift */,
 			);
 			path = Config;
 			sourceTree = "<group>";
@@ -168,6 +177,7 @@
 				8D7E867E2A6D049C008580A9 /* ViewFactoryUtil.swift */,
 				8D7E86802A6D0578008580A9 /* Constants.swift */,
 				8DD33B462A6F28B700A34010 /* DefaultPreferenceUtil.swift */,
+				8DD33B792A6F677700A34010 /* ParamUtil.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -208,6 +218,7 @@
 		8DA405C12A6CD3300033F979 /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				8DD33B752A6F64F400A34010 /* User */,
 				8DD33B4C2A6F34BE00A34010 /* Login */,
 				8DD33B482A6F2B5500A34010 /* Main */,
 				8D7E86822A6D0CB6008580A9 /* Guide */,
@@ -337,6 +348,30 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		8DD33B722A6F642B00A34010 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				8DD33B732A6F645000A34010 /* DefaultService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		8DD33B752A6F64F400A34010 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				8DD33B762A6F64FB00A34010 /* Model */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		8DD33B762A6F64FB00A34010 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8DD33B772A6F650400A34010 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		8DEBED242A6C4F7A00303597 = {
 			isa = PBXGroup;
 			children = (
@@ -362,6 +397,7 @@
 		8DEBED2F2A6C4F7A00303597 /* MelodyMusic */ = {
 			isa = PBXGroup;
 			children = (
+				8DD33B722A6F642B00A34010 /* Service */,
 				8D7E867D2A6D0486008580A9 /* Util */,
 				8D7E866F2A6CF4DF008580A9 /* Controller */,
 				8D7E866A2A6CECFF008580A9 /* Config */,
@@ -623,6 +659,7 @@
 				8D7E86712A6CF505008580A9 /* BaseController.swift in Sources */,
 				8D7E86752A6CF5E7008580A9 /* BaseLogicController.swift in Sources */,
 				8DD33B672A6F392400A34010 /* UIView+YJBannerViewExt.m in Sources */,
+				8DD33B7A2A6F677700A34010 /* ParamUtil.swift in Sources */,
 				8DA405C62A6CD8FE0033F979 /* SuperDateUtil.swift in Sources */,
 				8DEBED312A6C4F7A00303597 /* AppDelegate.swift in Sources */,
 				8DD33B6A2A6F392400A34010 /* YJAbstractDotView.m in Sources */,
@@ -631,8 +668,11 @@
 				8DD33B4B2A6F2B7E00A34010 /* MainController.swift in Sources */,
 				8D7E867C2A6D0042008580A9 /* TermServiceDialogController.swift in Sources */,
 				8DD33B6E2A6F392400A34010 /* YJBannerViewCell.m in Sources */,
+				8DD33B712A6F53D900A34010 /* Config.swift in Sources */,
+				8DD33B782A6F650400A34010 /* User.swift in Sources */,
 				8D7E86732A6CF58D008580A9 /* BaseCommonController.swift in Sources */,
 				8DD33B472A6F28B700A34010 /* DefaultPreferenceUtil.swift in Sources */,
+				8DD33B742A6F645000A34010 /* DefaultService.swift in Sources */,
 				8D7E86852A6D0CEB008580A9 /* GuideController.swift in Sources */,
 				8D7E867F2A6D049C008580A9 /* ViewFactoryUtil.swift in Sources */,
 				8D7E86692A6CE5A1008580A9 /* R.generated.swift in Sources */,

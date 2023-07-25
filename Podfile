@@ -19,6 +19,9 @@ target 'MelodyMusic' do
   
   #https://github.com/SDWebImage/SDWebImage
   pod 'SDWebImage'
+  
+  # https:https://github.com/Moya/Moya
+  pod 'Moya'
 
   post_install do |installer|
       installer.generated_projects.each do |project|

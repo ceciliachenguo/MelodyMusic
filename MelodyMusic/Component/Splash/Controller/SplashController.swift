@@ -48,11 +48,11 @@ class SplashController: BaseLogicController {
     
     override func initDatum() {
         super.initDatum()
-        if DefaultPreferenceUtil.isAcceptTermsServiceAgreement() {
-            prepareNext()
-        } else {
+//        if DefaultPreferenceUtil.isAcceptTermsServiceAgreement() {
+//            prepareNext()
+//        } else {
             showTermsServiceAgreementDialog()
-        }
+//        }
     }
     
     func prepareNext() {
@@ -84,7 +84,6 @@ class SplashController: BaseLogicController {
     }()
 
 }
-
 
 #Preview {
     SplashController()

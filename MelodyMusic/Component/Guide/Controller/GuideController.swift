@@ -7,6 +7,7 @@
 
 import UIKit
 import TangramKit
+import Moya
 
 class GuideController: BaseLogicController {
     var bannerView:YJBannerView!
@@ -75,7 +76,23 @@ class GuideController: BaseLogicController {
     
     //MARK: - Without Login Button Action
     @objc func enterClick(_ sender:QMUIButton) {
-        AppDelegate.shared.toMain()
+//        AppDelegate.shared.toMain()
+        
+        let moyaProvider = MoyaProvider<DefaultService>()
+        moyaProvider.request(.sheets(size: VALUE10)) { result in
+            print(result)
+            
+            switch result {
+            case let .success(response):
+                let data = response.data
+                let statusCode = response.statusCode
+                
+                let dataString = String(data: data, encoding: .utf8)!
+                print("request network success \(statusCode) \(dataString)")
+            case let .failure(error):
+                print("network error \(error)")
+            }
+        }
     }
     
 }

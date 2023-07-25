@@ -1,5 +1,10 @@
 PODS:
+  - Alamofire (5.7.1)
   - DynamicColor (5.0.1)
+  - Moya (15.0.0):
+    - Moya/Core (= 15.0.0)
+  - Moya/Core (15.0.0):
+    - Alamofire (~> 5.0)
   - QMUIKit (4.6.3):
     - QMUIKit/QMUIComponents (= 4.6.3)
     - QMUIKit/QMUICore (= 4.6.3)
@@ -304,6 +309,7 @@ PODS:
 
 DEPENDENCIES:
   - DynamicColor
+  - Moya
   - QMUIKit
   - R.swift
   - SDWebImage
@@ -311,19 +317,23 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
+    - Alamofire
     - DynamicColor
+    - Moya
     - QMUIKit
     - R.swift
     - SDWebImage
     - TangramKit
 
 SPEC CHECKSUMS:
+  Alamofire: 0123a34370cb170936ae79a8df46cc62b2edeb88
   DynamicColor: d049834ef86d8ecf150b0ca1ebe54ee733a0ec22
+  Moya: 138f0573e53411fb3dc17016add0b748dfbd78ee
   QMUIKit: b831835f33d7fb3494809042225e6256eb22b892
   R.swift: 0af0d882f49f03711415cb4e5215daa977d8a480
   SDWebImage: 750adf017a315a280c60fde706ab1e552a3ae4e9
   TangramKit: aad3ab8f9617418c9da96d59cddd71134ae8af83
 
-PODFILE CHECKSUM: 26d4f61e1ecf33a2b8497e1fab1ea2b614c96b7d
+PODFILE CHECKSUM: 2911e3401d3ca2639b178602111f9048acf219fa
 
 COCOAPODS: 1.12.1

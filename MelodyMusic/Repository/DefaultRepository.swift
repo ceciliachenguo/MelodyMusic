@@ -34,7 +34,13 @@ class DefaultRepository {
     }
     
     private init() {
-        moyaProvider = MoyaProvider<DefaultService>()
+        
+        var plugins:[PluginType] = []
+        
+        if Config.DEBUG {
+            plugins.append(NetworkLoggerPlugin(configuration: NetworkLoggerPlugin.Configuration(logOptions: .verbose)))
+        }
+        
+        moyaProvider = MoyaProvider<DefaultService>(plugins: plugins)
     }
-    
 }

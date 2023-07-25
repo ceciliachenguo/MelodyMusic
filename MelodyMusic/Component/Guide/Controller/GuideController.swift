@@ -82,14 +82,14 @@ class GuideController: BaseLogicController {
         
         //Use Moya RxSwift
         let moyaProvider = MoyaProvider<DefaultService>()
-        moyaProvider.rx.request(.sheets(size: 10))
+        moyaProvider.rx.request(.ads(position: 0))
             .asObservable()
             .mapString()
-            .mapObject(SheetListResponse.self)
+            .mapObject(ListResponse<Ad>.self)
             .subscribe { event in
             switch event {
             case .next(let data):
-                print(data.data.data[0].title!)
+                print(data.data.data![0].title)
             case .error(let error):
                 print("Error \(error)")
             case .completed:

@@ -15,6 +15,8 @@ enum DefaultService {
     
     case sheets(size: Int)
     
+    case sheetDetails(data: String)
+    
     case register(data: User)
     
 }
@@ -30,6 +32,8 @@ extension DefaultService:TargetType {
             return "v1/ads"
         case .sheets(_):
             return "v1/sheets"
+        case .sheetDetails(let data):
+            return "v1/sheets/\(data)"
         case .register(_):
             return "v1/users"
         default:

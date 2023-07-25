@@ -6,12 +6,10 @@
 //
 
 import Foundation
-import HandyJSON
 
-class Sheet:HandyJSON {
-    var id:String!
+class Sheet:BaseCommon {
     var title:String!
     var icon:String?
     
-    required init() {}
 }
+

@@ -7,8 +7,7 @@ This is my personal project, created to showcase my iOS development capabilities
 ## Tools & Frameworkd & Conventions
 - UIKit; CocoaPods; RxSwift Reactive Programming; Import Objective C frameworks into Swift project; Handling Network calls with Moya; Capture Packets; Database; APIs testing using Postman; RxCocoa; WebView; 
 - MVVM Architecture; Naming Conventions & Documentation & Organization Convention; Network call Architexture Encapsulation; Top-level Exception Handler; UITesting; Assets Management Conventions
-  
----
+
 
 ## App Features
 - User Preference
@@ -23,4 +22,6 @@ This is my personal project, created to showcase my iOS development capabilities
 - QR Code Generation; Scan QR Code; On-line Shopping Mall; Order Management; Pay Method
 - ChatRoom; Message History; Auto-Scroll to the bottom of the latest message; Message Notification; Send Text/Image/etc Message Types; TabBar/AppIcon red dot Indicator for new message
 - Application Icons
+
+  
 ---

@@ -27,4 +27,4 @@ This is my personal project, created to showcase my iOS development capabilities
 - Application Icons
 
 ## 😇 Contact Me
-If you have any questions or thoughts, please don't hesitate to contact me at 📧 chenguo0313@gmail.com or 📧 gc479@cornell.edu
+If you have any questions or thoughts, please don't hesitate to contact me at 📧 cecilia.g.chen@outlook.com or 📧 gc479@cornell.edu

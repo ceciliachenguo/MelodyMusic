@@ -9,7 +9,7 @@ This is my personal project, created to showcase my iOS development capabilities
 - Swift5
 - MVVM Architecture
 - UIKit; CocoaPods; RxSwift Reactive Programming; Import Objective C frameworks into Swift project; Handling Network calls with Moya; Capture Packets; Database; APIs testing using Postman; RxCocoa; WebView; 
-- Naming & Documentation & Organization Convention; Network call Architexture Encapsulation; Top-level Exception Handler; UITesting; Assets Management Conventions
+- Naming & Documentation & Organization Convention; Network call Architexture Encapsulation; Top-level Exception Handler; UITesting; Assets Management Conventions; App Localization
 
 
 ## 🐝 App Features

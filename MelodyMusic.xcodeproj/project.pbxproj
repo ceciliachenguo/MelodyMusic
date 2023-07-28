@@ -63,6 +63,7 @@
 		8DD33C2E2A73794A00A34010 /* ResourceUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD33C2D2A73794A00A34010 /* ResourceUtil.swift */; };
 		8DD33C302A73889300A34010 /* DiscoveryButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD33C2F2A73889300A34010 /* DiscoveryButtonCell.swift */; };
 		8DD33C322A7389E900A34010 /* ButtonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD33C312A7389E900A34010 /* ButtonData.swift */; };
+		8DD33C352A7392A800A34010 /* DiscoveryButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD33C342A7392A800A34010 /* DiscoveryButtonView.swift */; };
 		8DEBED312A6C4F7A00303597 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEBED302A6C4F7A00303597 /* AppDelegate.swift */; };
 		8DEBED352A6C4F7A00303597 /* SplashController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEBED342A6C4F7A00303597 /* SplashController.swift */; };
 		8DEBED3A2A6C4F7B00303597 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DEBED392A6C4F7B00303597 /* Assets.xcassets */; };
@@ -161,6 +162,7 @@
 		8DD33C2D2A73794A00A34010 /* ResourceUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceUtil.swift; sourceTree = "<group>"; };
 		8DD33C2F2A73889300A34010 /* DiscoveryButtonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveryButtonCell.swift; sourceTree = "<group>"; };
 		8DD33C312A7389E900A34010 /* ButtonData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonData.swift; sourceTree = "<group>"; };
+		8DD33C342A7392A800A34010 /* DiscoveryButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveryButtonView.swift; sourceTree = "<group>"; };
 		8DEBED2D2A6C4F7A00303597 /* MelodyMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MelodyMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DEBED302A6C4F7A00303597 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8DEBED342A6C4F7A00303597 /* SplashController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashController.swift; sourceTree = "<group>"; };
@@ -524,6 +526,7 @@
 		8DD33C0E2A73632900A34010 /* Discovery */ = {
 			isa = PBXGroup;
 			children = (
+				8DD33C332A73927B00A34010 /* View */,
 				8DD33C272A7370A700A34010 /* Cell */,
 				8DD33C232A736D9800A34010 /* Model */,
 				8DD33C0F2A73633900A34010 /* Controller */,
@@ -635,6 +638,14 @@
 				8DD33C292A7370EC00A34010 /* BaseTableViewCell.swift */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		8DD33C332A73927B00A34010 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8DD33C342A7392A800A34010 /* DiscoveryButtonView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		8DEBED242A6C4F7A00303597 = {
@@ -936,6 +947,7 @@
 				8DD33B4F2A6F34E100A34010 /* LoginHomeController.swift in Sources */,
 				8D7E86712A6CF505008580A9 /* BaseController.swift in Sources */,
 				8D7E86752A6CF5E7008580A9 /* BaseLogicController.swift in Sources */,
+				8DD33C352A7392A800A34010 /* DiscoveryButtonView.swift in Sources */,
 				8DD33B672A6F392400A34010 /* UIView+YJBannerViewExt.m in Sources */,
 				8DD33B7A2A6F677700A34010 /* ParamUtil.swift in Sources */,
 				8DA405C62A6CD8FE0033F979 /* SuperDateUtil.swift in Sources */,

@@ -58,13 +58,12 @@ extension DiscoveryController{
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let data = datum[indexPath.row]
-        
-        //get cell type
         let type = typeForItemAtData(data)
         
         switch type {
         case .button:
             let cell = tableView.dequeueReusableCell(withIdentifier: DiscoveryButtonCell.IDENTITY_NAME, for: indexPath) as! DiscoveryButtonCell
+            cell.bind(data as! ButtonData)
             return cell
             
         default:

@@ -11,10 +11,18 @@ class SuperDateUtil {
     
     static func currentYear() -> Int {
         let date = Date()
-        
         let calendar = Calendar.current
         let d = calendar.dateComponents([Calendar.Component.year], from: date)
         
         return d.year!
     }
+    
+    static func currentDay() -> Int {
+        let date = Date()
+        let calendar = Calendar.current
+        let d = calendar.dateComponents([Calendar.Component.day], from: date)
+        
+        return d.day!
+    }
+    
 }

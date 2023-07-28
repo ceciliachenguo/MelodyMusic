@@ -12,6 +12,8 @@ class BannerCell: BaseTableViewCell {
     var bannerView:YJBannerView!
     var data:BannerData!
     var datum:[String] = []
+    
+    var bannerClick:((Ad)->Void)!
 
     override func initViews() {
         super.initViews()
@@ -72,6 +74,12 @@ extension BannerCell:YJBannerViewDataSource,YJBannerViewDelegate{
         cell.showImageViewContentMode = .scaleAspectFill
         
         return cell
+    }
+    
+    func bannerView(_ bannerView: YJBannerView!, didSelectItemAt index: Int) {
+        let r = data.data[index]
+        
+        bannerClick(r)
     }
 }
 

@@ -35,6 +35,10 @@ class DiscoveryController: BaseLogicController {
                 
             }.disposed(by: rx.disposeBag)
     }
+    
+    func processAdClick(_ data: Ad) {
+        print("DiscoveryController processAdClick \(data.title)")
+    }
 }
 
 extension DiscoveryController{
@@ -48,6 +52,10 @@ extension DiscoveryController{
         let cell = tableView.dequeueReusableCell(withIdentifier: Constants.CELL, for: indexPath) as! BannerCell
         
         cell.bind(data as! BannerData)
+        
+        cell.bannerClick = {[weak self] data in
+            self?.processAdClick(data)
+        }
         
         return cell
     }

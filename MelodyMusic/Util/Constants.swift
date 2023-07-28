@@ -30,6 +30,33 @@ class Constants {
     static let DATA = "DATA"
 }
 
+enum MyStyle:Int {
+    case none = -1
+    case banner
+    case button
+    case sheet
+    case song
+    case footer
+    case refresh
+    case phoneLogin
+    case forgotPassword
+    case more
+    case videoInfo
+    case title
+    case video
+    case comment
+    case downloadManager
+    case local
+    case add
+    case select
+    case confirmOrder
+    case increment
+    case decrement
+    case playList
+    case friend
+    case fans
+}
+
 /// padding
 let PADDING_MIN:CGFloat = 0.5
 let PADDING_SMALL:CGFloat = 5

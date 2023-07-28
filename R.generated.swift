@@ -2534,9 +2534,18 @@ struct _R {
     var accentColor: RswiftResources.ColorResource { .init(name: "AccentColor", path: [], bundle: bundle) }
   }
 
-  /// This `_R.image` struct is generated, and contains static references to 18 images.
+  /// This `_R.image` struct is generated, and contains static references to 24 images.
   struct image {
     let bundle: Foundation.Bundle
+
+    /// Image `ButtonLive`.
+    var buttonLive: RswiftResources.ImageResource { .init(name: "ButtonLive", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `DayRecommend`.
+    var dayRecommend: RswiftResources.ImageResource { .init(name: "DayRecommend", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `DigitalAlbum`.
+    var digitalAlbum: RswiftResources.ImageResource { .init(name: "DigitalAlbum", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
 
     /// Image `Discovery`.
     var discovery: RswiftResources.ImageResource { .init(name: "Discovery", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
@@ -2568,11 +2577,20 @@ struct _R {
     /// Image `MeSelected`.
     var meSelected: RswiftResources.ImageResource { .init(name: "MeSelected", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
 
+    /// Image `PersonFm`.
+    var personFm: RswiftResources.ImageResource { .init(name: "PersonFm", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
     /// Image `Placeholder`.
     var placeholder: RswiftResources.ImageResource { .init(name: "Placeholder", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
 
     /// Image `PlaceholderError`.
     var placeholderError: RswiftResources.ImageResource { .init(name: "PlaceholderError", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `Rank`.
+    var rank: RswiftResources.ImageResource { .init(name: "Rank", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `Sheet`.
+    var sheet: RswiftResources.ImageResource { .init(name: "Sheet", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
 
     /// Image `Slogan`.
     var slogan: RswiftResources.ImageResource { .init(name: "Slogan", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }

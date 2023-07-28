@@ -61,6 +61,8 @@
 		8DD33C2A2A7370EC00A34010 /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD33C292A7370EC00A34010 /* BaseTableViewCell.swift */; };
 		8DD33C2C2A7373DB00A34010 /* BannerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD33C2B2A7373DB00A34010 /* BannerCell.swift */; };
 		8DD33C2E2A73794A00A34010 /* ResourceUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD33C2D2A73794A00A34010 /* ResourceUtil.swift */; };
+		8DD33C302A73889300A34010 /* DiscoveryButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD33C2F2A73889300A34010 /* DiscoveryButtonCell.swift */; };
+		8DD33C322A7389E900A34010 /* ButtonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD33C312A7389E900A34010 /* ButtonData.swift */; };
 		8DEBED312A6C4F7A00303597 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEBED302A6C4F7A00303597 /* AppDelegate.swift */; };
 		8DEBED352A6C4F7A00303597 /* SplashController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEBED342A6C4F7A00303597 /* SplashController.swift */; };
 		8DEBED3A2A6C4F7B00303597 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DEBED392A6C4F7B00303597 /* Assets.xcassets */; };
@@ -157,6 +159,8 @@
 		8DD33C292A7370EC00A34010 /* BaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
 		8DD33C2B2A7373DB00A34010 /* BannerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerCell.swift; sourceTree = "<group>"; };
 		8DD33C2D2A73794A00A34010 /* ResourceUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceUtil.swift; sourceTree = "<group>"; };
+		8DD33C2F2A73889300A34010 /* DiscoveryButtonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveryButtonCell.swift; sourceTree = "<group>"; };
+		8DD33C312A7389E900A34010 /* ButtonData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonData.swift; sourceTree = "<group>"; };
 		8DEBED2D2A6C4F7A00303597 /* MelodyMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MelodyMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DEBED302A6C4F7A00303597 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8DEBED342A6C4F7A00303597 /* SplashController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashController.swift; sourceTree = "<group>"; };
@@ -611,6 +615,7 @@
 			isa = PBXGroup;
 			children = (
 				8DD33C252A736DB000A34010 /* BannerData.swift */,
+				8DD33C312A7389E900A34010 /* ButtonData.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -619,6 +624,7 @@
 			isa = PBXGroup;
 			children = (
 				8DD33C2B2A7373DB00A34010 /* BannerCell.swift */,
+				8DD33C2F2A73889300A34010 /* DiscoveryButtonCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -911,6 +917,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DD33C302A73889300A34010 /* DiscoveryButtonCell.swift in Sources */,
 				8DEBED352A6C4F7A00303597 /* SplashController.swift in Sources */,
 				8DD33C222A73641500A34010 /* RoomController.swift in Sources */,
 				8DD33B9D2A7041B700A34010 /* SuperToast.swift in Sources */,
@@ -920,6 +927,7 @@
 				8D7E866E2A6CF007008580A9 /* SuperUIThemeExtension.swift in Sources */,
 				8DD33B912A6F836100A34010 /* BaseResponse.swift in Sources */,
 				8DD33C1E2A7363EC00A34010 /* FeedController.swift in Sources */,
+				8DD33C322A7389E900A34010 /* ButtonData.swift in Sources */,
 				8DD33B6B2A6F392400A34010 /* YJAnimatedDotView.m in Sources */,
 				8DD33B862A6F7CC300A34010 /* ObservableMoyaExtension.swift in Sources */,
 				8DD33B9F2A706C4A00A34010 /* ExceptionHandleUtil.swift in Sources */,

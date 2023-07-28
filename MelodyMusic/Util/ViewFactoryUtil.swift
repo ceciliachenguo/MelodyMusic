@@ -47,4 +47,28 @@ class ViewFactoryUtil {
         r.titleLabel?.font = UIFont.systemFont(ofSize: TEXT_MEDDLE)
         return r
     }
+    
+    static func tableView() -> UITableView {
+        let r = UITableView()
+        r.backgroundColor = .clear
+        
+        //get rid of separators when there is no content is cells
+        r.tableFooterView = UIView()
+        r.separatorStyle = .none
+        r.separatorInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+        
+        r.tg_width.equal(.fill)
+        r.tg_height.equal(.fill)
+        
+        //Auto ajust the length of the whole list
+        r.rowHeight = UITableView.automaticDimension
+        r.estimatedRowHeight = UITableView.automaticDimension
+        
+        //No scroll indication
+        r.showsVerticalScrollIndicator = false
+        
+        r.allowsSelection = true
+        
+        return r
+    }
 }

@@ -20,6 +20,13 @@ class BaseLogicController: BaseCommonController {
     
     var container:TGBaseLayout!
     
+    var tableView:UITableView!
+    
+    lazy var datum: [Any] = {
+        var result: [Any] = []
+        return result
+    }()
+    
   /// initialize RelativeLayout container，4 borders are within the safe area
     func initRelativeLayoutSafeArea() {
         initLinearLayout()
@@ -96,6 +103,24 @@ class BaseLogicController: BaseCommonController {
         rootContainer.addSubview(superFooterContainer)
     }
     
+    func initTableViewSafeArea() {
+        initLinearLayoutSafeArea()
+        createTableView()
+        
+        container.addSubview(tableView)
+    }
+    
+    func createTableView() {
+        tableView = ViewFactoryUtil.tableView()
+        tableView.delegate = self
+        tableView.dataSource = self
+    }
+    
+    /// use default separator
+    func initDefaultTableViewDivider() {
+        tableView.separatorStyle = .singleLine
+    }
+    
     override func initViews() {
         super.initViews()
         
@@ -105,3 +130,14 @@ class BaseLogicController: BaseCommonController {
     
 }
 
+//MARK: - TableView data source and delegate
+extension BaseLogicController: UITableViewDataSource, UITableViewDelegate {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return datum.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        return UITableViewCell()
+    }
+
+}

@@ -15,6 +15,17 @@ class DefaultRepository {
     
     private var moyaProvider:MoyaProvider<DefaultService>!
     
+    
+    //Banner in Discovery Page
+    func bannerAds() -> Observable<ListResponse<Ad>> {
+        return moyaProvider
+            .rx
+            .request(.ads(position: VALUE0))
+            .asObservable()
+            .mapString()
+            .mapObject((ListResponse<Ad>.self))
+    }
+    
     func sheets(size:Int) -> Observable<ListResponse<Sheet>> {
         return moyaProvider
             .rx

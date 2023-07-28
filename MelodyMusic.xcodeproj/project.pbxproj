@@ -57,6 +57,7 @@
 		8DD33C1A2A7363B800A34010 /* MeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD33C192A7363B800A34010 /* MeController.swift */; };
 		8DD33C1E2A7363EC00A34010 /* FeedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD33C1D2A7363EC00A34010 /* FeedController.swift */; };
 		8DD33C222A73641500A34010 /* RoomController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD33C212A73641500A34010 /* RoomController.swift */; };
+		8DD33C262A736DB000A34010 /* BannerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD33C252A736DB000A34010 /* BannerData.swift */; };
 		8DEBED312A6C4F7A00303597 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEBED302A6C4F7A00303597 /* AppDelegate.swift */; };
 		8DEBED352A6C4F7A00303597 /* SplashController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEBED342A6C4F7A00303597 /* SplashController.swift */; };
 		8DEBED3A2A6C4F7B00303597 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DEBED392A6C4F7B00303597 /* Assets.xcassets */; };
@@ -149,6 +150,7 @@
 		8DD33C192A7363B800A34010 /* MeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeController.swift; sourceTree = "<group>"; };
 		8DD33C1D2A7363EC00A34010 /* FeedController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedController.swift; sourceTree = "<group>"; };
 		8DD33C212A73641500A34010 /* RoomController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomController.swift; sourceTree = "<group>"; };
+		8DD33C252A736DB000A34010 /* BannerData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerData.swift; sourceTree = "<group>"; };
 		8DEBED2D2A6C4F7A00303597 /* MelodyMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MelodyMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DEBED302A6C4F7A00303597 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8DEBED342A6C4F7A00303597 /* SplashController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashController.swift; sourceTree = "<group>"; };
@@ -511,6 +513,7 @@
 		8DD33C0E2A73632900A34010 /* Discovery */ = {
 			isa = PBXGroup;
 			children = (
+				8DD33C232A736D9800A34010 /* Model */,
 				8DD33C0F2A73633900A34010 /* Controller */,
 			);
 			path = Discovery;
@@ -586,6 +589,22 @@
 				8DD33C212A73641500A34010 /* RoomController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		8DD33C232A736D9800A34010 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8DD33C242A736DA200A34010 /* UI */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8DD33C242A736DA200A34010 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				8DD33C252A736DB000A34010 /* BannerData.swift */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 		8DEBED242A6C4F7A00303597 = {
@@ -890,6 +909,7 @@
 				8DEBED312A6C4F7A00303597 /* AppDelegate.swift in Sources */,
 				8DD33BA22A70762B00A34010 /* DefaultRepository.swift in Sources */,
 				8DD33C1A2A7363B800A34010 /* MeController.swift in Sources */,
+				8DD33C262A736DB000A34010 /* BannerData.swift in Sources */,
 				8DD33B6A2A6F392400A34010 /* YJAbstractDotView.m in Sources */,
 				8DD33C112A73635800A34010 /* DiscoveryController.swift in Sources */,
 				8DD33B7D2A6F73E400A34010 /* SheetListResponse.swift in Sources */,

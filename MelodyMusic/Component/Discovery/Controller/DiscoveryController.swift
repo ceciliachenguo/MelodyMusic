@@ -15,4 +15,20 @@ class DiscoveryController: BaseLogicController {
         initTableViewSafeArea()
     }
     
+    override func initDatum() {
+        super.initDatum()
+        
+        loadData()
+    }
+    
+    func loadData() {
+        DefaultRepository.shared
+            .bannerAds()
+            .subscribeSuccess { [weak self] data in
+                self?.datum.removeAll()
+                
+                self?.datum.append(BannerData(data.data!.data!))
+                
+            }.disposed(by: rx.disposeBag)
+    }
 }

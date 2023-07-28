@@ -26,5 +26,43 @@ This is my personal project, created to showcase my iOS development capabilities
 - ChatRoom; Message History; Auto-Scroll to the bottom of the latest message; Message Notification; Send Text/Image/etc Message Types; TabBar/AppIcon red dot Indicator for new message
 - Application Icons
 
+## 👻 Demos
+
+<details open="true" >
+<summary> - Video </summary>
+Add Later
+</details>
+
+<details open="true">
+<summary> - Onboarding & Terms and Service Agreemen</summary>
+  <img src="https://github.com/ceciliachenguo/MelodyMusic/assets/121702916/c0946094-8b3d-46d0-bc4f-c7252795e70c" alt="onboarding" width="250">
+</details>
+
+<details open="true">
+<summary> - Discover Page </summary>
+  Add Later
+</details>
+
+<details open="true">
+<summary> - Video Page </summary>
+  Add Later
+</details>
+
+<details open="true">
+<summary> - My Profile Page </summary>
+  Add Later
+</details>
+
+<details open="true">
+<summary> - Moments Page </summary>
+  Add Later
+</details>
+
+<details open="true">
+<summary> - Live Stream Page </summary>
+  Add Later
+</details>
+  
+
 ## 😇 Contact Me
 If you have any questions or thoughts, please don't hesitate to contact me at 📧 cecilia.g.chen@outlook.com or 📧 gc479@cornell.edu

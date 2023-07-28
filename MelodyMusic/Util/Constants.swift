@@ -33,7 +33,7 @@ class Constants {
 /// padding
 let PADDING_MIN:CGFloat = 0.5
 let PADDING_SMALL:CGFloat = 5
-let PADDING_MEDDLE:CGFloat = 10
+let PADDING_MIDDLE:CGFloat = 10
 let PADDING_OUTER:CGFloat = 16
 let PADDING_LARGE2:CGFloat = 30
 

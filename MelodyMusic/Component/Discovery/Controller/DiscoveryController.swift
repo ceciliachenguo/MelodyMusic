@@ -13,6 +13,8 @@ class DiscoveryController: BaseLogicController {
         super.viewDidLoad()
 
         initTableViewSafeArea()
+        
+        tableView.register(BannerCell.self, forCellReuseIdentifier: Constants.CELL)
     }
     
     override func initDatum() {
@@ -29,6 +31,28 @@ class DiscoveryController: BaseLogicController {
                 
                 self?.datum.append(BannerData(data.data!.data!))
                 
+                self?.tableView.reloadData()
+                
             }.disposed(by: rx.disposeBag)
     }
+}
+
+extension DiscoveryController{
+    
+    //return the cell in current index
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let data = datum[indexPath.row]
+        
+        //get a Cell
+        let cell = tableView.dequeueReusableCell(withIdentifier: Constants.CELL, for: indexPath) as! BannerCell
+        
+        cell.bind(data as! BannerData)
+        
+        return cell
+    }
+}
+
+#Preview {
+    DiscoveryController()
 }

@@ -1376,12 +1376,12 @@ struct _R {
       /// Locales: en, zh-Hans
       var mapTencent: RswiftResources.StringResource { .init(key: "MapTencent", tableName: "Localizable", source: source, developmentValue: "Tencent Map", comment: nil) }
 
-      /// en translation: My
+      /// en translation: Me
       ///
       /// Key: Me
       ///
       /// Locales: en, zh-Hans
-      var me: RswiftResources.StringResource { .init(key: "Me", tableName: "Localizable", source: source, developmentValue: "My", comment: nil) }
+      var me: RswiftResources.StringResource { .init(key: "Me", tableName: "Localizable", source: source, developmentValue: "Me", comment: nil) }
 
       /// en translation: Member Center
       ///
@@ -2534,15 +2534,39 @@ struct _R {
     var accentColor: RswiftResources.ColorResource { .init(name: "AccentColor", path: [], bundle: bundle) }
   }
 
-  /// This `_R.image` struct is generated, and contains static references to 8 images.
+  /// This `_R.image` struct is generated, and contains static references to 18 images.
   struct image {
     let bundle: Foundation.Bundle
+
+    /// Image `Discovery`.
+    var discovery: RswiftResources.ImageResource { .init(name: "Discovery", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `DiscoverySelected`.
+    var discoverySelected: RswiftResources.ImageResource { .init(name: "DiscoverySelected", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `Feed`.
+    var feed: RswiftResources.ImageResource { .init(name: "Feed", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `FeedSelected`.
+    var feedSelected: RswiftResources.ImageResource { .init(name: "FeedSelected", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `Live`.
+    var live: RswiftResources.ImageResource { .init(name: "Live", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `LiveSelected`.
+    var liveSelected: RswiftResources.ImageResource { .init(name: "LiveSelected", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
 
     /// Image `Logo`.
     var logo: RswiftResources.ImageResource { .init(name: "Logo", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
 
     /// Image `LogoAndSlogan`.
     var logoAndSlogan: RswiftResources.ImageResource { .init(name: "LogoAndSlogan", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `Me`.
+    var me: RswiftResources.ImageResource { .init(name: "Me", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `MeSelected`.
+    var meSelected: RswiftResources.ImageResource { .init(name: "MeSelected", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
 
     /// Image `Placeholder`.
     var placeholder: RswiftResources.ImageResource { .init(name: "Placeholder", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
@@ -2552,6 +2576,12 @@ struct _R {
 
     /// Image `Slogan`.
     var slogan: RswiftResources.ImageResource { .init(name: "Slogan", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `Video`.
+    var video: RswiftResources.ImageResource { .init(name: "Video", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `VideoSelected`.
+    var videoSelected: RswiftResources.ImageResource { .init(name: "VideoSelected", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
 
     /// Image `guide1`.
     var guide1: RswiftResources.ImageResource { .init(name: "guide1", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }

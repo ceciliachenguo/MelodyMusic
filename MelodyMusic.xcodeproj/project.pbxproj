@@ -52,6 +52,11 @@
 		8DD33B9D2A7041B700A34010 /* SuperToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD33B9C2A7041B700A34010 /* SuperToast.swift */; };
 		8DD33B9F2A706C4A00A34010 /* ExceptionHandleUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD33B9E2A706C4A00A34010 /* ExceptionHandleUtil.swift */; };
 		8DD33BA22A70762B00A34010 /* DefaultRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD33BA12A70762B00A34010 /* DefaultRepository.swift */; };
+		8DD33C112A73635800A34010 /* DiscoveryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD33C102A73635800A34010 /* DiscoveryController.swift */; };
+		8DD33C162A73639600A34010 /* VideoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD33C152A73639600A34010 /* VideoController.swift */; };
+		8DD33C1A2A7363B800A34010 /* MeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD33C192A7363B800A34010 /* MeController.swift */; };
+		8DD33C1E2A7363EC00A34010 /* FeedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD33C1D2A7363EC00A34010 /* FeedController.swift */; };
+		8DD33C222A73641500A34010 /* RoomController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD33C212A73641500A34010 /* RoomController.swift */; };
 		8DEBED312A6C4F7A00303597 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEBED302A6C4F7A00303597 /* AppDelegate.swift */; };
 		8DEBED352A6C4F7A00303597 /* SplashController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEBED342A6C4F7A00303597 /* SplashController.swift */; };
 		8DEBED3A2A6C4F7B00303597 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DEBED392A6C4F7B00303597 /* Assets.xcassets */; };
@@ -139,6 +144,11 @@
 		8DD33B9C2A7041B700A34010 /* SuperToast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperToast.swift; sourceTree = "<group>"; };
 		8DD33B9E2A706C4A00A34010 /* ExceptionHandleUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExceptionHandleUtil.swift; sourceTree = "<group>"; };
 		8DD33BA12A70762B00A34010 /* DefaultRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultRepository.swift; sourceTree = "<group>"; };
+		8DD33C102A73635800A34010 /* DiscoveryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveryController.swift; sourceTree = "<group>"; };
+		8DD33C152A73639600A34010 /* VideoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoController.swift; sourceTree = "<group>"; };
+		8DD33C192A7363B800A34010 /* MeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeController.swift; sourceTree = "<group>"; };
+		8DD33C1D2A7363EC00A34010 /* FeedController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedController.swift; sourceTree = "<group>"; };
+		8DD33C212A73641500A34010 /* RoomController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomController.swift; sourceTree = "<group>"; };
 		8DEBED2D2A6C4F7A00303597 /* MelodyMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MelodyMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DEBED302A6C4F7A00303597 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8DEBED342A6C4F7A00303597 /* SplashController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashController.swift; sourceTree = "<group>"; };
@@ -248,6 +258,11 @@
 		8DA405C12A6CD3300033F979 /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				8DD33C1F2A7363FE00A34010 /* Room */,
+				8DD33C1B2A7363D300A34010 /* Feed */,
+				8DD33C172A7363A300A34010 /* Me */,
+				8DD33C132A73637F00A34010 /* Video */,
+				8DD33C0E2A73632900A34010 /* Discovery */,
 				8DD33B962A6F86B700A34010 /* Ad */,
 				8DD33B802A6F74D000A34010 /* Sheet */,
 				8DD33B752A6F64F400A34010 /* User */,
@@ -491,6 +506,86 @@
 				8DD33BA12A70762B00A34010 /* DefaultRepository.swift */,
 			);
 			path = Repository;
+			sourceTree = "<group>";
+		};
+		8DD33C0E2A73632900A34010 /* Discovery */ = {
+			isa = PBXGroup;
+			children = (
+				8DD33C0F2A73633900A34010 /* Controller */,
+			);
+			path = Discovery;
+			sourceTree = "<group>";
+		};
+		8DD33C0F2A73633900A34010 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8DD33C102A73635800A34010 /* DiscoveryController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8DD33C132A73637F00A34010 /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				8DD33C142A73638500A34010 /* Controller */,
+			);
+			path = Video;
+			sourceTree = "<group>";
+		};
+		8DD33C142A73638500A34010 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8DD33C152A73639600A34010 /* VideoController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8DD33C172A7363A300A34010 /* Me */ = {
+			isa = PBXGroup;
+			children = (
+				8DD33C182A7363A700A34010 /* Controller */,
+			);
+			path = Me;
+			sourceTree = "<group>";
+		};
+		8DD33C182A7363A700A34010 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8DD33C192A7363B800A34010 /* MeController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8DD33C1B2A7363D300A34010 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				8DD33C1C2A7363DB00A34010 /* Controller */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		8DD33C1C2A7363DB00A34010 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8DD33C1D2A7363EC00A34010 /* FeedController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8DD33C1F2A7363FE00A34010 /* Room */ = {
+			isa = PBXGroup;
+			children = (
+				8DD33C202A73640300A34010 /* Controller */,
+			);
+			path = Room;
+			sourceTree = "<group>";
+		};
+		8DD33C202A73640300A34010 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8DD33C212A73641500A34010 /* RoomController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		8DEBED242A6C4F7A00303597 = {
@@ -773,12 +868,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				8DEBED352A6C4F7A00303597 /* SplashController.swift in Sources */,
+				8DD33C222A73641500A34010 /* RoomController.swift in Sources */,
 				8DD33B9D2A7041B700A34010 /* SuperToast.swift in Sources */,
 				8D7E86772A6CFC79008580A9 /* BaseTitleController.swift in Sources */,
 				8DD33B692A6F392400A34010 /* YJHollowPageControl.m in Sources */,
 				8DD33B6F2A6F392400A34010 /* YJBannerViewFooter.m in Sources */,
 				8D7E866E2A6CF007008580A9 /* SuperUIThemeExtension.swift in Sources */,
 				8DD33B912A6F836100A34010 /* BaseResponse.swift in Sources */,
+				8DD33C1E2A7363EC00A34010 /* FeedController.swift in Sources */,
 				8DD33B6B2A6F392400A34010 /* YJAnimatedDotView.m in Sources */,
 				8DD33B862A6F7CC300A34010 /* ObservableMoyaExtension.swift in Sources */,
 				8DD33B9F2A706C4A00A34010 /* ExceptionHandleUtil.swift in Sources */,
@@ -792,10 +889,13 @@
 				8DA405C62A6CD8FE0033F979 /* SuperDateUtil.swift in Sources */,
 				8DEBED312A6C4F7A00303597 /* AppDelegate.swift in Sources */,
 				8DD33BA22A70762B00A34010 /* DefaultRepository.swift in Sources */,
+				8DD33C1A2A7363B800A34010 /* MeController.swift in Sources */,
 				8DD33B6A2A6F392400A34010 /* YJAbstractDotView.m in Sources */,
+				8DD33C112A73635800A34010 /* DiscoveryController.swift in Sources */,
 				8DD33B7D2A6F73E400A34010 /* SheetListResponse.swift in Sources */,
 				8D7E86812A6D0578008580A9 /* Constants.swift in Sources */,
 				8DD33B682A6F392400A34010 /* YJBannerView.m in Sources */,
+				8DD33C162A73639600A34010 /* VideoController.swift in Sources */,
 				8DD33B4B2A6F2B7E00A34010 /* MainController.swift in Sources */,
 				8D7E867C2A6D0042008580A9 /* TermServiceDialogController.swift in Sources */,
 				8DD33B932A6F83B800A34010 /* DetailResponse.swift in Sources */,

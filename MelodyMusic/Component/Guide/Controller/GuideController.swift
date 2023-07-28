@@ -78,14 +78,14 @@ class GuideController: BaseLogicController {
     
     //MARK: - Without Login Button Action
     @objc func enterClick(_ sender:QMUIButton) {
-//        AppDelegate.shared.toMain()
+        AppDelegate.shared.toMain()
         
         
-        DefaultRepository.shared
-            .sheetDetail("1")
-            .subscribeSuccess { data in
-                print(data)
-            }.disposed(by: rx.disposeBag)
+//        DefaultRepository.shared
+//            .sheetDetail("1")
+//            .subscribeSuccess { data in
+//                print(data)
+//            }.disposed(by: rx.disposeBag)
         
     }
 }

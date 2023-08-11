@@ -21,6 +21,10 @@
 		8D7E86852A6D0CEB008580A9 /* GuideController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7E86842A6D0CEB008580A9 /* GuideController.swift */; };
 		8DA405C62A6CD8FE0033F979 /* SuperDateUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA405C52A6CD8FE0033F979 /* SuperDateUtil.swift */; };
 		8DA405CA2A6CDC460033F979 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8DA405CC2A6CDC460033F979 /* Localizable.strings */; };
+		8DAF42122A85FBC300C5097F /* SheetGroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAF42112A85FBC300C5097F /* SheetGroupCell.swift */; };
+		8DAF42142A85FCDE00C5097F /* ItemTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAF42132A85FCDE00C5097F /* ItemTitleView.swift */; };
+		8DAF42162A85FF7C00C5097F /* SheetData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAF42152A85FF7C00C5097F /* SheetData.swift */; };
+		8DAF42192A8601BB00C5097F /* SuperImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAF42182A8601BB00C5097F /* SuperImageExtension.swift */; };
 		8DD33B472A6F28B700A34010 /* DefaultPreferenceUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD33B462A6F28B700A34010 /* DefaultPreferenceUtil.swift */; };
 		8DD33B4B2A6F2B7E00A34010 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD33B4A2A6F2B7E00A34010 /* MainController.swift */; };
 		8DD33B4F2A6F34E100A34010 /* LoginHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD33B4E2A6F34E100A34010 /* LoginHomeController.swift */; };
@@ -112,6 +116,10 @@
 		8DA405CB2A6CDC460033F979 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		8DA405CD2A6CDC5E0033F979 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		8DA405CE2A6CDC5E0033F979 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		8DAF42112A85FBC300C5097F /* SheetGroupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetGroupCell.swift; sourceTree = "<group>"; };
+		8DAF42132A85FCDE00C5097F /* ItemTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTitleView.swift; sourceTree = "<group>"; };
+		8DAF42152A85FF7C00C5097F /* SheetData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetData.swift; sourceTree = "<group>"; };
+		8DAF42182A8601BB00C5097F /* SuperImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperImageExtension.swift; sourceTree = "<group>"; };
 		8DD33B462A6F28B700A34010 /* DefaultPreferenceUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultPreferenceUtil.swift; sourceTree = "<group>"; };
 		8DD33B4A2A6F2B7E00A34010 /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
 		8DD33B4E2A6F34E100A34010 /* LoginHomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginHomeController.swift; sourceTree = "<group>"; };
@@ -315,6 +323,14 @@
 			path = Date;
 			sourceTree = "<group>";
 		};
+		8DAF42172A8601A800C5097F /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				8DAF42182A8601BB00C5097F /* SuperImageExtension.swift */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
 		8DD33B482A6F2B5500A34010 /* Main */ = {
 			isa = PBXGroup;
 			children = (
@@ -502,6 +518,7 @@
 		8DD33B9A2A70414200A34010 /* SuperUI */ = {
 			isa = PBXGroup;
 			children = (
+				8DAF42172A8601A800C5097F /* Image */,
 				8DD33B9B2A7041A300A34010 /* Toast */,
 			);
 			path = SuperUI;
@@ -619,6 +636,7 @@
 			children = (
 				8DD33C252A736DB000A34010 /* BannerData.swift */,
 				8DD33C312A7389E900A34010 /* ButtonData.swift */,
+				8DAF42152A85FF7C00C5097F /* SheetData.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -628,6 +646,7 @@
 			children = (
 				8DD33C2B2A7373DB00A34010 /* BannerCell.swift */,
 				8DD33C2F2A73889300A34010 /* DiscoveryButtonCell.swift */,
+				8DAF42112A85FBC300C5097F /* SheetGroupCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -644,6 +663,7 @@
 			isa = PBXGroup;
 			children = (
 				8DD33C342A7392A800A34010 /* DiscoveryButtonView.swift */,
+				8DAF42132A85FCDE00C5097F /* ItemTitleView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -932,7 +952,9 @@
 				8DEBED352A6C4F7A00303597 /* SplashController.swift in Sources */,
 				8DD33C222A73641500A34010 /* RoomController.swift in Sources */,
 				8DD33B9D2A7041B700A34010 /* SuperToast.swift in Sources */,
+				8DAF42122A85FBC300C5097F /* SheetGroupCell.swift in Sources */,
 				8D7E86772A6CFC79008580A9 /* BaseTitleController.swift in Sources */,
+				8DAF42162A85FF7C00C5097F /* SheetData.swift in Sources */,
 				8DD33B692A6F392400A34010 /* YJHollowPageControl.m in Sources */,
 				8DD33B6F2A6F392400A34010 /* YJBannerViewFooter.m in Sources */,
 				8D7E866E2A6CF007008580A9 /* SuperUIThemeExtension.swift in Sources */,
@@ -943,6 +965,7 @@
 				8DD33B862A6F7CC300A34010 /* ObservableMoyaExtension.swift in Sources */,
 				8DD33B9F2A706C4A00A34010 /* ExceptionHandleUtil.swift in Sources */,
 				8DD33B8C2A6F813200A34010 /* BaseCommon.swift in Sources */,
+				8DAF42142A85FCDE00C5097F /* ItemTitleView.swift in Sources */,
 				8DD33B6D2A6F392400A34010 /* YJBannerViewCollectionView.m in Sources */,
 				8DD33B4F2A6F34E100A34010 /* LoginHomeController.swift in Sources */,
 				8D7E86712A6CF505008580A9 /* BaseController.swift in Sources */,
@@ -952,6 +975,7 @@
 				8DD33B7A2A6F677700A34010 /* ParamUtil.swift in Sources */,
 				8DA405C62A6CD8FE0033F979 /* SuperDateUtil.swift in Sources */,
 				8DEBED312A6C4F7A00303597 /* AppDelegate.swift in Sources */,
+				8DAF42192A8601BB00C5097F /* SuperImageExtension.swift in Sources */,
 				8DD33BA22A70762B00A34010 /* DefaultRepository.swift in Sources */,
 				8DD33C1A2A7363B800A34010 /* MeController.swift in Sources */,
 				8DD33C262A736DB000A34010 /* BannerData.swift in Sources */,

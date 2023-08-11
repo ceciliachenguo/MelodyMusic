@@ -16,6 +16,7 @@ class DiscoveryController: BaseLogicController {
         
         tableView.register(BannerCell.self, forCellReuseIdentifier: Constants.CELL)
         tableView.register(DiscoveryButtonCell.self, forCellReuseIdentifier: DiscoveryButtonCell.IDENTITY_NAME)
+        tableView.register(SheetGroupCell.self, forCellReuseIdentifier: SheetGroupCell.NAME)
     }
     
     override func initDatum() {
@@ -35,8 +36,19 @@ class DiscoveryController: BaseLogicController {
                 
                 self?.datum.append(ButtonData())
                 
-                self?.tableView.reloadData()
+                self?.loadSheetData()
                 
+            }.disposed(by: rx.disposeBag)
+    }
+    
+    // Requesting discovery music sheet's data
+    func loadSheetData() {
+        DefaultRepository.shared
+            .sheets(size: VALUE12)
+            .subscribeSuccess{ [weak self] data in
+                self?.datum.append(SheetData(data.data!.data!))
+                
+                self?.tableView.reloadData()
             }.disposed(by: rx.disposeBag)
     }
     
@@ -47,6 +59,8 @@ class DiscoveryController: BaseLogicController {
     func typeForItemAtData(_ data: Any) -> MyStyle {
         if data is ButtonData {
             return .button
+        } else if data is SheetData {
+            return .sheet
         }
         return .banner
     }
@@ -64,6 +78,10 @@ extension DiscoveryController{
         case .button:
             let cell = tableView.dequeueReusableCell(withIdentifier: DiscoveryButtonCell.IDENTITY_NAME, for: indexPath) as! DiscoveryButtonCell
             cell.bind(data as! ButtonData)
+            return cell
+        case .sheet:
+            let cell = tableView.dequeueReusableCell(withIdentifier: SheetGroupCell.NAME, for: indexPath) as! SheetGroupCell
+            cell.bind(data as! SheetData)
             return cell
             
         default:

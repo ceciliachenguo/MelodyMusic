@@ -71,4 +71,13 @@ class ViewFactoryUtil {
         
         return r
     }
+    
+    static func smallDivider() -> UIView {
+        let r = UIView()
+        r.tg_width.equal(.fill)
+        r.tg_height.equal(0.5)
+        r.backgroundColor = .colorDivider
+        
+        return r
+    }
 }

@@ -80,4 +80,27 @@ class ViewFactoryUtil {
         
         return r
     }
+    
+    static func collectionView() -> UICollectionView {
+        let r = UICollectionView(frame: CGRect.zero, collectionViewLayout: collecionviewLayout())
+        r.backgroundColor = .clear
+        r.showsHorizontalScrollIndicator = false
+        r.showsVerticalScrollIndicator = false
+        
+        r.contentInsetAdjustmentBehavior = . never
+        
+        r.tg_width.equal(.fill)
+        r.tg_height.equal(.fill)
+        
+        return r
+    }
+    
+    static func collecionviewLayout() -> UICollectionViewFlowLayout {
+        let r = UICollectionViewFlowLayout()
+        r.sectionInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+        r.scrollDirection = .vertical
+        r.minimumLineSpacing = 0
+        r.minimumInteritemSpacing = 0
+        return r
+    }
 }

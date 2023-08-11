@@ -91,3 +91,9 @@ let VALUE_NO = -1
 let VALUE0 = 0
 let VALUE10 = 10
 let VALUE12 = 12
+
+
+let SCREEN_WIDTH:CGFloat = UIScreen.main.bounds.width
+
+let INPUT_SMALL = 30
+let INPUT_MEDDLE = 40

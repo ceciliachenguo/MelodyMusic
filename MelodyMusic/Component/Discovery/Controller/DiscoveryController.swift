@@ -17,6 +17,8 @@ class DiscoveryController: BaseLogicController {
         tableView.register(BannerCell.self, forCellReuseIdentifier: Constants.CELL)
         tableView.register(DiscoveryButtonCell.self, forCellReuseIdentifier: DiscoveryButtonCell.IDENTITY_NAME)
         tableView.register(SheetGroupCell.self, forCellReuseIdentifier: SheetGroupCell.NAME)
+        tableView.register(SongGroupCell.self, forCellReuseIdentifier: SongGroupCell.NAME)
+
     }
     
     override func initDatum() {
@@ -45,9 +47,18 @@ class DiscoveryController: BaseLogicController {
     func loadSheetData() {
         DefaultRepository.shared
             .sheets(size: VALUE12)
-            .subscribeSuccess{ [weak self] data in
+            .subscribeSuccess {[weak self] data in
                 self?.datum.append(SheetData(data.data!.data!))
                 
+                self?.loadSongData()
+                
+            }.disposed(by: rx.disposeBag)
+    }
+    
+    func loadSongData() {
+        DefaultRepository.shared.songs()
+            .subscribeSuccess {[weak self] data in
+                self?.datum.append(SongData(data.data!.data!))
                 self?.tableView.reloadData()
             }.disposed(by: rx.disposeBag)
     }
@@ -61,6 +72,8 @@ class DiscoveryController: BaseLogicController {
             return .button
         } else if data is SheetData {
             return .sheet
+        } else if data is SongData {
+            return .song
         }
         return .banner
     }
@@ -84,7 +97,10 @@ extension DiscoveryController{
             cell.bind(data as! SheetData)
             cell.delegate = self
             return cell
-            
+        case .song:
+            let cell = tableView.dequeueReusableCell(withIdentifier: SongGroupCell.NAME, for: indexPath) as! SongGroupCell
+            cell.bind(data as! SongData)
+            return cell
         default:
             let cell = tableView.dequeueReusableCell(withIdentifier: Constants.CELL, for: indexPath) as! BannerCell
             cell.bind(data as! BannerData)

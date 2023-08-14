@@ -8,5 +8,6 @@
 import Foundation
 
 class User {
-    
+    var nickname:String!
+    var icon:String!
 }

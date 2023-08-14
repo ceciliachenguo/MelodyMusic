@@ -44,6 +44,25 @@ class DefaultRepository {
             .mapObject((DetailResponse<Sheet>.self))
     }
     
+    
+    func songs() -> Observable<ListResponse<Song>> {
+        return moyaProvider
+                .rx
+                .request(.songs)
+                .asObservable()
+                .mapString()
+                .mapObject(ListResponse<Song>.self)
+    }
+    
+    func songDetail(_ data:String) -> Observable<DetailResponse<Song>> {
+        return moyaProvider
+                .rx
+                .request(.songDetail(data: data))
+                .asObservable()
+                .mapString()
+                .mapObject(DetailResponse<Song>.self)
+    }
+    
     private init() {
         var plugins:[PluginType] = []
         

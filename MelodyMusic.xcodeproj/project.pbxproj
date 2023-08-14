@@ -82,6 +82,9 @@
 		8DED454D2A8A71270025EC7F /* ImageViewKingfisherExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DED454C2A8A71270025EC7F /* ImageViewKingfisherExtension.swift */; };
 		8DED45502A8A71F60025EC7F /* SuperStringUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DED454F2A8A71F60025EC7F /* SuperStringUtil.swift */; };
 		8DED45522A8A751B0025EC7F /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DED45512A8A751B0025EC7F /* StringExtension.swift */; };
+		8DED45542A8A7C870025EC7F /* SongGroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DED45532A8A7C870025EC7F /* SongGroupCell.swift */; };
+		8DED45582A8A7E930025EC7F /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DED45572A8A7E930025EC7F /* Song.swift */; };
+		8DED455A2A8A80920025EC7F /* SongData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DED45592A8A80920025EC7F /* SongData.swift */; };
 		CEAC666C7A528C0B23B508BF /* Pods_MelodyMusic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F49BAF81D597800B0950D60 /* Pods_MelodyMusic.framework */; };
 /* End PBXBuildFile section */
 
@@ -196,6 +199,9 @@
 		8DED454C2A8A71270025EC7F /* ImageViewKingfisherExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewKingfisherExtension.swift; sourceTree = "<group>"; };
 		8DED454F2A8A71F60025EC7F /* SuperStringUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperStringUtil.swift; sourceTree = "<group>"; };
 		8DED45512A8A751B0025EC7F /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		8DED45532A8A7C870025EC7F /* SongGroupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongGroupCell.swift; sourceTree = "<group>"; };
+		8DED45572A8A7E930025EC7F /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
+		8DED45592A8A80920025EC7F /* SongData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongData.swift; sourceTree = "<group>"; };
 		8F49BAF81D597800B0950D60 /* Pods_MelodyMusic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MelodyMusic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -295,6 +301,7 @@
 		8DA405C12A6CD3300033F979 /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				8DED45552A8A7E7B0025EC7F /* Song */,
 				8DD33C1F2A7363FE00A34010 /* Room */,
 				8DD33C1B2A7363D300A34010 /* Feed */,
 				8DD33C172A7363A300A34010 /* Me */,
@@ -672,6 +679,7 @@
 				8DD33C252A736DB000A34010 /* BannerData.swift */,
 				8DD33C312A7389E900A34010 /* ButtonData.swift */,
 				8DAF42152A85FF7C00C5097F /* SheetData.swift */,
+				8DED45592A8A80920025EC7F /* SongData.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -683,6 +691,7 @@
 				8DD33C2F2A73889300A34010 /* DiscoveryButtonCell.swift */,
 				8DAF42112A85FBC300C5097F /* SheetGroupCell.swift */,
 				8DAF421C2A8607F400C5097F /* SheetCell.swift */,
+				8DED45532A8A7C870025EC7F /* SongGroupCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -775,6 +784,22 @@
 				8DED454F2A8A71F60025EC7F /* SuperStringUtil.swift */,
 			);
 			path = String;
+			sourceTree = "<group>";
+		};
+		8DED45552A8A7E7B0025EC7F /* Song */ = {
+			isa = PBXGroup;
+			children = (
+				8DED45562A8A7E820025EC7F /* Model */,
+			);
+			path = Song;
+			sourceTree = "<group>";
+		};
+		8DED45562A8A7E820025EC7F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8DED45572A8A7E930025EC7F /* Song.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		A5D514035FDDD657CEC6A809 /* Pods */ = {
@@ -1026,6 +1051,7 @@
 				8DEBED312A6C4F7A00303597 /* AppDelegate.swift in Sources */,
 				8DAF42192A8601BB00C5097F /* SuperImageExtension.swift in Sources */,
 				8DD33BA22A70762B00A34010 /* DefaultRepository.swift in Sources */,
+				8DED45582A8A7E930025EC7F /* Song.swift in Sources */,
 				8DD33C1A2A7363B800A34010 /* MeController.swift in Sources */,
 				8DD33C262A736DB000A34010 /* BannerData.swift in Sources */,
 				8DD33B6A2A6F392400A34010 /* YJAbstractDotView.m in Sources */,
@@ -1039,6 +1065,8 @@
 				8DD33B4B2A6F2B7E00A34010 /* MainController.swift in Sources */,
 				8DED454D2A8A71270025EC7F /* ImageViewKingfisherExtension.swift in Sources */,
 				8D7E867C2A6D0042008580A9 /* TermServiceDialogController.swift in Sources */,
+				8DED45542A8A7C870025EC7F /* SongGroupCell.swift in Sources */,
+				8DED455A2A8A80920025EC7F /* SongData.swift in Sources */,
 				8DD33B932A6F83B800A34010 /* DetailResponse.swift in Sources */,
 				8DD33B7F2A6F748A00A34010 /* PageResponse.swift in Sources */,
 				8DD33B6E2A6F392400A34010 /* YJBannerViewCell.m in Sources */,

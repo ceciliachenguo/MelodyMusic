@@ -85,6 +85,7 @@
 		8DED45542A8A7C870025EC7F /* SongGroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DED45532A8A7C870025EC7F /* SongGroupCell.swift */; };
 		8DED45582A8A7E930025EC7F /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DED45572A8A7E930025EC7F /* Song.swift */; };
 		8DED455A2A8A80920025EC7F /* SongData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DED45592A8A80920025EC7F /* SongData.swift */; };
+		8DED455C2A8A83640025EC7F /* DiscoverySongCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DED455B2A8A83640025EC7F /* DiscoverySongCell.swift */; };
 		CEAC666C7A528C0B23B508BF /* Pods_MelodyMusic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F49BAF81D597800B0950D60 /* Pods_MelodyMusic.framework */; };
 /* End PBXBuildFile section */
 
@@ -202,6 +203,7 @@
 		8DED45532A8A7C870025EC7F /* SongGroupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongGroupCell.swift; sourceTree = "<group>"; };
 		8DED45572A8A7E930025EC7F /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
 		8DED45592A8A80920025EC7F /* SongData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongData.swift; sourceTree = "<group>"; };
+		8DED455B2A8A83640025EC7F /* DiscoverySongCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverySongCell.swift; sourceTree = "<group>"; };
 		8F49BAF81D597800B0950D60 /* Pods_MelodyMusic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MelodyMusic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -692,6 +694,7 @@
 				8DAF42112A85FBC300C5097F /* SheetGroupCell.swift */,
 				8DAF421C2A8607F400C5097F /* SheetCell.swift */,
 				8DED45532A8A7C870025EC7F /* SongGroupCell.swift */,
+				8DED455B2A8A83640025EC7F /* DiscoverySongCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -1031,6 +1034,7 @@
 				8DD33B912A6F836100A34010 /* BaseResponse.swift in Sources */,
 				8DD33C1E2A7363EC00A34010 /* FeedController.swift in Sources */,
 				8DD33C322A7389E900A34010 /* ButtonData.swift in Sources */,
+				8DED455C2A8A83640025EC7F /* DiscoverySongCell.swift in Sources */,
 				8DD33B6B2A6F392400A34010 /* YJAnimatedDotView.m in Sources */,
 				8DAF42202A8608CB00C5097F /* ViewCornerExtension.swift in Sources */,
 				8DD33B862A6F7CC300A34010 /* ObservableMoyaExtension.swift in Sources */,

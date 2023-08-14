@@ -49,7 +49,7 @@ class ViewFactoryUtil {
     }
     
     static func tableView() -> UITableView {
-        let r = UITableView()
+        let r = QMUITableView()
         r.backgroundColor = .clear
         
         //get rid of separators when there is no content is cells

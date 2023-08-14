@@ -7,7 +7,7 @@
 
 import Foundation
 
-class User {
+class User: BaseCommon {
     var nickname:String!
     var icon:String!
 }

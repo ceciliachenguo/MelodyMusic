@@ -8,12 +8,17 @@
 import UIKit
 import TangramKit
 
+protocol SheetGroupDelegate:NSObjectProtocol{
+    func sheetClick(data:Sheet)
+}
+
 class SheetGroupCell: BaseTableViewCell {
     static let NAME = "SheetGroupCell"
     var datum:Array<Sheet> = []
     var cellWidth:CGFloat!
     var cellHeight:CGFloat!
     var spanCount:CGFloat = 3
+    weak open var delegate: SheetGroupDelegate?
 
     override func initViews() {
         super.initViews()
@@ -72,6 +77,12 @@ extension SheetGroupCell: UICollectionViewDataSource, UICollectionViewDelegate {
         
         cell.bind(data)
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if let d = delegate {
+            d.sheetClick(data: datum[indexPath.row])
+        }
     }
     
 }

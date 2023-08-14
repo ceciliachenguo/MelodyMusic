@@ -82,6 +82,7 @@ extension DiscoveryController{
         case .sheet:
             let cell = tableView.dequeueReusableCell(withIdentifier: SheetGroupCell.NAME, for: indexPath) as! SheetGroupCell
             cell.bind(data as! SheetData)
+            cell.delegate = self
             return cell
             
         default:
@@ -95,6 +96,14 @@ extension DiscoveryController{
         }
     }
 }
+
+// 实现歌单组协议
+extension DiscoveryController:SheetGroupDelegate{
+    func sheetClick(data: Sheet) {
+        print("SheetDetailController sheetClick \(data.title)")
+    }
+}
+
 
 #Preview {
     DiscoveryController()

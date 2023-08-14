@@ -18,7 +18,7 @@ class ViewFactoryUtil {
         r.tg_width.equal(.fill)
         r.tg_height.equal(BUTTON_MEDIUM)
         r.backgroundColor = .colorPrimary
-        r.cornerRadius = SMALL_RADIUS
+        r.layer.cornerRadius = SMALL_RADIUS
         r.tintColor = .colorLightWhite
         r.setTitleColor(.colorLightWhite, for: .normal)
         return r

@@ -18,6 +18,7 @@ class SheetCell: BaseCollectionViewCell {
     }
     
     func bind(_ data: Sheet) {
+        iconView.show(data.icon)
         titleView.text = data.title
     }
     

@@ -34,6 +34,12 @@ target 'MelodyMusic' do
   
   #https:https://github.com/jdg/MBProgressHUD
   pod 'MBProgressHUD'
+  
+  #https:https://github.com/onevcat/Kingfisher
+  pod "Kingfisher"
+  
+  #https://github.com/SwifterSwift/SwifterSwift
+  pod 'SwifterSwift'
 
   post_install do |installer|
       installer.generated_projects.each do |project|

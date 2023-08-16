@@ -7,6 +7,7 @@
 
 import UIKit
 import TangramKit
+import SwiftEventBus
 
 class SongGroupCell: BaseTableViewCell {
     static let NAME = "SongGroupCell"
@@ -74,4 +75,7 @@ extension SongGroupCell:QMUITableViewDelegate,QMUITableViewDataSource{
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        SwiftEventBus.post(Constants.EVENT_SONG_CLICK, sender: data.datum[indexPath.row])
+    }
 }

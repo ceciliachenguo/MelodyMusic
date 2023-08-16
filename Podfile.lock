@@ -337,6 +337,7 @@ PODS:
   - SwifterSwift/StoreKit (5.2.0)
   - SwifterSwift/SwiftStdlib (5.2.0)
   - SwifterSwift/UIKit (5.2.0)
+  - SwiftEventBus (5.0.0)
   - TangramKit (1.4.2)
 
 DEPENDENCIES:
@@ -350,6 +351,7 @@ DEPENDENCIES:
   - R.swift
   - SDWebImage
   - SwifterSwift
+  - SwiftEventBus
   - TangramKit
 
 SPEC REPOS:
@@ -366,6 +368,7 @@ SPEC REPOS:
     - RxSwift
     - SDWebImage
     - SwifterSwift
+    - SwiftEventBus
     - TangramKit
 
 SPEC CHECKSUMS:
@@ -381,8 +384,9 @@ SPEC CHECKSUMS:
   RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
   SDWebImage: 750adf017a315a280c60fde706ab1e552a3ae4e9
   SwifterSwift: 334181863c416882d97b7a60c05054d9e4d799e2
+  SwiftEventBus: b30f617a6aca5a9336464b4d3f5931034762f2d5
   TangramKit: aad3ab8f9617418c9da96d59cddd71134ae8af83
 
-PODFILE CHECKSUM: e660251fd716ce8819412c41e49dd3c3f8f7ddd4
+PODFILE CHECKSUM: b4c1552a7c01cc62de054c9e140672005aef617f
 
 COCOAPODS: 1.12.1

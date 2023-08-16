@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwiftEventBus
 
 class DiscoveryController: BaseLogicController {
 
@@ -65,6 +66,17 @@ class DiscoveryController: BaseLogicController {
     
     func processAdClick(_ data: Ad) {
         print("DiscoveryController processAdClick \(data.title)")
+    }
+    
+    override func initListeners() {
+        super.initListeners()
+        SwiftEventBus.onMainThread(self, name: Constants.EVENT_SONG_CLICK) {[weak self] data in
+            self?.processSongClick(data?.object as! Song)
+        }
+    }
+    
+    func processSongClick(_ data:Song) {
+        print("DiscoveryController processSongClick \(data.title)")
     }
     
     func typeForItemAtData(_ data: Any) -> MyStyle {

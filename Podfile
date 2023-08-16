@@ -40,6 +40,9 @@ target 'MelodyMusic' do
   
   #https://github.com/SwifterSwift/SwifterSwift
   pod 'SwifterSwift'
+  
+  # https:https://github.com/cesarferreira/SwiftEventBus
+  pod "SwiftEventBus"
 
   post_install do |installer|
       installer.generated_projects.each do |project|

@@ -43,6 +43,9 @@ target 'MelodyMusic' do
   
   # https:https://github.com/cesarferreira/SwiftEventBus
   pod "SwiftEventBus"
+  
+  #https:https://github.com/CoderMJLee/MJRefresh
+  pod 'MJRefresh'
 
   post_install do |installer|
       installer.generated_projects.each do |project|

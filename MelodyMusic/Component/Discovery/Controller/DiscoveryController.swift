@@ -10,10 +10,21 @@ import SwiftEventBus
 
 class DiscoveryController: BaseLogicController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func initViews() {
+        super.initViews()
 
         initTableViewSafeArea()
+        
+        let header=MJRefreshNormalHeader {
+            [weak self] in
+            self?.loadData()
+        }
+
+        header.stateLabel?.isHidden = true
+
+        header.lastUpdatedTimeLabel?.isHidden = true
+        tableView.mj_header=header
+
         
         tableView.register(BannerCell.self, forCellReuseIdentifier: Constants.CELL)
         tableView.register(DiscoveryButtonCell.self, forCellReuseIdentifier: DiscoveryButtonCell.IDENTITY_NAME)
@@ -22,10 +33,18 @@ class DiscoveryController: BaseLogicController {
 
     }
     
+    func startRefresh() {
+        tableView.mj_header!.beginRefreshing()
+    }
+    
+    func endRefresh() {
+        tableView.mj_header!.endRefreshing()
+    }
+    
     override func initDatum() {
         super.initDatum()
         
-        loadData()
+        startRefresh()
     }
     
     func loadData() {
@@ -59,6 +78,8 @@ class DiscoveryController: BaseLogicController {
     func loadSongData() {
         DefaultRepository.shared.songs()
             .subscribeSuccess {[weak self] data in
+                self?.endRefresh()
+                
                 self?.datum.append(SongData(data.data!.data!))
                 self?.tableView.reloadData()
             }.disposed(by: rx.disposeBag)

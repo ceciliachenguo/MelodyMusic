@@ -12,3 +12,5 @@
 #import "SDWebImage/UIImageView+WebCache.h"
 
 #import <MBProgressHUD/MBProgressHUD.h>
+
+#import <MJRefresh/MJRefresh.h>

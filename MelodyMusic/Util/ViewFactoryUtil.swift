@@ -48,6 +48,18 @@ class ViewFactoryUtil {
         return r
     }
     
+    static func secondHalfFilletSmallButton() -> QMUIButton {
+        let r = QMUIButton()
+        r.titleLabel?.font = UIFont.systemFont(ofSize: TEXT_SMALL)
+        r.tg_width.equal(90)
+        r.tg_height.equal(BUTTON_SMALL)
+        r.tintColor = .black80
+        r.border(.black80)
+        r.corner(BUTTON_SMALL_RADIUS)
+        r.setTitleColor(.black80, for: .normal)
+        return r
+    }
+    
     static func tableView() -> UITableView {
         let r = QMUITableView()
         r.backgroundColor = .clear

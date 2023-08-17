@@ -30,7 +30,7 @@ class DiscoveryController: BaseLogicController {
         tableView.register(DiscoveryButtonCell.self, forCellReuseIdentifier: DiscoveryButtonCell.IDENTITY_NAME)
         tableView.register(SheetGroupCell.self, forCellReuseIdentifier: SheetGroupCell.NAME)
         tableView.register(SongGroupCell.self, forCellReuseIdentifier: SongGroupCell.NAME)
-
+        tableView.register(DiscoveryFooterCell.self, forCellReuseIdentifier: DiscoveryFooterCell.NAME)
     }
     
     func startRefresh() {
@@ -81,6 +81,9 @@ class DiscoveryController: BaseLogicController {
                 self?.endRefresh()
                 
                 self?.datum.append(SongData(data.data!.data!))
+                
+                self?.datum.append(FooterData())
+                
                 self?.tableView.reloadData()
             }.disposed(by: rx.disposeBag)
     }
@@ -93,6 +96,29 @@ class DiscoveryController: BaseLogicController {
         super.initListeners()
         SwiftEventBus.onMainThread(self, name: Constants.EVENT_SONG_CLICK) {[weak self] data in
             self?.processSongClick(data?.object as! Song)
+        }
+        SwiftEventBus.onMainThread(self, name: Constants.CLICK_EVENT) {[weak self] sender in
+            let data = sender?.object as! MyStyle
+            
+            self?.processClick(data)
+        }
+    }
+    
+    func processClick(_ data:MyStyle) {
+        switch data {
+        case .refresh:
+            autoRefresh()
+        default:
+            break
+        }
+    }
+    
+    func autoRefresh() {
+        let indexPath = IndexPath(item: 0, section: 0)
+        tableView.scrollToRow(at: indexPath, at: .top, animated: true)
+        
+        DispatchQueue.main.asyncAfter(deadline: .now()+0.3) {[weak self] in
+            self?.startRefresh()
         }
     }
     
@@ -107,6 +133,8 @@ class DiscoveryController: BaseLogicController {
             return .sheet
         } else if data is SongData {
             return .song
+        } else if data is FooterData {
+            return .footer
         }
         return .banner
     }
@@ -133,6 +161,9 @@ extension DiscoveryController{
         case .song:
             let cell = tableView.dequeueReusableCell(withIdentifier: SongGroupCell.NAME, for: indexPath) as! SongGroupCell
             cell.bind(data as! SongData)
+            return cell
+        case .footer:
+            let cell = tableView.dequeueReusableCell(withIdentifier: DiscoveryFooterCell.NAME, for: indexPath)
             return cell
         default:
             let cell = tableView.dequeueReusableCell(withIdentifier: Constants.CELL, for: indexPath) as! BannerCell

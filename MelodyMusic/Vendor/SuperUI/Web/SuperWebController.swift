@@ -60,7 +60,7 @@ class SuperWebController: BaseTitleController {
         if let _ = object as? WKWebView {
             if keyPath == SuperWebController.TITLE {
                 self.title = webView.title
-            }else if keyPath == "estimatedProgress"{
+            } else if keyPath == "estimatedProgress"{
                 //进度
                 
                 //0~1
@@ -70,7 +70,7 @@ class SuperWebController: BaseTitleController {
                 if progress < 1 {
                     progressView.show()
                     progressView.alpha = 1
-                }else{
+                } else {
                     UIView.animate(withDuration: 0.35, delay: 0.15) {
                         self.progressView.alpha = 0
                     } completion: { finished in

@@ -39,7 +39,7 @@ class SuperToolbarView: TGRelativeLayout {
     
     @discardableResult
     func addCenterView(_ data:UIView) -> SuperToolbarView {
-//        titleView.hide()
+        titleView.hide()
         
         centerContainer.addSubview(data)
         return self

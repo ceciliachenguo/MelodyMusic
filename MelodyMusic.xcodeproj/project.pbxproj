@@ -73,6 +73,7 @@
 		8DD33C302A73889300A34010 /* DiscoveryButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD33C2F2A73889300A34010 /* DiscoveryButtonCell.swift */; };
 		8DD33C322A7389E900A34010 /* ButtonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD33C312A7389E900A34010 /* ButtonData.swift */; };
 		8DD33C352A7392A800A34010 /* DiscoveryButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD33C342A7392A800A34010 /* DiscoveryButtonView.swift */; };
+		8DDB15672A91602600B25482 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDB15662A91602600B25482 /* ViewExtension.swift */; };
 		8DEBED312A6C4F7A00303597 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEBED302A6C4F7A00303597 /* AppDelegate.swift */; };
 		8DEBED352A6C4F7A00303597 /* SplashController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEBED342A6C4F7A00303597 /* SplashController.swift */; };
 		8DEBED3A2A6C4F7B00303597 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DEBED392A6C4F7B00303597 /* Assets.xcassets */; };
@@ -190,6 +191,7 @@
 		8DD33C2F2A73889300A34010 /* DiscoveryButtonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveryButtonCell.swift; sourceTree = "<group>"; };
 		8DD33C312A7389E900A34010 /* ButtonData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonData.swift; sourceTree = "<group>"; };
 		8DD33C342A7392A800A34010 /* DiscoveryButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveryButtonView.swift; sourceTree = "<group>"; };
+		8DDB15662A91602600B25482 /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
 		8DEBED2D2A6C4F7A00303597 /* MelodyMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MelodyMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DEBED302A6C4F7A00303597 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8DEBED342A6C4F7A00303597 /* SplashController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashController.swift; sourceTree = "<group>"; };
@@ -374,6 +376,7 @@
 			isa = PBXGroup;
 			children = (
 				8DAF421F2A8608CB00C5097F /* ViewCornerExtension.swift */,
+				8DDB15662A91602600B25482 /* ViewExtension.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1092,6 +1095,7 @@
 				8DD33B932A6F83B800A34010 /* DetailResponse.swift in Sources */,
 				8DD33B7F2A6F748A00A34010 /* PageResponse.swift in Sources */,
 				8DD33B6E2A6F392400A34010 /* YJBannerViewCell.m in Sources */,
+				8DDB15672A91602600B25482 /* ViewExtension.swift in Sources */,
 				8DD33B712A6F53D900A34010 /* Config.swift in Sources */,
 				8DD33B782A6F650400A34010 /* User.swift in Sources */,
 				8DD33B952A6F846F00A34010 /* Meta.swift in Sources */,

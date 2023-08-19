@@ -11,6 +11,15 @@ class BaseTitleController: BaseLogicController {
 
     override func initLinearLayoutSafeArea() {
         super.initLinearLayoutSafeArea()
+        prepareInitToolbar()
+    }
+    
+    override func initRelativeLayoutSafeArea() {
+        super.initRelativeLayoutSafeArea()
+        prepareInitToolbar()
+    }
+    
+    func prepareInitToolbar() {
         if isAddToolBar() {
             initToolbar()
         }

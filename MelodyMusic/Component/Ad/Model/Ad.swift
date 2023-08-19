@@ -10,5 +10,5 @@ import Foundation
 class Ad: BaseCommon {
     var title:String!
     var icon:String!
-    var url:String!
+    var uri:String!
 }

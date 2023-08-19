@@ -75,6 +75,7 @@
 		8DD33C352A7392A800A34010 /* DiscoveryButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD33C342A7392A800A34010 /* DiscoveryButtonView.swift */; };
 		8DDB15672A91602600B25482 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDB15662A91602600B25482 /* ViewExtension.swift */; };
 		8DDB15692A91619C00B25482 /* BaseMainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDB15682A91619C00B25482 /* BaseMainController.swift */; };
+		8DDB156E2A91826000B25482 /* SuperWebController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDB156D2A91826000B25482 /* SuperWebController.swift */; };
 		8DEBED312A6C4F7A00303597 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEBED302A6C4F7A00303597 /* AppDelegate.swift */; };
 		8DEBED352A6C4F7A00303597 /* SplashController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEBED342A6C4F7A00303597 /* SplashController.swift */; };
 		8DEBED3A2A6C4F7B00303597 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DEBED392A6C4F7B00303597 /* Assets.xcassets */; };
@@ -194,6 +195,7 @@
 		8DD33C342A7392A800A34010 /* DiscoveryButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveryButtonView.swift; sourceTree = "<group>"; };
 		8DDB15662A91602600B25482 /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
 		8DDB15682A91619C00B25482 /* BaseMainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseMainController.swift; sourceTree = "<group>"; };
+		8DDB156D2A91826000B25482 /* SuperWebController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperWebController.swift; sourceTree = "<group>"; };
 		8DEBED2D2A6C4F7A00303597 /* MelodyMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MelodyMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DEBED302A6C4F7A00303597 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8DEBED342A6C4F7A00303597 /* SplashController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashController.swift; sourceTree = "<group>"; };
@@ -579,6 +581,7 @@
 		8DD33B9A2A70414200A34010 /* SuperUI */ = {
 			isa = PBXGroup;
 			children = (
+				8DDB156C2A91824800B25482 /* Web */,
 				8D7944BC2A912A5000B0B6D9 /* Toolbar */,
 				8DAF42212A86099900C5097F /* Config */,
 				8DAF421E2A8608B900C5097F /* View */,
@@ -738,6 +741,14 @@
 				8DAF42132A85FCDE00C5097F /* ItemTitleView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		8DDB156C2A91824800B25482 /* Web */ = {
+			isa = PBXGroup;
+			children = (
+				8DDB156D2A91826000B25482 /* SuperWebController.swift */,
+			);
+			path = Web;
 			sourceTree = "<group>";
 		};
 		8DEBED242A6C4F7A00303597 = {
@@ -1072,6 +1083,7 @@
 				8D7E86712A6CF505008580A9 /* BaseController.swift in Sources */,
 				8D7E86752A6CF5E7008580A9 /* BaseLogicController.swift in Sources */,
 				8DD33C352A7392A800A34010 /* DiscoveryButtonView.swift in Sources */,
+				8DDB156E2A91826000B25482 /* SuperWebController.swift in Sources */,
 				8DED45502A8A71F60025EC7F /* SuperStringUtil.swift in Sources */,
 				8DD33B672A6F392400A34010 /* UIView+YJBannerViewExt.m in Sources */,
 				8DD33B7A2A6F677700A34010 /* ParamUtil.swift in Sources */,

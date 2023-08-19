@@ -89,7 +89,13 @@ class DiscoveryController: BaseMainController {
     }
     
     func processAdClick(_ data: Ad) {
-        print("DiscoveryController processAdClick \(data.title)")
+        if let uri = data.uri {
+            if uri.starts(with: "http") {
+                SuperWebController.start(navigationController!,
+                                         title: data.title,
+                                         uri: data.uri)
+            }
+        }
     }
     
     override func initListeners() {

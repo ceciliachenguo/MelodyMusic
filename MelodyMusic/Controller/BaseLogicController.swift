@@ -132,6 +132,10 @@ class BaseLogicController: BaseCommonController {
         navigationController?.navigationBar.isHidden = true
     }
     
+    func finish() {
+        navigationController?.popViewController(animated: true)
+    }
+    
 }
 
 //MARK: - TableView data source and delegate

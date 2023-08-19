@@ -18,6 +18,10 @@ class DiscoveryController: BaseTitleController {
         
         title = R.string.localizable.discovery()
         
+        addLeftImageButton(R.image.menu()!)
+
+        addRightImageButton(R.image.mic()!)
+        
         let header=MJRefreshNormalHeader {
             [weak self] in
             self?.loadData()
@@ -183,7 +187,8 @@ extension DiscoveryController{
 // 实现歌单组协议
 extension DiscoveryController:SheetGroupDelegate{
     func sheetClick(data: Sheet) {
-        print("SheetDetailController sheetClick \(data.title)")
+//        print("SheetDetailController sheetClick \(data.title)")
+        navigationController?.pushViewController(LoginHomeController())
     }
 }
 

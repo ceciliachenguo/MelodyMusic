@@ -31,40 +31,40 @@ class SuperToolbarView: TGRelativeLayout {
         addSubview(rightContainer)
     }
     
-//    @discardableResult
-//    func addLeftItem(_ data:UIView) -> SuperToolbarView {
-//        leftContainer.addSubview(data)
-//        return self
-//    }
+    @discardableResult
+    func addLeftItem(_ data:UIView) -> SuperToolbarView {
+        leftContainer.addSubview(data)
+        return self
+    }
     
-//    @discardableResult
-//    func addCenterView(_ data:UIView) -> SuperToolbarView {
+    @discardableResult
+    func addCenterView(_ data:UIView) -> SuperToolbarView {
 //        titleView.hide()
-//        
-//        centerContainer.addSubview(data)
-//        return self
-//    }
+        
+        centerContainer.addSubview(data)
+        return self
+    }
     
-//    @discardableResult
-//    func addRightItem(_ data:UIView) -> SuperToolbarView {
-//        rightContainer.addSubview(data)
-//        return self
-//    }
+    @discardableResult
+    func addRightItem(_ data:UIView) -> SuperToolbarView {
+        rightContainer.addSubview(data)
+        return self
+    }
     
-//    @discardableResult
-//    func setToolbarLight() -> SuperToolbarView {
-//        titleView.textColor = .colorLightWhite
-//        
-//        for it in leftContainer.subviews {
-//            it.tintColor = .colorLightWhite
-//        }
-//        
-//        for it in rightContainer.subviews {
-//            it.tintColor = .colorLightWhite
-//        }
-//        
-//        return self
-//    }
+    @discardableResult
+    func setToolbarLight() -> SuperToolbarView {
+        titleView.textColor = .colorLightWhite
+        
+        for it in leftContainer.subviews {
+            it.tintColor = .colorLightWhite
+        }
+        
+        for it in rightContainer.subviews {
+            it.tintColor = .colorLightWhite
+        }
+        
+        return self
+    }
     
     lazy var leftContainer: TGLinearLayout = {
         let r = TGLinearLayout(.horz)

@@ -60,6 +60,16 @@ class ViewFactoryUtil {
         return r
     }
     
+    static func button(image:UIImage) -> QMUIButton {
+        let r = QMUIButton()
+        r.adjustsImageTintColorAutomatically = true
+        r.tg_width.equal(30)
+        r.tg_height.equal(30)
+        r.tintColor = .colorOnSurface
+        r.setImage(image, for: .normal)
+        return r
+    }
+    
     static func tableView() -> UITableView {
         let r = QMUITableView()
         r.backgroundColor = .clear

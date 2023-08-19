@@ -7,11 +7,11 @@
 
 import UIKit
 
-class LoginHomeController: BaseLogicController {
+class LoginHomeController: BaseTitleController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        setBackgroundColor(.blue)
+        initLinearLayoutSafeArea()
     }
 
 }

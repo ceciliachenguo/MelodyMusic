@@ -7,12 +7,11 @@
 
 import UIKit
 
-class VideoController: BaseLogicController {
+class VideoController: BaseMainController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        setBackgroundColor(.green.withAlphaComponent(0.3))
+    override func initViews() {
+        super.initViews()
+        initLinearLayoutSafeArea()
     }
     
 }

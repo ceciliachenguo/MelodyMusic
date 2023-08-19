@@ -7,12 +7,10 @@
 
 import UIKit
 
-class MeController: BaseLogicController {
+class MeController: BaseMainController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        setBackgroundColor(.purple.withAlphaComponent(0.3))
+    override func initViews() {
+        super.initViews()
+        initLinearLayoutSafeArea()
     }
-
 }

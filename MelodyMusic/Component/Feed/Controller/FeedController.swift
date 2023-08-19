@@ -7,12 +7,10 @@
 
 import UIKit
 
-class FeedController: BaseLogicController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        setBackgroundColor(.systemPink.withAlphaComponent(0.3))
+class FeedController: BaseMainController {
+    override func initViews() {
+        super.initViews()
+        initLinearLayoutSafeArea()
     }
 
 }

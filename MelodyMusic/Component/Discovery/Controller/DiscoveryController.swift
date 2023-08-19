@@ -8,12 +8,15 @@
 import UIKit
 import SwiftEventBus
 
-class DiscoveryController: BaseLogicController {
+class DiscoveryController: BaseTitleController {
 
     override func initViews() {
         super.initViews()
+        setBackgroundColor(.colorBackgroundLight)
 
         initTableViewSafeArea()
+        
+        title = R.string.localizable.discovery()
         
         let header=MJRefreshNormalHeader {
             [weak self] in

@@ -27,6 +27,8 @@ class BaseLogicController: BaseCommonController {
         return result
     }()
     
+    
+    
   /// initialize RelativeLayout container，4 borders are within the safe area
     func initRelativeLayoutSafeArea() {
         initLinearLayout()
@@ -126,6 +128,8 @@ class BaseLogicController: BaseCommonController {
         
         //default background color
         setBackgroundColor(.colorBackground)
+        
+        navigationController?.navigationBar.isHidden = true
     }
     
 }

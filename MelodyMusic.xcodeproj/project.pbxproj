@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D7944BE2A912A7100B0B6D9 /* SuperToolbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7944BD2A912A7100B0B6D9 /* SuperToolbarView.swift */; };
 		8D7E86632A6CE18F008580A9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8D7E86652A6CE18F008580A9 /* InfoPlist.strings */; };
 		8D7E86692A6CE5A1008580A9 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7E86682A6CE5A1008580A9 /* R.generated.swift */; };
 		8D7E866C2A6CED2E008580A9 /* SuperUIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7E866B2A6CED2E008580A9 /* SuperUIColorExtension.swift */; };
@@ -111,6 +112,7 @@
 /* Begin PBXFileReference section */
 		0C2BD0C475118F21AFA06524 /* Pods-MelodyMusic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MelodyMusic.release.xcconfig"; path = "Target Support Files/Pods-MelodyMusic/Pods-MelodyMusic.release.xcconfig"; sourceTree = "<group>"; };
 		309120CF9AD7639157F05755 /* Pods-MelodyMusic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MelodyMusic.debug.xcconfig"; path = "Target Support Files/Pods-MelodyMusic/Pods-MelodyMusic.debug.xcconfig"; sourceTree = "<group>"; };
+		8D7944BD2A912A7100B0B6D9 /* SuperToolbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperToolbarView.swift; sourceTree = "<group>"; };
 		8D7E86642A6CE18F008580A9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8D7E86662A6CE191008580A9 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		8D7E86682A6CE5A1008580A9 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
@@ -237,6 +239,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8D7944BC2A912A5000B0B6D9 /* Toolbar */ = {
+			isa = PBXGroup;
+			children = (
+				8D7944BD2A912A7100B0B6D9 /* SuperToolbarView.swift */,
+			);
+			path = Toolbar;
+			sourceTree = "<group>";
+		};
 		8D7E866A2A6CECFF008580A9 /* Config */ = {
 			isa = PBXGroup;
 			children = (
@@ -564,6 +574,7 @@
 		8DD33B9A2A70414200A34010 /* SuperUI */ = {
 			isa = PBXGroup;
 			children = (
+				8D7944BC2A912A5000B0B6D9 /* Toolbar */,
 				8DAF42212A86099900C5097F /* Config */,
 				8DAF421E2A8608B900C5097F /* View */,
 				8DAF42172A8601A800C5097F /* Image */,
@@ -1049,6 +1060,7 @@
 				8DD33B8C2A6F813200A34010 /* BaseCommon.swift in Sources */,
 				8DAF42142A85FCDE00C5097F /* ItemTitleView.swift in Sources */,
 				8DAF421B2A86064E00C5097F /* BaseCollectionViewCell.swift in Sources */,
+				8D7944BE2A912A7100B0B6D9 /* SuperToolbarView.swift in Sources */,
 				8DD33B6D2A6F392400A34010 /* YJBannerViewCollectionView.m in Sources */,
 				8DD33B4F2A6F34E100A34010 /* LoginHomeController.swift in Sources */,
 				8D7E86712A6CF505008580A9 /* BaseController.swift in Sources */,

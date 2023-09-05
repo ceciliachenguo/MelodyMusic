@@ -99,7 +99,6 @@ class SuperSettingView: TGLinearLayout {
     
     lazy var titleView: UILabel = {
         let result=UILabel()
-        //fill:暂用剩下所有空间
         result.tg_width.equal(.fill)
         result.tg_height.equal(.wrap)
         result.font = UIFont.systemFont(ofSize: TEXT_LARGE)

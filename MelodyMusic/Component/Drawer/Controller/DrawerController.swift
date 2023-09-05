@@ -20,6 +20,9 @@ class DrawerController: BaseLogicController {
         initUserView()
         initRecordView()
         initMessageMenu()
+        initShopMenu()
+        initOtherMenu()
+        initAboutMenu()
     }
     
     func initUserView() {
@@ -214,5 +217,156 @@ class DrawerController: BaseLogicController {
         return result
     }()
 
+    //MARK: - 创建控件 商城
+    func initShopMenu() {
+        let itemContainer=TGLinearLayout(.vert)
+        itemContainer.tg_width.equal(.fill)
+        itemContainer.tg_height.equal(.wrap)
+        itemContainer.backgroundColor = .colorDivider
+        itemContainer.corner()
+        itemContainer.tg_space = 0.5
+        contentContainer.addSubview(itemContainer)
+        
+        //商城
+        var itemView = SuperSettingView.smallWithIcon(icon: R.image.scan()!, title: R.string.localizable.mall()) {[weak self] data in
+            self?.closeDrawer()
+//            self?.startController(ProductController.self)
+        }
+        itemContainer.addSubview(itemView)
+        
+        //我的订单
+        itemView = SuperSettingView.smallWithIcon(icon: R.image.scan()!, title: R.string.localizable.myOrder()) {[weak self] data in
+            self?.closeDrawer()
+//            self?.loginAfter {
+//                self?.startController(OrderController.self)
+//            }
+        }
+        itemContainer.addSubview(itemView)
+        
+        //购物车
+        itemView = SuperSettingView.smallWithIcon(icon: R.image.shopCart()!, title: R.string.localizable.shopCart()) {[weak self] data in
+            self?.closeDrawer()
+//            self?.loginAfter {
+//                self?.startController(CartController.self)
+//            }
+        }
+        itemContainer.addSubview(itemView)
+        
+        //收货地址
+        itemView = SuperSettingView.smallWithIcon(icon: R.image.shopCart()!, title: R.string.localizable.receivingAddress()) {[weak self] data in
+            self?.closeDrawer()
+//            self?.loginAfter {
+//                self?.startController(AddressController.self)
+//            }
+        }
+        itemContainer.addSubview(itemView)
+    }
+    
+    //MARK: - 创建控件 其他
+    func initOtherMenu() {
+        let itemContainer=TGLinearLayout(.vert)
+        itemContainer.tg_width.equal(.fill)
+        itemContainer.tg_height.equal(.wrap)
+        itemContainer.backgroundColor = .colorDivider
+        itemContainer.corner()
+        itemContainer.tg_space = 0.5
+        contentContainer.addSubview(itemContainer)
+        
+        //标题
+        let groupTitle = QMUILabel()
+        groupTitle.tg_width.equal(.fill)
+        groupTitle.tg_height.equal(.wrap)
+        groupTitle.contentEdgeInsets = UIEdgeInsets(top: PADDING_MIDDLE,
+                                                    left: PADDING_OUTER,
+                                                    bottom: PADDING_MIDDLE,
+                                                    right: PADDING_OUTER)
+        groupTitle.textColor = .black80
+        groupTitle.font = UIFont.systemFont(ofSize: TEXT_MEDDLE)
+        groupTitle.backgroundColor = .colorSurface
+        groupTitle.text = R.string.localizable.other()
+        itemContainer.addSubview(groupTitle)
+        
+        //设置
+        var itemView = SuperSettingView.smallWithIcon(icon: R.image.scan()!, title: R.string.localizable.setting()) {[weak self] data in
+            self?.closeDrawer()
+//            self?.startController(SettingController.self)
+        }
+        itemContainer.addSubview(itemView)
+        
+        //深色模式
+        itemView = SuperSettingView.smallWithIcon(icon: R.image.scan()!, title: R.string.localizable.darkMode(),click:{[weak self] data in
+            
+        },switchChanged: { data in
+            print("night switch changed \(data.isOn)")
+        })
+        itemContainer.addSubview(itemView)
+        
+        //定时关闭
+        itemView = SuperSettingView.smallWithIcon(icon: R.image.scan()!, title: R.string.localizable.timedOff()) {[weak self] data in
+            self?.closeDrawer()
+            
+        }
+        itemView.moreView.text = R.string.localizable.notOpen()
+        itemContainer.addSubview(itemView)
+        
+        //个性装扮
+        itemView = SuperSettingView.smallWithIcon(icon: R.image.scan()!, title: R.string.localizable.personDress()) {[weak self] data in
+            self?.closeDrawer()
+            
+        }
+        itemContainer.addSubview(itemView)
 
+        
+        //边听边缓存
+        itemView = SuperSettingView.smallWithIcon(icon: R.image.scan()!, title: R.string.localizable.cacheWhileList()) {[weak self] data in
+            self?.closeDrawer()
+            
+        }
+        itemContainer.addSubview(itemView)
+
+        
+        //音乐闹钟
+        itemView = SuperSettingView.smallWithIcon(icon: R.image.scan()!, title: R.string.localizable.musicAlarmClock()) {[weak self] data in
+            self?.closeDrawer()
+            
+        }
+        itemContainer.addSubview(itemView)
+    }
+    
+    //MARK: - 创建控件 关于
+    func initAboutMenu() {
+        let itemContainer=TGLinearLayout(.vert)
+        itemContainer.tg_width.equal(.fill)
+        itemContainer.tg_height.equal(.wrap)
+        itemContainer.backgroundColor = .colorDivider
+        itemContainer.corner()
+        itemContainer.tg_space = 0.5
+        contentContainer.addSubview(itemContainer)
+
+        //我的客服
+        var itemView = SuperSettingView.smallWithIcon(icon: R.image.scan()!, title: R.string.localizable.myCustomerService()) {[weak self] data in
+            self?.closeDrawer()
+            
+        }
+        itemContainer.addSubview(itemView)
+        
+        //分享
+        itemView = SuperSettingView.smallWithIcon(icon: R.image.scan()!, title: R.string.localizable.shareApp()) {[weak self] data in
+            self?.closeDrawer()
+            
+        }
+        itemContainer.addSubview(itemView)
+        
+        itemView = SuperSettingView.smallWithIcon(icon: R.image.scan()!, title:"接口签名和加密") {[weak self] data in
+            self?.closeDrawer()
+        }
+        itemContainer.addSubview(itemView)
+        
+        //关于
+        itemView = SuperSettingView.smallWithIcon(icon: R.image.scan()!, title: R.string.localizable.about()) {[weak self] data in
+            self?.closeDrawer()
+            
+        }
+        itemContainer.addSubview(itemView)
+    }
 }

@@ -70,6 +70,18 @@ class ViewFactoryUtil {
         return r
     }
     
+    static func moreIconView() -> UIImageView {
+        let result = UIImageView()
+        result.tg_width.equal(15)
+        result.tg_height.equal(15)
+        result.image = R.image.superChevronRight()?.withTintColor()
+        result.tintColor = .black80
+        result.tg_centerY.equal(0)
+        
+        result.contentMode = .scaleAspectFit
+        return result
+    }
+    
     static func tableView() -> UITableView {
         let r = QMUITableView()
         r.backgroundColor = .clear

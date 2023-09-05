@@ -22,13 +22,14 @@ class BaseLogicController: BaseCommonController {
     
     var tableView:UITableView!
     
+    var scrollView:UIScrollView!
+    var contentContainer:TGBaseLayout!
+    
     lazy var datum: [Any] = {
         var result: [Any] = []
         return result
     }()
-    
-    
-    
+
   /// initialize RelativeLayout container，4 borders are within the safe area
     func initRelativeLayoutSafeArea() {
         initLinearLayout()
@@ -110,6 +111,22 @@ class BaseLogicController: BaseCommonController {
         createTableView()
         
         container.addSubview(tableView)
+    }
+    
+    func initScrollSafeArea() {
+        initLinearLayoutSafeArea()
+        
+        scrollView = UIScrollView()
+        scrollView.showsVerticalScrollIndicator = false
+        scrollView.tg_width.equal(.fill)
+        scrollView.tg_height.equal(.fill)
+        container.addSubview(scrollView)
+        
+        contentContainer = TGLinearLayout(.vert)
+        contentContainer.tg_width.equal(.fill)
+        contentContainer.tg_height.equal(.wrap)
+        
+        scrollView.addSubview(contentContainer)
     }
     
     func createTableView() {

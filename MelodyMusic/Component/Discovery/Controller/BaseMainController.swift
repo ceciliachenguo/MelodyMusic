@@ -19,6 +19,36 @@ class BaseMainController: BaseTitleController {
         toolbarView.addCenterView(searchButton)
     }
     
+    override func initListeners() {
+        super.initListeners()
+        self.cw_registerShowIntractive(withEdgeGesture: false) { [weak self] direction in
+            if direction == .fromLeft {
+                self?.openDrawer()
+            }
+        }
+    }
+    
+    override func leftClick(_ sender: QMUIButton) {
+        openDrawer()
+    }
+
+    func openDrawer() {
+        //side-drawer pushes the main content to the other side
+        //self.cw_showDefaultDrawerViewController(drawerController)
+        
+        //side-drawer show on the top of the content
+        self.cw_showDrawerViewController(drawerController, animationType: .mask, configuration: nil)
+    }
+
+    func closeDrawer() {
+        dismiss(animated: true, completion: nil)
+    }
+
+    lazy var drawerController: DrawerController = {
+        let r = DrawerController()
+        return r
+    }()
+    
     lazy var searchButton:QMUIButton = {
         let r = QMUIButton()
         r.tg_width.equal(SCREEN_WIDTH - 50 * 2)

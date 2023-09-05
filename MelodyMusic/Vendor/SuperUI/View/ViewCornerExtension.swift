@@ -16,7 +16,7 @@ extension UIView {
         corner(SuperConfig.SIZE_LARGE_RADIUS)
     }
     
-    func corner(_ radius:CGFloat) {
+    func corner(_ radius:CGFloat = 10) {
         self.clipsToBounds = true
         self.layer.cornerRadius = CGFloat(radius)
     }

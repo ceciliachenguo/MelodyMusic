@@ -26,6 +26,7 @@
 		8D9E016B2AA7AF72008DE778 /* CWLateralSlideAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D9E01652AA7AF72008DE778 /* CWLateralSlideAnimator.m */; };
 		8D9E016C2AA7AF72008DE778 /* CWDrawerTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D9E01662AA7AF72008DE778 /* CWDrawerTransition.m */; };
 		8D9E016D2AA7AF72008DE778 /* CWLateralSlideConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D9E01682AA7AF72008DE778 /* CWLateralSlideConfiguration.m */; };
+		8D9E01702AA7C8F6008DE778 /* SuperSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9E016F2AA7C8F6008DE778 /* SuperSettingView.swift */; };
 		8DA405C62A6CD8FE0033F979 /* SuperDateUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA405C52A6CD8FE0033F979 /* SuperDateUtil.swift */; };
 		8DA405CA2A6CDC460033F979 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8DA405CC2A6CDC460033F979 /* Localizable.strings */; };
 		8DAF42122A85FBC300C5097F /* SheetGroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAF42112A85FBC300C5097F /* SheetGroupCell.swift */; };
@@ -147,6 +148,7 @@
 		8D9E01662AA7AF72008DE778 /* CWDrawerTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWDrawerTransition.m; sourceTree = "<group>"; };
 		8D9E01672AA7AF72008DE778 /* UIViewController+CWLateralSlide.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+CWLateralSlide.h"; sourceTree = "<group>"; };
 		8D9E01682AA7AF72008DE778 /* CWLateralSlideConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWLateralSlideConfiguration.m; sourceTree = "<group>"; };
+		8D9E016F2AA7C8F6008DE778 /* SuperSettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperSettingView.swift; sourceTree = "<group>"; };
 		8DA405C52A6CD8FE0033F979 /* SuperDateUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperDateUtil.swift; sourceTree = "<group>"; };
 		8DA405CB2A6CDC460033F979 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		8DA405CD2A6CDC5E0033F979 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
@@ -360,6 +362,14 @@
 				8D9E01682AA7AF72008DE778 /* CWLateralSlideConfiguration.m */,
 			);
 			path = CWLateralSlide;
+			sourceTree = "<group>";
+		};
+		8D9E016E2AA7C8C8008DE778 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				8D9E016F2AA7C8F6008DE778 /* SuperSettingView.swift */,
+			);
+			path = Setting;
 			sourceTree = "<group>";
 		};
 		8DA405C02A6CD3130033F979 /* Splash */ = {
@@ -633,6 +643,7 @@
 		8DD33B9A2A70414200A34010 /* SuperUI */ = {
 			isa = PBXGroup;
 			children = (
+				8D9E016E2AA7C8C8008DE778 /* Setting */,
 				8DDB156C2A91824800B25482 /* Web */,
 				8D7944BC2A912A5000B0B6D9 /* Toolbar */,
 				8DAF42212A86099900C5097F /* Config */,
@@ -1152,6 +1163,7 @@
 				8DD33C112A73635800A34010 /* DiscoveryController.swift in Sources */,
 				8DD33B7D2A6F73E400A34010 /* SheetListResponse.swift in Sources */,
 				8D9E016A2AA7AF72008DE778 /* UIViewController+CWLateralSlide.m in Sources */,
+				8D9E01702AA7C8F6008DE778 /* SuperSettingView.swift in Sources */,
 				8DED45522A8A751B0025EC7F /* StringExtension.swift in Sources */,
 				8D7E86812A6D0578008580A9 /* Constants.swift in Sources */,
 				8DD33B682A6F392400A34010 /* YJBannerView.m in Sources */,

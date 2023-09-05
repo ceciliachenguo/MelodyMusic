@@ -1383,12 +1383,12 @@ struct _R {
       /// Locales: en, zh-Hans
       var me: RswiftResources.StringResource { .init(key: "Me", tableName: "Localizable", source: source, developmentValue: "Me", comment: nil) }
 
-      /// en translation: Member Center
+      /// en translation: VIP Center
       ///
       /// Key: MemberCenter
       ///
       /// Locales: en, zh-Hans
-      var memberCenter: RswiftResources.StringResource { .init(key: "MemberCenter", tableName: "Localizable", source: source, developmentValue: "Member Center", comment: nil) }
+      var memberCenter: RswiftResources.StringResource { .init(key: "MemberCenter", tableName: "Localizable", source: source, developmentValue: "VIP Center", comment: nil) }
 
       /// en translation: More
       ///
@@ -2426,19 +2426,19 @@ struct _R {
       /// Locales: en, zh-Hans
       var videoInfo: RswiftResources.StringResource2<Int, String> { .init(key: "VideoInfo", tableName: "Localizable", source: source, developmentValue: "%d plays, by %@", comment: nil) }
 
-      /// en translation: Add VIP to highlight different languages
+      /// en translation: Join our VIP Plan
       ///
       /// Key: VipHint
       ///
       /// Locales: en, zh-Hans
-      var vipHint: RswiftResources.StringResource { .init(key: "VipHint", tableName: "Localizable", source: source, developmentValue: "Add VIP to highlight different languages", comment: nil) }
+      var vipHint: RswiftResources.StringResource { .init(key: "VipHint", tableName: "Localizable", source: source, developmentValue: "Join our VIP Plan", comment: nil) }
 
-      /// en translation: Exclusive special offer, the first month of vinyl is only 0.01 yuan!
+      /// en translation: Exclusive special offer!!
       ///
       /// Key: VipHintPrice
       ///
       /// Locales: en, zh-Hans
-      var vipHintPrice: RswiftResources.StringResource { .init(key: "VipHintPrice", tableName: "Localizable", source: source, developmentValue: "Exclusive special offer, the first month of vinyl is only 0.01 yuan!", comment: nil) }
+      var vipHintPrice: RswiftResources.StringResource { .init(key: "VipHintPrice", tableName: "Localizable", source: source, developmentValue: "Exclusive special offer!!", comment: nil) }
 
       /// en translation: Baidu voice recognition error: %1$s
       ///
@@ -2534,7 +2534,7 @@ struct _R {
     var accentColor: RswiftResources.ColorResource { .init(name: "AccentColor", path: [], bundle: bundle) }
   }
 
-  /// This `_R.image` struct is generated, and contains static references to 33 images.
+  /// This `_R.image` struct is generated, and contains static references to 34 images.
   struct image {
     let bundle: Foundation.Bundle
 
@@ -2543,6 +2543,9 @@ struct _R {
 
     /// Image `ButtonLive`.
     var buttonLive: RswiftResources.ImageResource { .init(name: "ButtonLive", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `Check`.
+    var check: RswiftResources.ImageResource { .init(name: "Check", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
 
     /// Image `Close`.
     var close: RswiftResources.ImageResource { .init(name: "Close", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }

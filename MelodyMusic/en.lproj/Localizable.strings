@@ -47,9 +47,9 @@ CustomDiscovery="Custom Home";
 ActivityDetails="Activity Details";
 
 BuyVip="Buy VIP";
-MemberCenter="Member Center";
-VipHint="Add VIP to highlight different languages";
-VipHintPrice="Exclusive special offer, the first month of vinyl is only 0.01 yuan!";
+MemberCenter="VIP Center";
+VipHint="Join our VIP Plan";
+VipHintPrice="Exclusive special offer!!";
 SecurityVerification="Security Verification";
 CompleteUserDataTip="Complete the data, the account is better and more secure";
 UpdateSuccess="Complete data successfully";

@@ -50,7 +50,10 @@ target 'MelodyMusic' do
   #https:https://github.com/a1049145827/BSText
   #OC版本：https:https://github.com/ibireme/YYText
   pod "BSText"
-
+  
+  #腾讯开源的偏好存储框架
+  #https://github.com/Tencent/MMKV
+  pod 'MMKV'
 
   post_install do |installer|
       installer.generated_projects.each do |project|

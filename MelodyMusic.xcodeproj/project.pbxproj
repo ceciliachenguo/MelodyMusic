@@ -32,6 +32,10 @@
 		8D9E017B2AA84EFC008DE778 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9E017A2AA84EFC008DE778 /* LoginController.swift */; };
 		8D9E017E2AA857B4008DE778 /* SuperInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9E017D2AA857B4008DE778 /* SuperInputView.swift */; };
 		8D9E01812AA857EC008DE778 /* BaseRelativeLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9E01802AA857EC008DE778 /* BaseRelativeLayout.swift */; };
+		8D9E01832AA85D9C008DE778 /* StringUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9E01822AA85D9C008DE778 /* StringUtil.swift */; };
+		8D9E01852AA85F42008DE778 /* BaseLoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9E01842AA85F42008DE778 /* BaseLoginController.swift */; };
+		8D9E01882AA8610A008DE778 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9E01872AA8610A008DE778 /* Session.swift */; };
+		8D9E018A2AA861DA008DE778 /* PreferenceUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9E01892AA861DA008DE778 /* PreferenceUtil.swift */; };
 		8DA405C62A6CD8FE0033F979 /* SuperDateUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA405C52A6CD8FE0033F979 /* SuperDateUtil.swift */; };
 		8DA405CA2A6CDC460033F979 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8DA405CC2A6CDC460033F979 /* Localizable.strings */; };
 		8DAF42122A85FBC300C5097F /* SheetGroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAF42112A85FBC300C5097F /* SheetGroupCell.swift */; };
@@ -159,6 +163,10 @@
 		8D9E017A2AA84EFC008DE778 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		8D9E017D2AA857B4008DE778 /* SuperInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperInputView.swift; sourceTree = "<group>"; };
 		8D9E01802AA857EC008DE778 /* BaseRelativeLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRelativeLayout.swift; sourceTree = "<group>"; };
+		8D9E01822AA85D9C008DE778 /* StringUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringUtil.swift; sourceTree = "<group>"; };
+		8D9E01842AA85F42008DE778 /* BaseLoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseLoginController.swift; sourceTree = "<group>"; };
+		8D9E01872AA8610A008DE778 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		8D9E01892AA861DA008DE778 /* PreferenceUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceUtil.swift; sourceTree = "<group>"; };
 		8DA405C52A6CD8FE0033F979 /* SuperDateUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperDateUtil.swift; sourceTree = "<group>"; };
 		8DA405CB2A6CDC460033F979 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		8DA405CD2A6CDC5E0033F979 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
@@ -312,6 +320,8 @@
 				8DD33B792A6F677700A34010 /* ParamUtil.swift */,
 				8DD33B9E2A706C4A00A34010 /* ExceptionHandleUtil.swift */,
 				8DD33C2D2A73794A00A34010 /* ResourceUtil.swift */,
+				8D9E01822AA85D9C008DE778 /* StringUtil.swift */,
+				8D9E01892AA861DA008DE778 /* PreferenceUtil.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -412,6 +422,14 @@
 				8D9E01802AA857EC008DE778 /* BaseRelativeLayout.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		8D9E01862AA860FF008DE778 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8D9E01872AA8610A008DE778 /* Session.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		8DA405C02A6CD3130033F979 /* Splash */ = {
@@ -517,6 +535,7 @@
 		8DD33B4C2A6F34BE00A34010 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				8D9E01862AA860FF008DE778 /* Model */,
 				8DD33B4D2A6F34C300A34010 /* Controller */,
 			);
 			path = Login;
@@ -527,6 +546,7 @@
 			children = (
 				8DD33B4E2A6F34E100A34010 /* LoginHomeController.swift */,
 				8D9E017A2AA84EFC008DE778 /* LoginController.swift */,
+				8D9E01842AA85F42008DE778 /* BaseLoginController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1227,6 +1247,7 @@
 				8DD33B932A6F83B800A34010 /* DetailResponse.swift in Sources */,
 				8DD33B7F2A6F748A00A34010 /* PageResponse.swift in Sources */,
 				8D9E01732AA80F9C008DE778 /* SuperRegularUtil.swift in Sources */,
+				8D9E01832AA85D9C008DE778 /* StringUtil.swift in Sources */,
 				8DD33B6E2A6F392400A34010 /* YJBannerViewCell.m in Sources */,
 				8DDB15672A91602600B25482 /* ViewExtension.swift in Sources */,
 				8DDB15692A91619C00B25482 /* BaseMainController.swift in Sources */,
@@ -1234,8 +1255,10 @@
 				8D9E017E2AA857B4008DE778 /* SuperInputView.swift in Sources */,
 				8DD33B782A6F650400A34010 /* User.swift in Sources */,
 				8DD33B952A6F846F00A34010 /* Meta.swift in Sources */,
+				8D9E01852AA85F42008DE778 /* BaseLoginController.swift in Sources */,
 				8D7E86732A6CF58D008580A9 /* BaseCommonController.swift in Sources */,
 				8DD33B992A6F86CA00A34010 /* Ad.swift in Sources */,
+				8D9E018A2AA861DA008DE778 /* PreferenceUtil.swift in Sources */,
 				8DD33B472A6F28B700A34010 /* DefaultPreferenceUtil.swift in Sources */,
 				8D9E017B2AA84EFC008DE778 /* LoginController.swift in Sources */,
 				8DED455E2A8D96120025EC7F /* DiscoveryFooterCell.swift in Sources */,
@@ -1251,6 +1274,7 @@
 				8D9E016B2AA7AF72008DE778 /* CWLateralSlideAnimator.m in Sources */,
 				8DD33B832A6F74E500A34010 /* Sheet.swift in Sources */,
 				8DD33B8F2A6F82B200A34010 /* ListResponse.swift in Sources */,
+				8D9E01882AA8610A008DE778 /* Session.swift in Sources */,
 				8D9E016C2AA7AF72008DE778 /* CWDrawerTransition.m in Sources */,
 				8DAF421D2A8607F400C5097F /* SheetCell.swift in Sources */,
 				8DED45602A8D99470025EC7F /* FooterData.swift in Sources */,
@@ -1458,6 +1482,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS -D DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = com.melody.music.cecilia.MelodyMusic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;

@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwiftEventBus
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -20,6 +21,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
+        initMMKV()
+        
         // Override point for customization after application launch.
         //setting default page
         let controller = SplashController()
@@ -28,7 +31,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window!.rootViewController = controller
         window!.makeKeyAndVisible()
         
+        if PreferenceUtil.isLogin() {
+            onLogin(nil)
+        }
+        
         return true
+    }
+    
+    func initMMKV() {
+        MMKV.initialize(rootDir: nil)
     }
     
     func toGuide() {
@@ -54,6 +65,42 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func logout() {
         
+    }
+    
+    func onLogin(_ d:Session?) {
+        var data:Session!
+        if d==nil {
+            data = Session()
+            data!.userId = PreferenceUtil.getUserId()
+            data!.session = PreferenceUtil.getSession()
+            data!.chatToken = PreferenceUtil.getChatSession()
+        }else{
+            data=d
+        }
+        
+        if let navigationController = window?.rootViewController as? UINavigationController {
+            //关闭登陆相关界面
+            let vcs = navigationController.viewControllers
+            
+            var results:[UIViewController] = []
+            for it in vcs {
+                if it is LoginHomeController ||
+                it is LoginController {
+                    continue
+                }
+                
+                results.append(it)
+            }
+            
+            navigationController.setViewControllers(results, animated: true)
+        }
+        
+        loginStatusChanged()
+
+    }
+    
+    func loginStatusChanged() {
+        SwiftEventBus.post(Constants.EVELT_LOGIN_STATUS_CHANGED)
     }
     
     func setRootViewController(_ data:UIViewController) {

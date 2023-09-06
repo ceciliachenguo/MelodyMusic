@@ -13,12 +13,12 @@ import HandyJSON
 class DefaultRepository {
     static let shared = DefaultRepository()
     
-    private var moyaProvider:MoyaProvider<DefaultService>!
+    private var provider:MoyaProvider<DefaultService>!
     
     
     //Banner in Discovery Page
     func bannerAds() -> Observable<ListResponse<Ad>> {
-        return moyaProvider
+        return provider
             .rx
             .request(.ads(position: VALUE0))
             .asObservable()
@@ -27,7 +27,7 @@ class DefaultRepository {
     }
     
     func sheets(size:Int) -> Observable<ListResponse<Sheet>> {
-        return moyaProvider
+        return provider
             .rx
             .request(.sheets(size: size))
             .asObservable()
@@ -36,7 +36,7 @@ class DefaultRepository {
     }
     
     func sheetDetail(_ data:String) -> Observable<DetailResponse<Sheet>> {
-        return moyaProvider
+        return provider
             .rx
             .request(.sheetDetails(data: data))
             .asObservable()
@@ -46,7 +46,7 @@ class DefaultRepository {
     
     
     func songs() -> Observable<ListResponse<Song>> {
-        return moyaProvider
+        return provider
                 .rx
                 .request(.songs)
                 .asObservable()
@@ -55,7 +55,7 @@ class DefaultRepository {
     }
     
     func songDetail(_ data:String) -> Observable<DetailResponse<Song>> {
-        return moyaProvider
+        return provider
                 .rx
                 .request(.songDetail(data: data))
                 .asObservable()
@@ -63,6 +63,26 @@ class DefaultRepository {
                 .mapObject(DetailResponse<Song>.self)
     }
     
+    func register(_ data:User) -> Observable<DetailResponse<BaseModel>> {
+        return provider
+                    .rx
+                    .request(.register(data: data))
+                    .filterSuccessfulStatusCodes()
+                    .mapString()
+                    .asObservable()
+                    .mapObject(DetailResponse<BaseModel>.self)
+    }
+    
+    func login(_ data:User) -> Observable<DetailResponse<Session>> {
+        return provider
+                    .rx
+                    .request(.login(data: data))
+                    .filterSuccessfulStatusCodes()
+                    .mapString()
+                    .asObservable()
+                    .mapObject(DetailResponse<Session>.self)
+    }
+        
     private init() {
         var plugins:[PluginType] = []
         
@@ -94,6 +114,6 @@ class DefaultRepository {
                                                           
         plugins.append(networkActivityPlugin)
                                                           
-        moyaProvider = MoyaProvider<DefaultService>(plugins: plugins)
+        provider = MoyaProvider<DefaultService>(plugins: plugins)
     }
 }

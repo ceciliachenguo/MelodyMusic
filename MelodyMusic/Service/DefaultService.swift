@@ -17,6 +17,7 @@ enum DefaultService {
     case sheetDetails(data: String)
     
     case register(data: User)
+    case login(data: User)
     
     case songs
     case songDetail(data:String)
@@ -44,6 +45,8 @@ extension DefaultService:TargetType {
             
         case .register(_):
             return "v1/users"
+        case .login:
+            return "v1/sessions"
         default:
             fatalError("Default Service Path is inValid")
         }
@@ -51,7 +54,7 @@ extension DefaultService:TargetType {
     
     var method: Moya.Method {
         switch self {
-        case .register(_):
+        case .register(_), .login:
             return .post
         default:
             return .get
@@ -64,6 +67,8 @@ extension DefaultService:TargetType {
             return ParamUtil.urlRequestParameters(["position":position])
         case .sheets(let size):
             return ParamUtil.urlRequestParameters(["size":size])
+        case .login(let data):
+            return .requestData(data.toJSONString()!.data(using: .utf8)!)
 //        case .register(let user):
 //            return .requestPlain
         default:
@@ -73,6 +78,8 @@ extension DefaultService:TargetType {
     
     var headers: [String : String]? {
         var headers:Dictionary<String, String> = [:]
+        
+        headers["Content-Type"] = "application/json"
         return headers
     }
     

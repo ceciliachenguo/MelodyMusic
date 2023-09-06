@@ -8,7 +8,7 @@
 import UIKit
 import TangramKit
 
-class LoginController: BaseTitleController {
+class LoginController: BaseLoginController {
 
     override func initViews() {
         super.initViews()
@@ -51,57 +51,57 @@ class LoginController: BaseTitleController {
         controlContainer.addSubview(forgotPasswordView)
         
         initTapHideKeyboard()
-//        
-//        //swift中这样判断,需要在Build Settings 搜索 Other Swift Flags,设置Debug 添加 -D DEBUG
-//        #if DEBUG
-//        //添加测试账号，方便测试
-//        usernameView.textFieldView.text="13141111222"
-//        passwordView.textFieldView.text="ixueaedu"
-//        #endif
+        
+        //swift中这样判断,需要在Build Settings 搜索 Other Swift Flags,设置Debug 添加 -D DEBUG
+        #if DEBUG
+        //添加测试账号，方便测试
+        usernameView.textFieldView.text="13141111222"
+        passwordView.textFieldView.text="ixueaedu"
+        #endif
     }
     
     @objc func primaryClick(_ sender:QMUIButton) {
-//        //获取用户名
-//        let username = usernameView.textFieldView.text?.trimmed
-//        if SuperStringUtil.isBlank(username) {
-//            SuperToast.show(title: R.string.localizable.enterUsername())
-//            return
-//        }
-//        
-//        //如果用户名
-//        //不是手机号也不是邮箱
-//        //就是格式错误
-//        if !SuperRegularUtil.isPhone(username!) && !SuperRegularUtil.isEmail(username!) {
-//            SuperToast.show(title: R.string.localizable.errorUsernameFormat())
-//            return
-//        }
-//        
-//        //获取密码
-//        let password = passwordView.textFieldView.text?.trimmed
-//        if SuperStringUtil.isBlank(password) {
-//            SuperToast.show(title: R.string.localizable.enterPassword())
-//            return
-//        }
-//        
-//        //判断密码格式
-//        if !StringUtil.isPassword(password!) {
-//            SuperToast.show(title: R.string.localizable.errorPasswordFormat())
-//            return
-//        }
-//        
-//        //判断是手机号还有邮箱
-//        let param = User()
-//        param.password=password
-//        if SuperRegularUtil.isPhone(username!) {
-//            //手机号
-//            param.phone = username
-//        } else {
-//            //邮箱
-//            param.email = username
-//        }
-//        
-//        //调用父类的登录方法
-//        login(param)
+        //获取用户名
+        let username = usernameView.textFieldView.text?.trimmed
+        if SuperStringUtil.isBlank(username) {
+            SuperToast.show(title: R.string.localizable.enterUsername())
+            return
+        }
+        
+        //如果用户名
+        //不是手机号也不是邮箱
+        //就是格式错误
+        if !SuperRegularUtil.isPhone(username!) && !SuperRegularUtil.isEmail(username!) {
+            SuperToast.show(title: R.string.localizable.errorUsernameFormat())
+            return
+        }
+        
+        //获取密码
+        let password = passwordView.textFieldView.text?.trimmed
+        if SuperStringUtil.isBlank(password) {
+            SuperToast.show(title: R.string.localizable.enterPassword())
+            return
+        }
+        
+        //判断密码格式
+        if !StringUtil.isPassword(password!) {
+            SuperToast.show(title: R.string.localizable.errorPasswordFormat())
+            return
+        }
+        
+        //判断是手机号还有邮箱
+        let param = User()
+        param.password = password
+        if SuperRegularUtil.isPhone(username!) {
+            //手机号
+            param.phone = username
+        } else {
+            //邮箱
+            param.email = username
+        }
+        
+        //调用父类的登录方法
+        login(param)
     }
     
     @objc func registerClick(_ sender:QMUIButton) {

@@ -29,6 +29,9 @@
 		8D9E01702AA7C8F6008DE778 /* SuperSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9E016F2AA7C8F6008DE778 /* SuperSettingView.swift */; };
 		8D9E01732AA80F9C008DE778 /* SuperRegularUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9E01722AA80F9C008DE778 /* SuperRegularUtil.swift */; };
 		8D9E01792AA81C84008DE778 /* SuperUIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9E01782AA81C84008DE778 /* SuperUIViewControllerExtension.swift */; };
+		8D9E017B2AA84EFC008DE778 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9E017A2AA84EFC008DE778 /* LoginController.swift */; };
+		8D9E017E2AA857B4008DE778 /* SuperInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9E017D2AA857B4008DE778 /* SuperInputView.swift */; };
+		8D9E01812AA857EC008DE778 /* BaseRelativeLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9E01802AA857EC008DE778 /* BaseRelativeLayout.swift */; };
 		8DA405C62A6CD8FE0033F979 /* SuperDateUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA405C52A6CD8FE0033F979 /* SuperDateUtil.swift */; };
 		8DA405CA2A6CDC460033F979 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8DA405CC2A6CDC460033F979 /* Localizable.strings */; };
 		8DAF42122A85FBC300C5097F /* SheetGroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAF42112A85FBC300C5097F /* SheetGroupCell.swift */; };
@@ -153,6 +156,9 @@
 		8D9E016F2AA7C8F6008DE778 /* SuperSettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperSettingView.swift; sourceTree = "<group>"; };
 		8D9E01722AA80F9C008DE778 /* SuperRegularUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuperRegularUtil.swift; sourceTree = "<group>"; };
 		8D9E01782AA81C84008DE778 /* SuperUIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperUIViewControllerExtension.swift; sourceTree = "<group>"; };
+		8D9E017A2AA84EFC008DE778 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		8D9E017D2AA857B4008DE778 /* SuperInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperInputView.swift; sourceTree = "<group>"; };
+		8D9E01802AA857EC008DE778 /* BaseRelativeLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRelativeLayout.swift; sourceTree = "<group>"; };
 		8DA405C52A6CD8FE0033F979 /* SuperDateUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperDateUtil.swift; sourceTree = "<group>"; };
 		8DA405CB2A6CDC460033F979 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		8DA405CD2A6CDC5E0033F979 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
@@ -392,6 +398,22 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		8D9E017C2AA85787008DE778 /* Input */ = {
+			isa = PBXGroup;
+			children = (
+				8D9E017D2AA857B4008DE778 /* SuperInputView.swift */,
+			);
+			path = Input;
+			sourceTree = "<group>";
+		};
+		8D9E017F2AA857DB008DE778 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8D9E01802AA857EC008DE778 /* BaseRelativeLayout.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		8DA405C02A6CD3130033F979 /* Splash */ = {
 			isa = PBXGroup;
 			children = (
@@ -504,6 +526,7 @@
 			isa = PBXGroup;
 			children = (
 				8DD33B4E2A6F34E100A34010 /* LoginHomeController.swift */,
+				8D9E017A2AA84EFC008DE778 /* LoginController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -664,6 +687,7 @@
 		8DD33B9A2A70414200A34010 /* SuperUI */ = {
 			isa = PBXGroup;
 			children = (
+				8D9E017C2AA85787008DE778 /* Input */,
 				8D9E01772AA81C66008DE778 /* Controller */,
 				8D9E016E2AA7C8C8008DE778 /* Setting */,
 				8DDB156C2A91824800B25482 /* Web */,
@@ -861,6 +885,7 @@
 		8DEBED2F2A6C4F7A00303597 /* MelodyMusic */ = {
 			isa = PBXGroup;
 			children = (
+				8D9E017F2AA857DB008DE778 /* View */,
 				8DD33C282A7370C800A34010 /* Cell */,
 				8DD33BA02A70761900A34010 /* Repository */,
 				8DD33B842A6F7C8600A34010 /* Extension */,
@@ -1159,6 +1184,7 @@
 				8DD33B6B2A6F392400A34010 /* YJAnimatedDotView.m in Sources */,
 				8DAF42202A8608CB00C5097F /* ViewCornerExtension.swift in Sources */,
 				8DD33B862A6F7CC300A34010 /* ObservableMoyaExtension.swift in Sources */,
+				8D9E01812AA857EC008DE778 /* BaseRelativeLayout.swift in Sources */,
 				8DD33B9F2A706C4A00A34010 /* ExceptionHandleUtil.swift in Sources */,
 				8DAF42232A8609A800C5097F /* SuperConfig.swift in Sources */,
 				8DD33B8C2A6F813200A34010 /* BaseCommon.swift in Sources */,
@@ -1205,11 +1231,13 @@
 				8DDB15672A91602600B25482 /* ViewExtension.swift in Sources */,
 				8DDB15692A91619C00B25482 /* BaseMainController.swift in Sources */,
 				8DD33B712A6F53D900A34010 /* Config.swift in Sources */,
+				8D9E017E2AA857B4008DE778 /* SuperInputView.swift in Sources */,
 				8DD33B782A6F650400A34010 /* User.swift in Sources */,
 				8DD33B952A6F846F00A34010 /* Meta.swift in Sources */,
 				8D7E86732A6CF58D008580A9 /* BaseCommonController.swift in Sources */,
 				8DD33B992A6F86CA00A34010 /* Ad.swift in Sources */,
 				8DD33B472A6F28B700A34010 /* DefaultPreferenceUtil.swift in Sources */,
+				8D9E017B2AA84EFC008DE778 /* LoginController.swift in Sources */,
 				8DED455E2A8D96120025EC7F /* DiscoveryFooterCell.swift in Sources */,
 				8DD33B742A6F645000A34010 /* DefaultService.swift in Sources */,
 				8DD33B8A2A6F80FF00A34010 /* BaseId.swift in Sources */,

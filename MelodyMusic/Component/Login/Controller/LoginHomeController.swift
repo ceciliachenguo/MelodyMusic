@@ -103,7 +103,7 @@ class LoginHomeController: BaseTitleController {
     
     ///用户名登录
     @objc func onUsernameClick(_ sender:QMUIButton) {
-
+        startController(LoginController.self)
     }
     
     /// 微信登录

@@ -153,6 +153,31 @@ class BaseLogicController: BaseCommonController {
         navigationController?.popViewController(animated: true)
     }
     
+    // MARK: - 隐藏键盘
+
+    /// 点击空白隐藏键盘
+    func initTapHideKeyboard() {
+        //点击空白，关闭键盘
+        let g=UITapGestureRecognizer(target: self, action: #selector(tapClick(_:)))
+
+        //设置成false表示当前控件响应后会传播到其他控件上
+        //如果不设置为false，界面里面的列表控件可能无法响应点击事件
+        g.cancelsTouchesInView = true
+
+        //将触摸事件添加到当前view
+        view.addGestureRecognizer(g)
+    }
+
+    @objc func tapClick(_ data:UITapGestureRecognizer) {
+        hideKeyboard()
+    }
+
+    /// 隐藏键盘
+    func hideKeyboard() {
+        view.endEditing(true)
+    }
+
+    
 }
 
 //MARK: - TableView data source and delegate

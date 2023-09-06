@@ -64,7 +64,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func logout() {
+        logoutSilence()
+    }
+    
+    func logoutSilence() {
+        //清除登录相关信息
+        PreferenceUtil.logout()
         
+        loginStatusChanged()
     }
     
     func onLogin(_ d:Session?) {

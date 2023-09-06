@@ -108,6 +108,13 @@ class DiscoveryController: BaseMainController {
             
             self?.processClick(data)
         }
+        
+        //登录点击事件
+        NotificationCenter.default.addObserver(self, selector: #selector(toLoginClick(_:)), name: NSNotification.Name(Constants.EVENT_LOGIN_CLICK), object: nil)
+    }
+    
+    @objc func toLoginClick(_ data:Notification) {
+        toLogin()
     }
     
     func processClick(_ data:MyStyle) {

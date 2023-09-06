@@ -36,6 +36,7 @@
 		8D9E01852AA85F42008DE778 /* BaseLoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9E01842AA85F42008DE778 /* BaseLoginController.swift */; };
 		8D9E01882AA8610A008DE778 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9E01872AA8610A008DE778 /* Session.swift */; };
 		8D9E018A2AA861DA008DE778 /* PreferenceUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9E01892AA861DA008DE778 /* PreferenceUtil.swift */; };
+		8D9E018E2AA87433008DE778 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9E018D2AA87433008DE778 /* UIViewControllerExtension.swift */; };
 		8DA405C62A6CD8FE0033F979 /* SuperDateUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA405C52A6CD8FE0033F979 /* SuperDateUtil.swift */; };
 		8DA405CA2A6CDC460033F979 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8DA405CC2A6CDC460033F979 /* Localizable.strings */; };
 		8DAF42122A85FBC300C5097F /* SheetGroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAF42112A85FBC300C5097F /* SheetGroupCell.swift */; };
@@ -167,6 +168,7 @@
 		8D9E01842AA85F42008DE778 /* BaseLoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseLoginController.swift; sourceTree = "<group>"; };
 		8D9E01872AA8610A008DE778 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		8D9E01892AA861DA008DE778 /* PreferenceUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceUtil.swift; sourceTree = "<group>"; };
+		8D9E018D2AA87433008DE778 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		8DA405C52A6CD8FE0033F979 /* SuperDateUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperDateUtil.swift; sourceTree = "<group>"; };
 		8DA405CB2A6CDC460033F979 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		8DA405CD2A6CDC5E0033F979 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
@@ -673,6 +675,7 @@
 			children = (
 				8DD33B852A6F7CC300A34010 /* ObservableMoyaExtension.swift */,
 				8DED45512A8A751B0025EC7F /* StringExtension.swift */,
+				8D9E018D2AA87433008DE778 /* UIViewControllerExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -1265,6 +1268,7 @@
 				8DD33B742A6F645000A34010 /* DefaultService.swift in Sources */,
 				8DD33B8A2A6F80FF00A34010 /* BaseId.swift in Sources */,
 				8DD33B882A6F809E00A34010 /* BaseModel.swift in Sources */,
+				8D9E018E2AA87433008DE778 /* UIViewControllerExtension.swift in Sources */,
 				8D7E86852A6D0CEB008580A9 /* GuideController.swift in Sources */,
 				8D7E867F2A6D049C008580A9 /* ViewFactoryUtil.swift in Sources */,
 				8DD33C2E2A73794A00A34010 /* ResourceUtil.swift in Sources */,

@@ -86,8 +86,8 @@ class TermServiceDialogController: BaseController, QMUIModalPresentationContentV
         return r
     }()
     
-    lazy var primaryButton:QMUIButton = {
-        let r = ViewFactoryUtil.primaryCapsuleFilledButton()
+    lazy var primaryButton: QMUIButton = {
+        let r = ViewFactoryUtil.primaryHalfFilletButton()
         r.setTitle(R.string.localizable.agree(), for: .normal)
         return r
     }()

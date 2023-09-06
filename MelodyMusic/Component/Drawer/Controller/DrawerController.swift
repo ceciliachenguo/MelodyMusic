@@ -49,7 +49,9 @@ class DrawerController: BaseLogicController {
     }
     
     @objc func userClick(_ data: UITapGestureRecognizer) {
-        
+        closeDrawer()
+//        startController(LoginHomeController()) // same as below
+        startController(LoginHomeController.self)
     }
     
     lazy var scanView: QMUIButton = {

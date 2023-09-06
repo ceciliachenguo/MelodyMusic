@@ -2534,7 +2534,7 @@ struct _R {
     var accentColor: RswiftResources.ColorResource { .init(name: "AccentColor", path: [], bundle: bundle) }
   }
 
-  /// This `_R.image` struct is generated, and contains static references to 35 images.
+  /// This `_R.image` struct is generated, and contains static references to 39 images.
   struct image {
     let bundle: Foundation.Bundle
 
@@ -2576,6 +2576,18 @@ struct _R {
 
     /// Image `LiveSelected`.
     var liveSelected: RswiftResources.ImageResource { .init(name: "LiveSelected", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `LoginNeteaseSelected`.
+    var loginNeteaseSelected: RswiftResources.ImageResource { .init(name: "LoginNeteaseSelected", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `LoginQqSelected`.
+    var loginQqSelected: RswiftResources.ImageResource { .init(name: "LoginQqSelected", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `LoginWechatSelected`.
+    var loginWechatSelected: RswiftResources.ImageResource { .init(name: "LoginWechatSelected", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `LoginWeiboSelected`.
+    var loginWeiboSelected: RswiftResources.ImageResource { .init(name: "LoginWeiboSelected", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
 
     /// Image `Logo`.
     var logo: RswiftResources.ImageResource { .init(name: "Logo", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }

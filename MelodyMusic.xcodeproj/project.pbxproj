@@ -27,6 +27,7 @@
 		8D9E016C2AA7AF72008DE778 /* CWDrawerTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D9E01662AA7AF72008DE778 /* CWDrawerTransition.m */; };
 		8D9E016D2AA7AF72008DE778 /* CWLateralSlideConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D9E01682AA7AF72008DE778 /* CWLateralSlideConfiguration.m */; };
 		8D9E01702AA7C8F6008DE778 /* SuperSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9E016F2AA7C8F6008DE778 /* SuperSettingView.swift */; };
+		8D9E01732AA80F9C008DE778 /* SuperRegularUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9E01722AA80F9C008DE778 /* SuperRegularUtil.swift */; };
 		8DA405C62A6CD8FE0033F979 /* SuperDateUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA405C52A6CD8FE0033F979 /* SuperDateUtil.swift */; };
 		8DA405CA2A6CDC460033F979 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8DA405CC2A6CDC460033F979 /* Localizable.strings */; };
 		8DAF42122A85FBC300C5097F /* SheetGroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAF42112A85FBC300C5097F /* SheetGroupCell.swift */; };
@@ -149,6 +150,7 @@
 		8D9E01672AA7AF72008DE778 /* UIViewController+CWLateralSlide.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+CWLateralSlide.h"; sourceTree = "<group>"; };
 		8D9E01682AA7AF72008DE778 /* CWLateralSlideConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWLateralSlideConfiguration.m; sourceTree = "<group>"; };
 		8D9E016F2AA7C8F6008DE778 /* SuperSettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperSettingView.swift; sourceTree = "<group>"; };
+		8D9E01722AA80F9C008DE778 /* SuperRegularUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuperRegularUtil.swift; sourceTree = "<group>"; };
 		8DA405C52A6CD8FE0033F979 /* SuperDateUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperDateUtil.swift; sourceTree = "<group>"; };
 		8DA405CB2A6CDC460033F979 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		8DA405CD2A6CDC5E0033F979 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
@@ -372,6 +374,14 @@
 			path = Setting;
 			sourceTree = "<group>";
 		};
+		8D9E01712AA80F7C008DE778 /* Regular */ = {
+			isa = PBXGroup;
+			children = (
+				8D9E01722AA80F9C008DE778 /* SuperRegularUtil.swift */,
+			);
+			path = Regular;
+			sourceTree = "<group>";
+		};
 		8DA405C02A6CD3130033F979 /* Splash */ = {
 			isa = PBXGroup;
 			children = (
@@ -415,6 +425,7 @@
 		8DA405C32A6CD8920033F979 /* SuperSwift */ = {
 			isa = PBXGroup;
 			children = (
+				8D9E01712AA80F7C008DE778 /* Regular */,
 				8DED454E2A8A71EB0025EC7F /* String */,
 				8DA405C42A6CD89C0033F979 /* Date */,
 			);
@@ -1177,6 +1188,7 @@
 				8DED455A2A8A80920025EC7F /* SongData.swift in Sources */,
 				8DD33B932A6F83B800A34010 /* DetailResponse.swift in Sources */,
 				8DD33B7F2A6F748A00A34010 /* PageResponse.swift in Sources */,
+				8D9E01732AA80F9C008DE778 /* SuperRegularUtil.swift in Sources */,
 				8DD33B6E2A6F392400A34010 /* YJBannerViewCell.m in Sources */,
 				8DDB15672A91602600B25482 /* ViewExtension.swift in Sources */,
 				8DDB15692A91619C00B25482 /* BaseMainController.swift in Sources */,

@@ -7,6 +7,7 @@
 
 import UIKit
 import TangramKit
+import BSText
 
 class LoginHomeController: BaseTitleController {
     override func initViews() {
@@ -74,6 +75,25 @@ class LoginHomeController: BaseTitleController {
         //邮箱登录
         moreButtonView =  ViewFactoryUtil.buttonLarge(R.image.loginNeteaseSelected()!)
         moreLogincontainer.addSubview(moreButtonView)
+        
+        //用户协议
+        let agreementString = NSMutableAttributedString(string: R.string.localizable.userAgreement())
+        
+        agreementString.bs_font = UIFont.systemFont(ofSize: TEXT_SMALL)
+        agreementString.bs_color = .black80
+        
+        var range = NSRange(location: 9, length: 4)
+        agreementString.bs_set(textHighlightRange: range, color: .link, backgroundColor: nil) { containerView, text, range, rect in
+            SuperWebController.start(self.navigationController!, uri: "http://www.ixuea.com/articles/4449")
+        }
+        
+        range = NSRange(location: 16, length: 4)
+        agreementString.bs_set(textHighlightRange: range, color: .link, backgroundColor: nil) { containerView, text, range, rect in
+            SuperWebController.start(self.navigationController!, uri: "http://www.ixuea.com/articles/4467")
+        }
+        
+        agreementView.attributedText = agreementString
+        container.addSubview(agreementView)
     }
     
     /// 手机号登录
@@ -95,4 +115,14 @@ class LoginHomeController: BaseTitleController {
     @objc func onQQClick(_ sender:QMUIButton) {
 
     }
+    
+    lazy var agreementView: BSLabel = {
+        let r = BSLabel()
+        r.tg_width.equal(.wrap)
+        r.tg_height.equal(.wrap)
+        r.textAlignment = .center
+        r.numberOfLines = 0
+        r.isUserInteractionEnabled = true
+        return r
+    }()
 }

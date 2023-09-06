@@ -46,6 +46,11 @@ target 'MelodyMusic' do
   
   #https:https://github.com/CoderMJLee/MJRefresh
   pod 'MJRefresh'
+  
+  #https:https://github.com/a1049145827/BSText
+  #OC版本：https:https://github.com/ibireme/YYText
+  pod "BSText"
+
 
   post_install do |installer|
       installer.generated_projects.each do |project|

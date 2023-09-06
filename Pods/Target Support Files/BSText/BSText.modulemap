@@ -1,0 +1,6 @@
+framework module BSText {
+  umbrella header "BSText-umbrella.h"
+
+  export *
+  module * { export * }
+}

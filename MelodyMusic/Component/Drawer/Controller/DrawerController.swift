@@ -52,8 +52,9 @@ class DrawerController: BaseLogicController {
     
     @objc func userClick(_ data: UITapGestureRecognizer) {
         closeDrawer()
-//        startController(LoginHomeController()) // same as below
-        startController(LoginHomeController.self)
+        loginAfter{
+            UserDetailController.start(getNavigationController(), id: PreferenceUtil.getUserId())
+        }
     }
     
     lazy var scanView: QMUIButton = {
@@ -75,27 +76,26 @@ class DrawerController: BaseLogicController {
     
     @objc func primaryClick(_ sender:QMUIButton) {
         closeDrawer()
-//        logoutConfirmController.show()
+        logoutConfirmController.show()
     }
     
+    /// 退出确认对话框
+    lazy var logoutConfirmController: SuperDialogController = {
+        let r = SuperDialogController()
+        
+        r.setTitleText(R.string.localizable.confirmLogout())
+        r.setCancelButton(title: R.string.localizable.superCancel())
+        r.setWarningButton(title: R.string.localizable.confirm(), target: self, action: #selector(primaryConfirmClick(_:)))
+        
+        return r
+    }()
+    
     @objc func primaryConfirmClick(_ sender:QMUIButton) {
-//        logoutConfirmController.hide()
+        logoutConfirmController.hide()
         closeDrawer()
         AppDelegate.shared.logout()
         showNotLogin()
     }
-    
-    /// 退出确认对话框
-//    lazy var logoutConfirmController: SuperDialogController = {
-//        let r = SuperDialogController()
-//        
-//        r.setTitleText(R.string.localizable.confirmLogout())
-//        r.setCancelButton(title: R.string
-//            .localizable.superCancel())
-//        r.setWarningButton(title: R.string.localizable.confirm(), target: self, action: #selector(primaryConfirmClick(_:)))
-//        
-//        return r
-//    }()
     
     func closeDrawer() {
         dismiss(animated: true, completion: nil)

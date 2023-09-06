@@ -22,6 +22,8 @@ enum DefaultService {
     case songs
     case songDetail(data:String)
     
+    case userDetail(data:String,nickname:String?)
+
 }
 
 extension DefaultService:TargetType {
@@ -42,6 +44,9 @@ extension DefaultService:TargetType {
             return "v1/songs"
         case .songDetail(let data):
             return "v1/songs/\(data)"
+            
+        case .userDetail(let data,_):
+            return "v1/users/\(data)"
             
         case .register(_):
             return "v1/users"
@@ -69,6 +74,13 @@ extension DefaultService:TargetType {
             return ParamUtil.urlRequestParameters(["size":size])
         case .login(let data):
             return .requestData(data.toJSONString()!.data(using: .utf8)!)
+        case .userDetail(_, let nickname):
+            var param:[String:Any]=[:]
+            
+            if let nickname = nickname {
+                param["nickname"]=nickname
+            }
+            return ParamUtil.urlRequestParameters(param)
 //        case .register(let user):
 //            return .requestPlain
         default:

@@ -63,6 +63,15 @@ class DefaultRepository {
                 .mapObject(DetailResponse<Song>.self)
     }
     
+    func userDetail(_ data:String,_ nickname:String?=nil) -> Observable<DetailResponse<User>> {
+        return provider
+                .rx
+                .request(.userDetail(data: data,nickname:nickname))
+                .asObservable()
+                .mapString()
+                .mapObject(DetailResponse<User>.self)
+    }
+    
     func register(_ data:User) -> Observable<DetailResponse<BaseModel>> {
         return provider
                     .rx

@@ -23,6 +23,8 @@ class DrawerController: BaseLogicController {
         initShopMenu()
         initOtherMenu()
         initAboutMenu()
+        
+        contentContainer.addSubview(primaryButton)
     }
     
     func initUserView() {
@@ -63,6 +65,38 @@ class DrawerController: BaseLogicController {
         return result
     }()
     
+    lazy var primaryButton: QMUIButton = {
+        let r = ViewFactoryUtil.primaryHalfFilletOutlineButton()
+        r.setTitle(R.string.localizable.logout(), for: .normal)
+        r.tg_top.equal(PADDING_OUTER)
+        r.addTarget(self, action: #selector(primaryClick(_:)), for: .touchUpInside)
+        return r
+    }()
+    
+    @objc func primaryClick(_ sender:QMUIButton) {
+        closeDrawer()
+//        logoutConfirmController.show()
+    }
+    
+    @objc func primaryConfirmClick(_ sender:QMUIButton) {
+//        logoutConfirmController.hide()
+        closeDrawer()
+        AppDelegate.shared.logout()
+        showNotLogin()
+    }
+    
+    /// 退出确认对话框
+//    lazy var logoutConfirmController: SuperDialogController = {
+//        let r = SuperDialogController()
+//        
+//        r.setTitleText(R.string.localizable.confirmLogout())
+//        r.setCancelButton(title: R.string
+//            .localizable.superCancel())
+//        r.setWarningButton(title: R.string.localizable.confirm(), target: self, action: #selector(primaryConfirmClick(_:)))
+//        
+//        return r
+//    }()
+    
     func closeDrawer() {
         dismiss(animated: true, completion: nil)
     }
@@ -76,6 +110,49 @@ class DrawerController: BaseLogicController {
             startController(ScanController.self)
         #endif
     }
+    
+    /// 界面即将展示
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        showUserInfo()
+    }
+    
+    /// 界面已经显示出来
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        //第一次获取消息数
+//        messageCountChanged()
+    }
+
+    func showUserInfo() {
+        if PreferenceUtil.isLogin() {
+            loadUserData()
+            
+            primaryButton.show()
+        } else {
+            showNotLogin()
+        }
+    }
+
+    func loadUserData() {
+        DefaultRepository.shared
+            .userDetail(PreferenceUtil.getUserId())
+            .subscribeSuccess {[weak self] data in
+                self?.show(data.data!)
+            }.disposed(by: rx.disposeBag)
+    }
+
+    func show(_ data:User) {
+        iconView.showAvatar(data.icon)
+        nicknameView.text = data.nickname
+    }
+
+    func showNotLogin() {
+        iconView.image = R.image.defaultAvatar()
+        nicknameView.text = R.string.localizable.loginNow()
+        primaryButton.hide()
+    }
+
     
     lazy var iconView: UIImageView = {
         let r = UIImageView()

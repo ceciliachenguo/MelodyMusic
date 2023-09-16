@@ -92,6 +92,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             var results:[UIViewController] = []
             for it in vcs {
                 if it is LoginHomeController ||
+                it is RegisterController ||
                 it is LoginController {
                     continue
                 }

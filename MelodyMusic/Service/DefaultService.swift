@@ -81,8 +81,8 @@ extension DefaultService:TargetType {
                 param["nickname"]=nickname
             }
             return ParamUtil.urlRequestParameters(param)
-//        case .register(let user):
-//            return .requestPlain
+        case .register(let data):
+            return .requestData(data.toJSONString()!.data(using: .utf8)!)
         default:
             return .requestPlain
         }

@@ -84,27 +84,27 @@ class RegisterController: BaseLoginController {
             return
         }
         
-        //获取密码
+        //get password
         let password = passwordView.textFieldView.text?.trimmed
         if SuperStringUtil.isBlank(password) {
             SuperToast.show(title: R.string.localizable.enterPassword())
             return
         }
 
-        //判断密码格式
+        //check password format
         if !StringUtil.isPassword(password!) {
             SuperToast.show(title: R.string.localizable.errorPasswordFormat())
             return
         }
 
-        //确认获取密码
+        //confirm acquiring password
         let confirmPassword = confirmPasswordView.textFieldView.text?.trimmed
         if SuperStringUtil.isBlank(confirmPassword) {
             SuperToast.show(title: R.string.localizable.enterConfirmPassword())
             return
         }
 
-        //判断确认密码是否一致
+        //check password
         if password != confirmPassword {
             SuperToast.show(title: R.string.localizable.errorConfirmPassword())
             return
@@ -120,7 +120,7 @@ class RegisterController: BaseLoginController {
         DefaultRepository.shared
             .register(param)
             .subscribeSuccess { data in
-                //注册成功后，自动登陆，这样用户体验更好
+                //if sucessfully registered, automatically login
                 self.login(param)
             }.disposed(by: rx.disposeBag)
     }

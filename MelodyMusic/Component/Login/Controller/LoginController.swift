@@ -105,7 +105,7 @@ class LoginController: BaseLoginController {
     }
     
     @objc func registerClick(_ sender:QMUIButton) {
-//        startController(RegisterController.self)
+        startController(RegisterController.self)
     }
     
     @objc func forgotPasswordViewClick(_ sender:QMUIButton) {

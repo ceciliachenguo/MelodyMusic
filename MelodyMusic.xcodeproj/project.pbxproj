@@ -39,6 +39,7 @@
 		8D9E018E2AA87433008DE778 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9E018D2AA87433008DE778 /* UIViewControllerExtension.swift */; };
 		8D9E01922AA875FD008DE778 /* SuperDialogController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9E01912AA875FD008DE778 /* SuperDialogController.swift */; };
 		8D9E01952AA8866A008DE778 /* UserDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9E01942AA8866A008DE778 /* UserDetailController.swift */; };
+		8D9E024F2AB5F753008DE778 /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9E024E2AB5F753008DE778 /* RegisterController.swift */; };
 		8DA405C62A6CD8FE0033F979 /* SuperDateUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA405C52A6CD8FE0033F979 /* SuperDateUtil.swift */; };
 		8DA405CA2A6CDC460033F979 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8DA405CC2A6CDC460033F979 /* Localizable.strings */; };
 		8DAF42122A85FBC300C5097F /* SheetGroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAF42112A85FBC300C5097F /* SheetGroupCell.swift */; };
@@ -173,6 +174,7 @@
 		8D9E018D2AA87433008DE778 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		8D9E01912AA875FD008DE778 /* SuperDialogController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperDialogController.swift; sourceTree = "<group>"; };
 		8D9E01942AA8866A008DE778 /* UserDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailController.swift; sourceTree = "<group>"; };
+		8D9E024E2AB5F753008DE778 /* RegisterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
 		8DA405C52A6CD8FE0033F979 /* SuperDateUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperDateUtil.swift; sourceTree = "<group>"; };
 		8DA405CB2A6CDC460033F979 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		8DA405CD2A6CDC5E0033F979 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
@@ -454,6 +456,22 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		8D9E024C2AB5F72E008DE778 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				8D9E024D2AB5F737008DE778 /* Controller */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		8D9E024D2AB5F737008DE778 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8D9E024E2AB5F753008DE778 /* RegisterController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		8DA405C02A6CD3130033F979 /* Splash */ = {
 			isa = PBXGroup;
 			children = (
@@ -465,6 +483,7 @@
 		8DA405C12A6CD3300033F979 /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				8D9E024C2AB5F72E008DE778 /* Register */,
 				8D9E015A2AA7AED1008DE778 /* Drawer */,
 				8DED45552A8A7E7B0025EC7F /* Song */,
 				8DD33C1F2A7363FE00A34010 /* Room */,
@@ -1246,6 +1265,7 @@
 				8DED45502A8A71F60025EC7F /* SuperStringUtil.swift in Sources */,
 				8DD33B672A6F392400A34010 /* UIView+YJBannerViewExt.m in Sources */,
 				8DD33B7A2A6F677700A34010 /* ParamUtil.swift in Sources */,
+				8D9E024F2AB5F753008DE778 /* RegisterController.swift in Sources */,
 				8DA405C62A6CD8FE0033F979 /* SuperDateUtil.swift in Sources */,
 				8DEBED312A6C4F7A00303597 /* AppDelegate.swift in Sources */,
 				8DAF42192A8601BB00C5097F /* SuperImageExtension.swift in Sources */,

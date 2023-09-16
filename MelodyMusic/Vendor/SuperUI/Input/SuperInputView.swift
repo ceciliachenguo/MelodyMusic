@@ -19,7 +19,6 @@ class SuperInputView: BaseRelativeLayout {
     }
     
     func initInput() {
-        //内容容器
         container = ViewFactoryUtil.orientationContainer()
         container.tg_space = PADDING_MIDDLE
         container.tg_gravity = TGGravity.vert.center
@@ -37,7 +36,6 @@ class SuperInputView: BaseRelativeLayout {
     func initMultiInput(_ maxCount:Int = -1) {
         self.maxCount = maxCount
         
-        //内容容器
         container = TGRelativeLayout()
         container.tg_width.equal(.fill)
         container.tg_height.equal(.wrap)
@@ -56,12 +54,11 @@ class SuperInputView: BaseRelativeLayout {
     }
     
     func smallBorder() {
-        //小圆角，边框
         layer.cornerRadius = SMALL_RADIUS
         layer.borderWidth = 1
         layer.borderColor = UIColor.colorDivider.cgColor
         
-        //两端有padding
+        //padding on 2 sides
         container.tg_leadingPadding = PADDING_MIDDLE
         container.tg_trailingPadding = PADDING_MIDDLE
     }
@@ -81,7 +78,7 @@ class SuperInputView: BaseRelativeLayout {
     @discardableResult
     func emailStyle() -> SuperInputView {
         textFieldView.textContentType = .emailAddress
-        textFieldView.keyboardType = .asciiCapable
+        textFieldView.keyboardType = .emailAddress
         return self
     }
     
@@ -102,10 +99,9 @@ class SuperInputView: BaseRelativeLayout {
         r.font = UIFont.systemFont(ofSize: TEXT_LARGE)
         r.textColor = .colorOnSurface
         
-        //编辑的时候显示清除按钮
+        //show the clear button when editing
         r.clearButtonMode = .whileEditing
         
-        //关闭首字母大写
         r.autocapitalizationType = .none
         return r
     }()
@@ -119,7 +115,6 @@ class SuperInputView: BaseRelativeLayout {
         r.placeholderColor = .black80
         r.delegate = self
         
-        //关闭首字母大写
         r.autocapitalizationType = .none
         return r
     }()
@@ -137,7 +132,6 @@ class SuperInputView: BaseRelativeLayout {
     }()
 }
 
-//快捷创建方法
 extension SuperInputView{
     static func input(placeholder:String,image:UIImage?=nil) -> SuperInputView {
         let r = SuperInputView()
@@ -160,7 +154,6 @@ extension SuperInputView{
         
         r.initMultiInput(maxCount)
         
-        //输入框
         r.textView.placeholder = placeholder
         
         r.bottomBorder()
@@ -168,13 +161,11 @@ extension SuperInputView{
         return r
     }
     
-    /// 小圆角输入框
     static func inputSmallBorder(placeholder:String) -> SuperInputView {
         let r = SuperInputView()
         
         r.initInput()
         
-        //输入框
         r.textFieldView.placeholder = placeholder
         r.backgroundColor = .colorDivider
         r.smallBorder()
@@ -183,7 +174,7 @@ extension SuperInputView{
     }
 }
 
-//多行输入框代理
+//multi-line textView代理
 extension SuperInputView:QMUITextViewDelegate{
     func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
         if isCount() {

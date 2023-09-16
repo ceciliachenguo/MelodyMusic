@@ -91,6 +91,16 @@ class DefaultRepository {
                     .asObservable()
                     .mapObject(DetailResponse<Session>.self)
     }
+    
+    func sendCode(_ style:Int,_ data:CodeRequest) -> Observable<DetailResponse<BaseModel>> {
+        return provider
+                    .rx
+                    .request(.sendCode(style:style,data: data))
+                    .filterSuccessfulStatusCodes()
+                    .mapString()
+                    .asObservable()
+                    .mapObject(DetailResponse<BaseModel>.self)
+    }
         
     private init() {
         var plugins:[PluginType] = []

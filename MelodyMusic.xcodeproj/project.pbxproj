@@ -43,6 +43,9 @@
 		8D9E02532AB655F9008DE778 /* InputUserIdentityController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9E02522AB655F9008DE778 /* InputUserIdentityController.swift */; };
 		8D9E02562AB657D7008DE778 /* InputCodePageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9E02552AB657D7008DE778 /* InputCodePageData.swift */; };
 		8D9E02582AB65896008DE778 /* InputCodeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9E02572AB65896008DE778 /* InputCodeController.swift */; };
+		8D9E025A2AB66249008DE778 /* CodeRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9E02592AB66249008DE778 /* CodeRequest.swift */; };
+		8D9E025D2AB6660F008DE778 /* CountDownUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9E025C2AB6660F008DE778 /* CountDownUtil.swift */; };
+		8D9E02612AB669A2008DE778 /* SetPasswordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9E02602AB669A2008DE778 /* SetPasswordController.swift */; };
 		8DA405C62A6CD8FE0033F979 /* SuperDateUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA405C52A6CD8FE0033F979 /* SuperDateUtil.swift */; };
 		8DA405CA2A6CDC460033F979 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8DA405CC2A6CDC460033F979 /* Localizable.strings */; };
 		8DAF42122A85FBC300C5097F /* SheetGroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAF42112A85FBC300C5097F /* SheetGroupCell.swift */; };
@@ -181,6 +184,9 @@
 		8D9E02522AB655F9008DE778 /* InputUserIdentityController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputUserIdentityController.swift; sourceTree = "<group>"; };
 		8D9E02552AB657D7008DE778 /* InputCodePageData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputCodePageData.swift; sourceTree = "<group>"; };
 		8D9E02572AB65896008DE778 /* InputCodeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputCodeController.swift; sourceTree = "<group>"; };
+		8D9E02592AB66249008DE778 /* CodeRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeRequest.swift; sourceTree = "<group>"; };
+		8D9E025C2AB6660F008DE778 /* CountDownUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountDownUtil.swift; sourceTree = "<group>"; };
+		8D9E02602AB669A2008DE778 /* SetPasswordController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetPasswordController.swift; sourceTree = "<group>"; };
 		8DA405C52A6CD8FE0033F979 /* SuperDateUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperDateUtil.swift; sourceTree = "<group>"; };
 		8DA405CB2A6CDC460033F979 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		8DA405CD2A6CDC5E0033F979 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
@@ -500,8 +506,33 @@
 			isa = PBXGroup;
 			children = (
 				8D9E02552AB657D7008DE778 /* InputCodePageData.swift */,
+				8D9E02592AB66249008DE778 /* CodeRequest.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		8D9E025B2AB66607008DE778 /* Time */ = {
+			isa = PBXGroup;
+			children = (
+				8D9E025C2AB6660F008DE778 /* CountDownUtil.swift */,
+			);
+			path = Time;
+			sourceTree = "<group>";
+		};
+		8D9E025E2AB6697D008DE778 /* Password */ = {
+			isa = PBXGroup;
+			children = (
+				8D9E025F2AB66984008DE778 /* Controller */,
+			);
+			path = Password;
+			sourceTree = "<group>";
+		};
+		8D9E025F2AB66984008DE778 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8D9E02602AB669A2008DE778 /* SetPasswordController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		8DA405C02A6CD3130033F979 /* Splash */ = {
@@ -515,6 +546,7 @@
 		8DA405C12A6CD3300033F979 /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				8D9E025E2AB6697D008DE778 /* Password */,
 				8D9E02502AB655DC008DE778 /* Input */,
 				8D9E024C2AB5F72E008DE778 /* Register */,
 				8D9E015A2AA7AED1008DE778 /* Drawer */,
@@ -783,6 +815,7 @@
 		8DD33B9A2A70414200A34010 /* SuperUI */ = {
 			isa = PBXGroup;
 			children = (
+				8D9E025B2AB66607008DE778 /* Time */,
 				8D9E01902AA875C0008DE778 /* Dialog */,
 				8D9E017C2AA85787008DE778 /* Input */,
 				8D9E01772AA81C66008DE778 /* Controller */,
@@ -1273,10 +1306,12 @@
 				8DD33B692A6F392400A34010 /* YJHollowPageControl.m in Sources */,
 				8DD33B6F2A6F392400A34010 /* YJBannerViewFooter.m in Sources */,
 				8D7E866E2A6CF007008580A9 /* SuperUIThemeExtension.swift in Sources */,
+				8D9E025D2AB6660F008DE778 /* CountDownUtil.swift in Sources */,
 				8DD33B912A6F836100A34010 /* BaseResponse.swift in Sources */,
 				8DD33C1E2A7363EC00A34010 /* FeedController.swift in Sources */,
 				8DD33C322A7389E900A34010 /* ButtonData.swift in Sources */,
 				8DED455C2A8A83640025EC7F /* DiscoverySongCell.swift in Sources */,
+				8D9E025A2AB66249008DE778 /* CodeRequest.swift in Sources */,
 				8D9E015D2AA7AEF5008DE778 /* DrawerController.swift in Sources */,
 				8D9E01922AA875FD008DE778 /* SuperDialogController.swift in Sources */,
 				8D9E01692AA7AF72008DE778 /* CWInteractiveTransition.m in Sources */,
@@ -1301,6 +1336,7 @@
 				8DD33B672A6F392400A34010 /* UIView+YJBannerViewExt.m in Sources */,
 				8DD33B7A2A6F677700A34010 /* ParamUtil.swift in Sources */,
 				8D9E024F2AB5F753008DE778 /* RegisterController.swift in Sources */,
+				8D9E02612AB669A2008DE778 /* SetPasswordController.swift in Sources */,
 				8DA405C62A6CD8FE0033F979 /* SuperDateUtil.swift in Sources */,
 				8DEBED312A6C4F7A00303597 /* AppDelegate.swift in Sources */,
 				8DAF42192A8601BB00C5097F /* SuperImageExtension.swift in Sources */,

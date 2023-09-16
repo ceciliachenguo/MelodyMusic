@@ -9,8 +9,10 @@ import Foundation
 import TangramKit
 import MHVerifyCodeView
 
-class InputCodeController: BaseTitleController {
+class InputCodeController: BaseLoginController {
     var pageData: InputCodePageData!
+    var codeStyle:Int!
+    var codeRequest:CodeRequest!
     
     override func initViews() {
         super.initViews()
@@ -52,14 +54,11 @@ class InputCodeController: BaseTitleController {
     }
     
     func sendCode() {
-//        DefaultRepository.shared
-//            .sendCode(codeStyle, codeRequest)
-//            .subscribeSuccess {[weak self] data in
-//                //发送成功了
-//
-//                //开始倒计时
-//                self?.startCountDown()
-//            }.disposed(by: rx.disposeBag)
+        DefaultRepository.shared
+            .sendCode(codeStyle, codeRequest)
+            .subscribeSuccess {[weak self] data in
+                self?.startCountDown()
+            }.disposed(by: rx.disposeBag)
     }
     
     lazy var codeSendTargetView: UILabel = {
@@ -88,26 +87,44 @@ class InputCodeController: BaseTitleController {
         super.initDatum()
         //显示验证码发送到目标
         var target:String!
+        codeRequest = CodeRequest()
         if SuperStringUtil.isNotBlank(pageData.phone) {
             target = pageData.phone
+            codeStyle = VALUE10
+            codeRequest.phone = pageData.phone
         } else {
             target = pageData.email
+            codeStyle = VALUE0
+            codeRequest.email = pageData.email
         }
         codeSendTargetView.text = R.string.localizable.verificationCodeSentTo(target)
         
         sendCode()
     }
     
+    func startCountDown() {
+        CountDownUtil.countDown(60) { result in
+            if result == 0 {
+                self.sendView.setTitle(R.string.localizable.resend(), for: .normal)
+                self.sendView.isEnabled = true
+            } else {
+                self.sendView.setTitle(R.string.localizable.resendCount(result), for: .normal)
+            }
+            
+            self.sendView.sizeToFit()
+        }
+        
+        self.sendView.isEnabled = false
+    }
+    
     func processNext(_ data:String) {
-//        if pageData.style == .phoneLogin {
-//            //手机号验证码登录
-//            let param = User()
-//            param.phone=pageData.phone
-//            param.email=pageData.email
-//            param.code=data
-//            login(param)
-//        } else {
-//            //先校验验证码
+        if pageData.style == .phoneLogin {
+            let param = User()
+            param.phone=pageData.phone
+            param.email=pageData.email
+            param.code=data
+            login(param)
+        } else {
 //            codeRequest.code = data
 //
 //            DefaultRepository.shared
@@ -120,7 +137,7 @@ class InputCodeController: BaseTitleController {
 //                    //self.codeInputView.clear
 //                    return false
 //                }).disposed(by: rx.disposeBag)
-//        }
+        }
     }
 }
 

@@ -129,6 +129,13 @@ class BaseLogicController: BaseCommonController {
         scrollView.addSubview(contentContainer)
     }
     
+    func initLinearLayoutInputSafeArea() {
+        initLinearLayoutSafeArea()
+        
+        container.tg_padding = UIEdgeInsets(top: PADDING_OUTER, left: PADDING_OUTER, bottom: 0, right: PADDING_OUTER)
+        container.tg_space = PADDING_OUTER
+    }
+    
     func createTableView() {
         tableView = ViewFactoryUtil.tableView()
         tableView.delegate = self

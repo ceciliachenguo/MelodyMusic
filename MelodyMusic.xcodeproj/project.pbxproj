@@ -40,6 +40,9 @@
 		8D9E01922AA875FD008DE778 /* SuperDialogController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9E01912AA875FD008DE778 /* SuperDialogController.swift */; };
 		8D9E01952AA8866A008DE778 /* UserDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9E01942AA8866A008DE778 /* UserDetailController.swift */; };
 		8D9E024F2AB5F753008DE778 /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9E024E2AB5F753008DE778 /* RegisterController.swift */; };
+		8D9E02532AB655F9008DE778 /* InputUserIdentityController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9E02522AB655F9008DE778 /* InputUserIdentityController.swift */; };
+		8D9E02562AB657D7008DE778 /* InputCodePageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9E02552AB657D7008DE778 /* InputCodePageData.swift */; };
+		8D9E02582AB65896008DE778 /* InputCodeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9E02572AB65896008DE778 /* InputCodeController.swift */; };
 		8DA405C62A6CD8FE0033F979 /* SuperDateUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA405C52A6CD8FE0033F979 /* SuperDateUtil.swift */; };
 		8DA405CA2A6CDC460033F979 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8DA405CC2A6CDC460033F979 /* Localizable.strings */; };
 		8DAF42122A85FBC300C5097F /* SheetGroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAF42112A85FBC300C5097F /* SheetGroupCell.swift */; };
@@ -175,6 +178,9 @@
 		8D9E01912AA875FD008DE778 /* SuperDialogController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperDialogController.swift; sourceTree = "<group>"; };
 		8D9E01942AA8866A008DE778 /* UserDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailController.swift; sourceTree = "<group>"; };
 		8D9E024E2AB5F753008DE778 /* RegisterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
+		8D9E02522AB655F9008DE778 /* InputUserIdentityController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputUserIdentityController.swift; sourceTree = "<group>"; };
+		8D9E02552AB657D7008DE778 /* InputCodePageData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputCodePageData.swift; sourceTree = "<group>"; };
+		8D9E02572AB65896008DE778 /* InputCodeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputCodeController.swift; sourceTree = "<group>"; };
 		8DA405C52A6CD8FE0033F979 /* SuperDateUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperDateUtil.swift; sourceTree = "<group>"; };
 		8DA405CB2A6CDC460033F979 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		8DA405CD2A6CDC5E0033F979 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
@@ -472,6 +478,32 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		8D9E02502AB655DC008DE778 /* Input */ = {
+			isa = PBXGroup;
+			children = (
+				8D9E02542AB657C6008DE778 /* Model */,
+				8D9E02512AB655E0008DE778 /* Controller */,
+			);
+			path = Input;
+			sourceTree = "<group>";
+		};
+		8D9E02512AB655E0008DE778 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8D9E02522AB655F9008DE778 /* InputUserIdentityController.swift */,
+				8D9E02572AB65896008DE778 /* InputCodeController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8D9E02542AB657C6008DE778 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8D9E02552AB657D7008DE778 /* InputCodePageData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		8DA405C02A6CD3130033F979 /* Splash */ = {
 			isa = PBXGroup;
 			children = (
@@ -483,6 +515,7 @@
 		8DA405C12A6CD3300033F979 /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				8D9E02502AB655DC008DE778 /* Input */,
 				8D9E024C2AB5F72E008DE778 /* Register */,
 				8D9E015A2AA7AED1008DE778 /* Drawer */,
 				8DED45552A8A7E7B0025EC7F /* Song */,
@@ -1236,6 +1269,7 @@
 				8DAF42122A85FBC300C5097F /* SheetGroupCell.swift in Sources */,
 				8D7E86772A6CFC79008580A9 /* BaseTitleController.swift in Sources */,
 				8DAF42162A85FF7C00C5097F /* SheetData.swift in Sources */,
+				8D9E02532AB655F9008DE778 /* InputUserIdentityController.swift in Sources */,
 				8DD33B692A6F392400A34010 /* YJHollowPageControl.m in Sources */,
 				8DD33B6F2A6F392400A34010 /* YJBannerViewFooter.m in Sources */,
 				8D7E866E2A6CF007008580A9 /* SuperUIThemeExtension.swift in Sources */,
@@ -1250,6 +1284,7 @@
 				8DAF42202A8608CB00C5097F /* ViewCornerExtension.swift in Sources */,
 				8DD33B862A6F7CC300A34010 /* ObservableMoyaExtension.swift in Sources */,
 				8D9E01812AA857EC008DE778 /* BaseRelativeLayout.swift in Sources */,
+				8D9E02562AB657D7008DE778 /* InputCodePageData.swift in Sources */,
 				8DD33B9F2A706C4A00A34010 /* ExceptionHandleUtil.swift in Sources */,
 				8DAF42232A8609A800C5097F /* SuperConfig.swift in Sources */,
 				8DD33B8C2A6F813200A34010 /* BaseCommon.swift in Sources */,
@@ -1310,6 +1345,7 @@
 				8D9E017B2AA84EFC008DE778 /* LoginController.swift in Sources */,
 				8DED455E2A8D96120025EC7F /* DiscoveryFooterCell.swift in Sources */,
 				8DD33B742A6F645000A34010 /* DefaultService.swift in Sources */,
+				8D9E02582AB65896008DE778 /* InputCodeController.swift in Sources */,
 				8DD33B8A2A6F80FF00A34010 /* BaseId.swift in Sources */,
 				8DD33B882A6F809E00A34010 /* BaseModel.swift in Sources */,
 				8D9E018E2AA87433008DE778 /* UIViewControllerExtension.swift in Sources */,

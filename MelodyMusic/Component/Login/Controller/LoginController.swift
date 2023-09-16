@@ -109,7 +109,7 @@ class LoginController: BaseLoginController {
     }
     
     @objc func forgotPasswordViewClick(_ sender:QMUIButton) {
-//        InputUserIdentityController.start(navigationController!, .forgotPassword)
+        InputUserIdentityController.start(navigationController!, .forgotPassword)
     }
 
     //用户名输入框

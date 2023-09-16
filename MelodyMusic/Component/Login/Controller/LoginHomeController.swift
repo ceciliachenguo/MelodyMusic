@@ -98,7 +98,7 @@ class LoginHomeController: BaseTitleController {
     
     /// 手机号登录
     @objc func onPhoneLoginClick(_ sender:QMUIButton) {
-        
+        InputUserIdentityController.start(navigationController!, .phoneLogin)
     }
     
     ///用户名登录

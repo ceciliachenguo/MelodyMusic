@@ -54,6 +54,9 @@ target 'MelodyMusic' do
   #腾讯开源的偏好存储框架
   #https://github.com/Tencent/MMKV
   pod 'MMKV'
+  
+  #https:https://github.com/feaskters/MHVerifyCodeView
+  pod 'MHVerifyCodeView'
 
   post_install do |installer|
       installer.generated_projects.each do |project|

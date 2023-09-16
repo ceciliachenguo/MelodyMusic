@@ -1,0 +1,6 @@
+framework module MHVerifyCodeView {
+  umbrella header "MHVerifyCodeView-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -101,6 +101,26 @@ class DefaultRepository {
                     .asObservable()
                     .mapObject(DetailResponse<BaseModel>.self)
     }
+    
+    func checkCode(_ data:CodeRequest) -> Observable<DetailResponse<BaseModel>> {
+        return provider
+                    .rx
+                    .request(.checkCode(data: data))
+                    .filterSuccessfulStatusCodes()
+                    .mapString()
+                    .asObservable()
+                    .mapObject(DetailResponse<BaseModel>.self)
+    }
+    
+    func resetPassword(_ data:User) -> Observable<DetailResponse<BaseModel>> {
+        return provider
+                    .rx
+                    .request(.resetPassword(data: data))
+                    .filterSuccessfulStatusCodes()
+                    .mapString()
+                    .asObservable()
+                    .mapObject(DetailResponse<BaseModel>.self)
+    }
         
     private init() {
         var plugins:[PluginType] = []

@@ -25,6 +25,9 @@ enum DefaultService {
     case userDetail(data:String,nickname:String?)
     
     case sendCode(style:Int,data:CodeRequest)
+    case checkCode(data:CodeRequest)
+    case resetPassword(data:User)
+
 
 }
 
@@ -57,6 +60,10 @@ extension DefaultService:TargetType {
             
         case .sendCode:
             return "v1/codes"
+        case .checkCode(_):
+            return "v1/codes/check"
+        case .resetPassword(_):
+            return "v1/users/reset_password"
             
         default:
             fatalError("Default Service Path is inValid")
@@ -65,7 +72,7 @@ extension DefaultService:TargetType {
     
     var method: Moya.Method {
         switch self {
-        case .register(_), .login, .sendCode(_, _):
+        case .register(_), .login, .sendCode(_, _), .checkCode, .resetPassword:
             return .post
         default:
             return .get
@@ -92,6 +99,10 @@ extension DefaultService:TargetType {
             
         case .sendCode(let style, let data):
             return .requestCompositeParameters(bodyParameters: ["phone":data.phone,"email":data.email], bodyEncoding: JSONEncoding.default, urlParameters: ["style":style])
+        case .checkCode(let data):
+            return .requestData(data.toJSONString()!.data(using: .utf8)!)
+        case .resetPassword(let data):
+            return .requestData(data.toJSONString()!.data(using: .utf8)!)
             
         default:
             return .requestPlain

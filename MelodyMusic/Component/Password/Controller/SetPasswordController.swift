@@ -65,11 +65,11 @@ class SetPasswordController: BaseLoginController {
         param.code=pageData.code
         param.password=password
         
-//        DefaultRepository.shared
-//            .resetPassword(param)
-//            .subscribeSuccess{ result in
-//                self.login(param)
-//            }.disposed(by: rx.disposeBag)
+        DefaultRepository.shared
+            .resetPassword(param)
+            .subscribeSuccess{ result in
+                self.login(param)
+            }.disposed(by: rx.disposeBag)
     }
     
     lazy var primaryButton: QMUIButton = {

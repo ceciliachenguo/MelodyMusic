@@ -125,18 +125,18 @@ class InputCodeController: BaseLoginController {
             param.code=data
             login(param)
         } else {
-//            codeRequest.code = data
-//
-//            DefaultRepository.shared
-//                .checkCode(codeRequest)
-//                .subscribe({ result in
-//                    //重设密码
-//                    SetPasswordController.start(self.navigationController!, self.codeRequest)
-//                }, { response, error in
-//                    //清除验证码输入的内容
-//                    //self.codeInputView.clear
-//                    return false
-//                }).disposed(by: rx.disposeBag)
+            codeRequest.code = data
+
+            DefaultRepository.shared
+                .checkCode(codeRequest)
+                .subscribe({ result in
+                    //重设密码
+                    SetPasswordController.start(self.navigationController!, self.codeRequest)
+                }, { response, error in
+                    //清除验证码输入的内容
+                    //self.codeInputView.clear
+                    return false
+                }).disposed(by: rx.disposeBag)
         }
     }
 }

@@ -10,6 +10,7 @@
 		8D3D06602B269B4E001B7F57 /* StorageUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3D065F2B269B4E001B7F57 /* StorageUtil.swift */; };
 		8D3D06632B269D2F001B7F57 /* SuperFileUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3D06622B269D2F001B7F57 /* SuperFileUtil.swift */; };
 		8D3D066B2B26A347001B7F57 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3D06692B26A347001B7F57 /* Reachability.m */; };
+		8D3D066E2B26AAB7001B7F57 /* AdController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3D066D2B26AAB7001B7F57 /* AdController.swift */; };
 		8D7944BE2A912A7100B0B6D9 /* SuperToolbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7944BD2A912A7100B0B6D9 /* SuperToolbarView.swift */; };
 		8D7E86632A6CE18F008580A9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8D7E86652A6CE18F008580A9 /* InfoPlist.strings */; };
 		8D7E86692A6CE5A1008580A9 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7E86682A6CE5A1008580A9 /* R.generated.swift */; };
@@ -148,6 +149,7 @@
 		8D3D06622B269D2F001B7F57 /* SuperFileUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperFileUtil.swift; sourceTree = "<group>"; };
 		8D3D06692B26A347001B7F57 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		8D3D066A2B26A347001B7F57 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		8D3D066D2B26AAB7001B7F57 /* AdController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdController.swift; sourceTree = "<group>"; };
 		8D7944BD2A912A7100B0B6D9 /* SuperToolbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperToolbarView.swift; sourceTree = "<group>"; };
 		8D7E86642A6CE18F008580A9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8D7E86662A6CE191008580A9 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
@@ -324,6 +326,14 @@
 				8D3D066A2B26A347001B7F57 /* Reachability.h */,
 			);
 			path = Reachability;
+			sourceTree = "<group>";
+		};
+		8D3D066C2B26AAA8001B7F57 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8D3D066D2B26AAB7001B7F57 /* AdController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		8D7944BC2A912A5000B0B6D9 /* Toolbar */ = {
@@ -825,6 +835,7 @@
 		8DD33B962A6F86B700A34010 /* Ad */ = {
 			isa = PBXGroup;
 			children = (
+				8D3D066C2B26AAA8001B7F57 /* Controller */,
 				8DD33B972A6F86BC00A34010 /* Model */,
 			);
 			path = Ad;
@@ -1329,6 +1340,7 @@
 				8DAF42122A85FBC300C5097F /* SheetGroupCell.swift in Sources */,
 				8D7E86772A6CFC79008580A9 /* BaseTitleController.swift in Sources */,
 				8DAF42162A85FF7C00C5097F /* SheetData.swift in Sources */,
+				8D3D066E2B26AAB7001B7F57 /* AdController.swift in Sources */,
 				8D9E02532AB655F9008DE778 /* InputUserIdentityController.swift in Sources */,
 				8DD33B692A6F392400A34010 /* YJHollowPageControl.m in Sources */,
 				8DD33B6F2A6F392400A34010 /* YJBannerViewFooter.m in Sources */,

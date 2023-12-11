@@ -32,4 +32,18 @@ extension UIImageView {
         kf.indicatorType = .activity
         kf.setImage(with: URL(string: data))
     }
+    
+    /// 显示本地图片
+    func showLocal(_ data: String?, _ defaultImage: String = "Placeholder") {
+        if (SuperStringUtil.isBlank(data)) {
+            self.image = UIImage(named: defaultImage)
+        } else {
+            kf.indicatorType = .activity
+            
+            let url = URL(fileURLWithPath: data!)
+            let provider = LocalFileImageDataProvider(fileURL: url)
+            
+            kf.setImage(with: provider)
+        }
+    }
 }

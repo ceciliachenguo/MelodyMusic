@@ -53,6 +53,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         setRootViewController(r)
     }
     
+    // redirect to ad page
+    func toAd() {
+        let r = AdController()
+        setRootViewController(r)
+    }
+    
     // redirect to Login page
     func toLogin() {
         toMain()

@@ -170,6 +170,13 @@ class DiscoveryController: BaseMainController {
         
         //登录点击事件
         NotificationCenter.default.addObserver(self, selector: #selector(toLoginClick(_:)), name: NSNotification.Name(Constants.EVENT_LOGIN_CLICK), object: nil)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(prepareProcessAdClick(_:)), name:NSNotification.Name(rawValue: Constants.EVENT_BANNER_CLICK), object: nil)
+    }
+    
+    @objc func prepareProcessAdClick(_ d:Notification) {
+        let data = d.userInfo![Constants.DATA] as! Ad
+        processAdClick(data)
     }
     
     @objc func toLoginClick(_ data:Notification) {

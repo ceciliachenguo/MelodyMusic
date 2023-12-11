@@ -60,7 +60,11 @@ class SplashController: BaseLogicController {
     }
 
     @objc func next() {
-        AppDelegate.shared.toMain()
+        if PreferenceUtil.isLogin() {
+            AppDelegate.shared.toAd()
+        } else {
+            AppDelegate.shared.toMain()
+        }
     }
     
     /// show terms of use pop-up

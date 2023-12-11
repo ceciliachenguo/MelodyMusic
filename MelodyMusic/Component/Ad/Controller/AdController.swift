@@ -9,6 +9,10 @@ import Foundation
 
 class AdController: BaseLogicController {
     var data:Ad?
+    
+    var player: AVPlayer?
+    var playerLayer: AVPlayerLayer?
+    
     override func initViews() {
         super.initViews()
         
@@ -22,8 +26,17 @@ class AdController: BaseLogicController {
         
         //提示按钮
         container.addSubview(tipView)
-        
+    }
+    
+    override func initListeners() {
+        super.initListeners()
         initTapHideKeyboard()
+        
+        //监听应用进入前台了
+        NotificationCenter.default.addObserver(self, selector: #selector(onEnterForeground), name: UIApplication.didBecomeActiveNotification, object: nil)
+        
+        //监听应用进入后台了
+        NotificationCenter.default.addObserver(self, selector: #selector(onEnterBackground), name: UIApplication.willResignActiveNotification, object: nil)
     }
     
     override func tapClick(_ data: UITapGestureRecognizer) {
@@ -67,8 +80,73 @@ class AdController: BaseLogicController {
     }
     
     func showVideoAd(_ data:URL) {
+        //播放应用内嵌入视频，放根目录中
+        //同样其他的文件，也可以通过这种方式读取
+        //var data=Bundle.main.url(forResource: "ixueaeduTestVideo", withExtension: ".mp4")!
+        player = AVPlayer(url: data)
         
+        //静音
+        player!.isMuted = true
+        
+        /// 添加进度监听
+        player!.addPeriodicTimeObserver(forInterval: CMTime(value: CMTimeValue(1.0), timescale: 60), queue: DispatchQueue.main, using: {time in
+            if self.player == nil {
+                return
+            }
+            
+            //播放时间
+            let current = Float(CMTimeGetSeconds(time))
+            
+            //总时间
+            let duration = Float(CMTimeGetSeconds(self.player!.currentItem!.duration))
+            
+            if current==duration {
+                //视频播放结束
+                self.next()
+            } else {
+                self.skipView.setTitle(R.string.localizable.skipAdCount(Int(duration-current)), for: .normal)
+                self.skipView.tg_width.equal(.wrap)
+                self.skipView.setNeedsLayout()
+            }
+        })
+        
+        //显示图像
+        playerLayer = AVPlayerLayer(player: player)
+        
+        //从中心等比缩放，完全显示控件
+        playerLayer?.videoGravity = .resizeAspectFill
+        
+        view.layer.insertSublayer(playerLayer!, at: 0)
     }
+
+    @objc func primaryClick(_ sender:QMUIButton) {
+        next()
+    }
+
+    func startPlay()  {
+        player?.play()
+    }
+
+    func pausePlay()  {
+        player?.pause()
+    }
+
+    /// 进入前台了,第一次进入也会调用
+    @objc func onEnterForeground() {
+        startPlay()
+    }
+
+    /// 进入后台了
+    @objc func onEnterBackground() {
+        pausePlay()
+    }
+
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        pausePlay()
+        self.player = nil
+    }
+
 
     func showImageAd(_ data:String) {
         iconView.showLocal(data)
@@ -82,14 +160,11 @@ class AdController: BaseLogicController {
             self.skipView.setNeedsLayout()
         }
     }
-    
-    @objc func primaryClick(_ sender:QMUIButton) {
-        next()
-    }
 
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         iconView.frame = view.bounds
+        playerLayer?.frame = view.bounds
     }
     
     @objc func tipClick() {

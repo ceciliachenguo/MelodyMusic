@@ -35,7 +35,7 @@ class SheetDetailController: BaseTitleController {
         
         //初始化TableView结构
         initTableViewSafeArea()
-        
+                
         //设置状态栏为亮色(文字是白色)
         setStatusBarLight()
         
@@ -68,6 +68,12 @@ class SheetDetailController: BaseTitleController {
     func show(_ data: Sheet) {
         self.data = data
         
+        backgroundImageView.show(data.icon)
+        UIView.animate(withDuration: 0.3) {
+            //透明度设置为1
+            self.backgroundImageView.alpha = 1
+        }
+        
         //first section
         var groupData = SongGroupData()
         groupData.datum = [data]
@@ -95,6 +101,12 @@ class SheetDetailController: BaseTitleController {
     
     func play(_ data:Song) {
         
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        backgroundImageView.frame = view.bounds
+        backgroundVisual.frame = backgroundImageView.bounds
     }
 }
 

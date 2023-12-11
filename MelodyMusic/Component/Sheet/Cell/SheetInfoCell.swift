@@ -15,7 +15,6 @@ class SheetInfoCell: BaseTableViewCell {
     
     override func initViews() {
         super.initViews()
-        container.backgroundColor = .blue
         container.tg_padding = UIEdgeInsets(top: PADDING_OUTER, left: PADDING_OUTER, bottom: PADDING_LARGE2, right: PADDING_OUTER)
         container.tg_space = PADDING_LARGE2
         

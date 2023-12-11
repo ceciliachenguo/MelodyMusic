@@ -46,6 +46,10 @@ class SheetDetailController: BaseTitleController {
         //注册单曲
         tableView.register(SongCell.self, forCellReuseIdentifier: Constants.CELL)
         tableView.register(SheetInfoCell.self, forCellReuseIdentifier: SheetInfoCell.NAME)
+        
+        //注册section
+        tableView.register(SongGroupHeaderView.self, forHeaderFooterViewReuseIdentifier: SongGroupHeaderView.NAME)
+        tableView.bounces = false
     }
 
     override func initDatum() {
@@ -64,10 +68,21 @@ class SheetDetailController: BaseTitleController {
     func show(_ data: Sheet) {
         self.data = data
         
-        datum.append(data)
+        //first section
+        var groupData = SongGroupData()
+        groupData.datum = [data]
+        datum.append(groupData)
         
-        datum += data.songs ?? []
-        
+        //second section
+        if let r = data.songs {
+            if !r.isEmpty {
+                groupData=SongGroupData()
+                groupData.datum = r
+                datum.append(groupData)
+                superFooterContainer.backgroundColor = .colorLightWhite
+            }
+        }
+    
         tableView.reloadData()
     }
     
@@ -77,11 +92,43 @@ class SheetDetailController: BaseTitleController {
         }
         return .song
     }
+    
+    func play(_ data:Song) {
+        
+    }
 }
 
 extension SheetDetailController {
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return datum.count
+    }
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        let data = datum[section] as! SongGroupData
+        return data.datum.count
+    }
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        //取出组数据
+        let groupData=datum[section] as! SongGroupData
+        
+        //获取header
+        let header = tableView.dequeueReusableHeaderFooterView(withIdentifier: SongGroupHeaderView.NAME) as! SongGroupHeaderView
+        
+        header.bind(groupData)
+        
+        header.playAllClick = {[weak self] in
+            let groupData = self?.datum[1] as! SongGroupData
+            self?.play(groupData.datum[0] as! Song)
+        }
+        
+        return header
+    }
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let data = datum[indexPath.row]
+        let groupData = datum[indexPath.section] as! SongGroupData
+        let data = groupData.datum[indexPath.row]
         
         let type = typeForItemAtData(data)
         
@@ -99,6 +146,15 @@ extension SheetDetailController {
             return cell
         }
     }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        if section == 1 {
+            return 50
+        }
+        return 0
+    }
+    
+    
 }
 
 extension SheetDetailController {

@@ -2534,9 +2534,12 @@ struct _R {
     var accentColor: RswiftResources.ColorResource { .init(name: "AccentColor", path: [], bundle: bundle) }
   }
 
-  /// This `_R.image` struct is generated, and contains static references to 43 images.
+  /// This `_R.image` struct is generated, and contains static references to 45 images.
   struct image {
     let bundle: Foundation.Bundle
+
+    /// Image `ArrowCircleDown`.
+    var arrowCircleDown: RswiftResources.ImageResource { .init(name: "ArrowCircleDown", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
 
     /// Image `ArrowLeft`.
     var arrowLeft: RswiftResources.ImageResource { .init(name: "ArrowLeft", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
@@ -2627,6 +2630,9 @@ struct _R {
 
     /// Image `PlaceholderError`.
     var placeholderError: RswiftResources.ImageResource { .init(name: "PlaceholderError", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `PlayCircle`.
+    var playCircle: RswiftResources.ImageResource { .init(name: "PlayCircle", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
 
     /// Image `Rank`.
     var rank: RswiftResources.ImageResource { .init(name: "Rank", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }

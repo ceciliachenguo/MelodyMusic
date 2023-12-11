@@ -15,6 +15,9 @@
 		8D3D06742B26C4FC001B7F57 /* SongCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3D06732B26C4FC001B7F57 /* SongCell.swift */; };
 		8D3D06772B26CAA0001B7F57 /* SheetInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3D06762B26CAA0001B7F57 /* SheetInfoCell.swift */; };
 		8D3D06792B26CFF3001B7F57 /* ImageViewWebImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3D06782B26CFF3001B7F57 /* ImageViewWebImageExtension.swift */; };
+		8D3D067C2B26DBB6001B7F57 /* SongGroupHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3D067B2B26DBB6001B7F57 /* SongGroupHeaderView.swift */; };
+		8D3D067E2B26DBF6001B7F57 /* BaseTableViewHeaderFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3D067D2B26DBF6001B7F57 /* BaseTableViewHeaderFooterView.swift */; };
+		8D3D06812B26DDCE001B7F57 /* SongGroupData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3D06802B26DDCE001B7F57 /* SongGroupData.swift */; };
 		8D7944BE2A912A7100B0B6D9 /* SuperToolbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7944BD2A912A7100B0B6D9 /* SuperToolbarView.swift */; };
 		8D7E86632A6CE18F008580A9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8D7E86652A6CE18F008580A9 /* InfoPlist.strings */; };
 		8D7E86692A6CE5A1008580A9 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7E86682A6CE5A1008580A9 /* R.generated.swift */; };
@@ -158,6 +161,9 @@
 		8D3D06732B26C4FC001B7F57 /* SongCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongCell.swift; sourceTree = "<group>"; };
 		8D3D06762B26CAA0001B7F57 /* SheetInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetInfoCell.swift; sourceTree = "<group>"; };
 		8D3D06782B26CFF3001B7F57 /* ImageViewWebImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewWebImageExtension.swift; sourceTree = "<group>"; };
+		8D3D067B2B26DBB6001B7F57 /* SongGroupHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongGroupHeaderView.swift; sourceTree = "<group>"; };
+		8D3D067D2B26DBF6001B7F57 /* BaseTableViewHeaderFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewHeaderFooterView.swift; sourceTree = "<group>"; };
+		8D3D06802B26DDCE001B7F57 /* SongGroupData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongGroupData.swift; sourceTree = "<group>"; };
 		8D7944BD2A912A7100B0B6D9 /* SuperToolbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperToolbarView.swift; sourceTree = "<group>"; };
 		8D7E86642A6CE18F008580A9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8D7E86662A6CE191008580A9 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
@@ -368,6 +374,22 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		8D3D067A2B26DB9A001B7F57 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8D3D067B2B26DBB6001B7F57 /* SongGroupHeaderView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8D3D067F2B26DDBF001B7F57 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				8D3D06802B26DDCE001B7F57 /* SongGroupData.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
 		8D7944BC2A912A5000B0B6D9 /* Toolbar */ = {
 			isa = PBXGroup;
 			children = (
@@ -507,6 +529,7 @@
 			isa = PBXGroup;
 			children = (
 				8D9E01802AA857EC008DE778 /* BaseRelativeLayout.swift */,
+				8D3D067D2B26DBF6001B7F57 /* BaseTableViewHeaderFooterView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -830,6 +853,7 @@
 		8DD33B802A6F74D000A34010 /* Sheet */ = {
 			isa = PBXGroup;
 			children = (
+				8D3D067A2B26DB9A001B7F57 /* View */,
 				8D3D06752B26CA91001B7F57 /* Cell */,
 				8D3D066F2B26BD81001B7F57 /* Controller */,
 				8DD33B812A6F74DA00A34010 /* Model */,
@@ -840,6 +864,7 @@
 		8DD33B812A6F74DA00A34010 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8D3D067F2B26DDBF001B7F57 /* UI */,
 				8DD33B822A6F74E500A34010 /* Sheet.swift */,
 			);
 			path = Model;
@@ -1393,10 +1418,12 @@
 				8D9E01692AA7AF72008DE778 /* CWInteractiveTransition.m in Sources */,
 				8DD33B6B2A6F392400A34010 /* YJAnimatedDotView.m in Sources */,
 				8DAF42202A8608CB00C5097F /* ViewCornerExtension.swift in Sources */,
+				8D3D06812B26DDCE001B7F57 /* SongGroupData.swift in Sources */,
 				8DD33B862A6F7CC300A34010 /* ObservableMoyaExtension.swift in Sources */,
 				8D9E01812AA857EC008DE778 /* BaseRelativeLayout.swift in Sources */,
 				8D3D06742B26C4FC001B7F57 /* SongCell.swift in Sources */,
 				8D9E02562AB657D7008DE778 /* InputCodePageData.swift in Sources */,
+				8D3D067C2B26DBB6001B7F57 /* SongGroupHeaderView.swift in Sources */,
 				8DD33B9F2A706C4A00A34010 /* ExceptionHandleUtil.swift in Sources */,
 				8DAF42232A8609A800C5097F /* SuperConfig.swift in Sources */,
 				8DD33B8C2A6F813200A34010 /* BaseCommon.swift in Sources */,
@@ -1430,6 +1457,7 @@
 				8DED45522A8A751B0025EC7F /* StringExtension.swift in Sources */,
 				8D7E86812A6D0578008580A9 /* Constants.swift in Sources */,
 				8DD33B682A6F392400A34010 /* YJBannerView.m in Sources */,
+				8D3D067E2B26DBF6001B7F57 /* BaseTableViewHeaderFooterView.swift in Sources */,
 				8DD33C2C2A7373DB00A34010 /* BannerCell.swift in Sources */,
 				8DD33C162A73639600A34010 /* VideoController.swift in Sources */,
 				8DD33B4B2A6F2B7E00A34010 /* MainController.swift in Sources */,
@@ -1597,7 +1625,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1652,7 +1680,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

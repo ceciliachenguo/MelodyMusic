@@ -45,11 +45,7 @@ class SheetDetailController: BaseTitleController {
         
         //注册单曲
         tableView.register(SongCell.self, forCellReuseIdentifier: Constants.CELL)
-//        tableView.register(SheetInfoCell.self, forCellReuseIdentifier: SheetInfoCell.NAME)
-//        
-//        //注册section
-//        tableView.register(SongGroupHeaderView.self, forHeaderFooterViewReuseIdentifier: SongGroupHeaderView.NAME)
-//        tableView.bounces = false
+        tableView.register(SheetInfoCell.self, forCellReuseIdentifier: SheetInfoCell.NAME)
     }
 
     override func initDatum() {
@@ -68,22 +64,40 @@ class SheetDetailController: BaseTitleController {
     func show(_ data: Sheet) {
         self.data = data
         
+        datum.append(data)
+        
         datum += data.songs ?? []
         
         tableView.reloadData()
+    }
+    
+    func typeForItemAtData(_ data: Any) -> MyStyle {
+        if data is Sheet {
+            return .sheet
+        }
+        return .song
     }
 }
 
 extension SheetDetailController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let data = datum[indexPath.row] as! Song
+        let data = datum[indexPath.row]
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: Constants.CELL, for: indexPath) as! SongCell
-        cell.indexView.text = "\(indexPath.row + 1)"
-        cell.bind(data)
+        let type = typeForItemAtData(data)
         
-        return cell
-        
+        switch type {
+        case .sheet:
+            let cell = tableView.dequeueReusableCell(withIdentifier: SheetInfoCell.NAME, for: indexPath) as! SheetInfoCell
+            cell.bind(data as! Sheet)
+            
+            return cell
+        default:
+            let cell = tableView.dequeueReusableCell(withIdentifier: Constants.CELL, for: indexPath) as! SongCell
+            cell.indexView.text = "\(indexPath.row + 1)"
+            cell.bind(data as! Song)
+            
+            return cell
+        }
     }
 }
 

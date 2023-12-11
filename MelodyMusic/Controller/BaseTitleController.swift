@@ -44,6 +44,14 @@ class BaseTitleController: BaseLogicController {
         }
     }
     
+    func setStatusBarLight() {
+        
+    }
+    
+    func setToolbarLight() {
+        self.toolbarView.setToolbarLight()
+    }
+    
     func addLeftImageButton(_ data:UIImage) -> QMUIButton {
         let leftButton = ViewFactoryUtil.button(image: data)
         leftButton.addTarget(self, action: #selector(leftClick(_:)), for: .touchUpInside)

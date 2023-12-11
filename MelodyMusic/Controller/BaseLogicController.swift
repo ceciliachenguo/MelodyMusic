@@ -183,8 +183,6 @@ class BaseLogicController: BaseCommonController {
     func hideKeyboard() {
         view.endEditing(true)
     }
-
-    
 }
 
 //MARK: - TableView data source and delegate

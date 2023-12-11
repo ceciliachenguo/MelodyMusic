@@ -2534,7 +2534,7 @@ struct _R {
     var accentColor: RswiftResources.ColorResource { .init(name: "AccentColor", path: [], bundle: bundle) }
   }
 
-  /// This `_R.image` struct is generated, and contains static references to 41 images.
+  /// This `_R.image` struct is generated, and contains static references to 43 images.
   struct image {
     let bundle: Foundation.Bundle
 
@@ -2564,6 +2564,9 @@ struct _R {
 
     /// Image `DiscoverySelected`.
     var discoverySelected: RswiftResources.ImageResource { .init(name: "DiscoverySelected", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `Downloaded`.
+    var downloaded: RswiftResources.ImageResource { .init(name: "Downloaded", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
 
     /// Image `Feed`.
     var feed: RswiftResources.ImageResource { .init(name: "Feed", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
@@ -2612,6 +2615,9 @@ struct _R {
 
     /// Image `Mic`.
     var mic: RswiftResources.ImageResource { .init(name: "Mic", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `MoreVerticalDot`.
+    var moreVerticalDot: RswiftResources.ImageResource { .init(name: "MoreVerticalDot", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
 
     /// Image `PersonFm`.
     var personFm: RswiftResources.ImageResource { .init(name: "PersonFm", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }

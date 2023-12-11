@@ -19,3 +19,7 @@
 
 //腾讯开源的偏好存储框架
 #import <MMKV/MMKV.h>
+
+//苹果官方提供判断网络类型的demo
+//https://developer.apple.com/library/archive/samplecode/Reachability/Listings/Reachability_Reachability_h.html#//apple_ref/doc/uid/DTS40007324-Reachability_Reachability_h-DontLinkElementID_8
+#import "Reachability.h"

@@ -26,6 +26,17 @@ class DefaultRepository {
             .mapObject((ListResponse<Ad>.self))
     }
     
+    
+    //启动界面广告
+    func splashAds() -> Observable<ListResponse<Ad>> {
+        return provider
+            .rx
+            .request(.ads(position: VALUE10))
+            .asObservable()
+            .mapString()
+            .mapObject((ListResponse<Ad>.self))
+    }
+    
     func sheets(size:Int) -> Observable<ListResponse<Sheet>> {
         return provider
             .rx

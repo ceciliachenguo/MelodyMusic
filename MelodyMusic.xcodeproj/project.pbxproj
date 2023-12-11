@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D3D06602B269B4E001B7F57 /* StorageUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3D065F2B269B4E001B7F57 /* StorageUtil.swift */; };
+		8D3D06632B269D2F001B7F57 /* SuperFileUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3D06622B269D2F001B7F57 /* SuperFileUtil.swift */; };
+		8D3D066B2B26A347001B7F57 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3D06692B26A347001B7F57 /* Reachability.m */; };
 		8D7944BE2A912A7100B0B6D9 /* SuperToolbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7944BD2A912A7100B0B6D9 /* SuperToolbarView.swift */; };
 		8D7E86632A6CE18F008580A9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8D7E86652A6CE18F008580A9 /* InfoPlist.strings */; };
 		8D7E86692A6CE5A1008580A9 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7E86682A6CE5A1008580A9 /* R.generated.swift */; };
@@ -141,6 +144,10 @@
 /* Begin PBXFileReference section */
 		0C2BD0C475118F21AFA06524 /* Pods-MelodyMusic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MelodyMusic.release.xcconfig"; path = "Target Support Files/Pods-MelodyMusic/Pods-MelodyMusic.release.xcconfig"; sourceTree = "<group>"; };
 		309120CF9AD7639157F05755 /* Pods-MelodyMusic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MelodyMusic.debug.xcconfig"; path = "Target Support Files/Pods-MelodyMusic/Pods-MelodyMusic.debug.xcconfig"; sourceTree = "<group>"; };
+		8D3D065F2B269B4E001B7F57 /* StorageUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageUtil.swift; sourceTree = "<group>"; };
+		8D3D06622B269D2F001B7F57 /* SuperFileUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperFileUtil.swift; sourceTree = "<group>"; };
+		8D3D06692B26A347001B7F57 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		8D3D066A2B26A347001B7F57 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		8D7944BD2A912A7100B0B6D9 /* SuperToolbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperToolbarView.swift; sourceTree = "<group>"; };
 		8D7E86642A6CE18F008580A9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8D7E86662A6CE191008580A9 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
@@ -302,6 +309,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8D3D06612B269CD4001B7F57 /* File */ = {
+			isa = PBXGroup;
+			children = (
+				8D3D06622B269D2F001B7F57 /* SuperFileUtil.swift */,
+			);
+			path = File;
+			sourceTree = "<group>";
+		};
+		8D3D06682B26A347001B7F57 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				8D3D06692B26A347001B7F57 /* Reachability.m */,
+				8D3D066A2B26A347001B7F57 /* Reachability.h */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
 		8D7944BC2A912A5000B0B6D9 /* Toolbar */ = {
 			isa = PBXGroup;
 			children = (
@@ -342,6 +366,7 @@
 				8DD33C2D2A73794A00A34010 /* ResourceUtil.swift */,
 				8D9E01822AA85D9C008DE778 /* StringUtil.swift */,
 				8D9E01892AA861DA008DE778 /* PreferenceUtil.swift */,
+				8D3D065F2B269B4E001B7F57 /* StorageUtil.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -570,6 +595,7 @@
 		8DA405C22A6CD8870033F979 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				8D3D06682B26A347001B7F57 /* Reachability */,
 				8D9E015E2AA7AF72008DE778 /* CWLateralSlide */,
 				8DD33B502A6F392400A34010 /* YJBannerView */,
 				8DD33B9A2A70414200A34010 /* SuperUI */,
@@ -815,6 +841,7 @@
 		8DD33B9A2A70414200A34010 /* SuperUI */ = {
 			isa = PBXGroup;
 			children = (
+				8D3D06612B269CD4001B7F57 /* File */,
 				8D9E025B2AB66607008DE778 /* Time */,
 				8D9E01902AA875C0008DE778 /* Dialog */,
 				8D9E017C2AA85787008DE778 /* Input */,
@@ -1382,6 +1409,7 @@
 				8DED455E2A8D96120025EC7F /* DiscoveryFooterCell.swift in Sources */,
 				8DD33B742A6F645000A34010 /* DefaultService.swift in Sources */,
 				8D9E02582AB65896008DE778 /* InputCodeController.swift in Sources */,
+				8D3D06602B269B4E001B7F57 /* StorageUtil.swift in Sources */,
 				8DD33B8A2A6F80FF00A34010 /* BaseId.swift in Sources */,
 				8DD33B882A6F809E00A34010 /* BaseModel.swift in Sources */,
 				8D9E018E2AA87433008DE778 /* UIViewControllerExtension.swift in Sources */,
@@ -1392,9 +1420,11 @@
 				8D7E86692A6CE5A1008580A9 /* R.generated.swift in Sources */,
 				8D7E866C2A6CED2E008580A9 /* SuperUIColorExtension.swift in Sources */,
 				8D9E016B2AA7AF72008DE778 /* CWLateralSlideAnimator.m in Sources */,
+				8D3D06632B269D2F001B7F57 /* SuperFileUtil.swift in Sources */,
 				8DD33B832A6F74E500A34010 /* Sheet.swift in Sources */,
 				8DD33B8F2A6F82B200A34010 /* ListResponse.swift in Sources */,
 				8D9E01882AA8610A008DE778 /* Session.swift in Sources */,
+				8D3D066B2B26A347001B7F57 /* Reachability.m in Sources */,
 				8D9E016C2AA7AF72008DE778 /* CWDrawerTransition.m in Sources */,
 				8DAF421D2A8607F400C5097F /* SheetCell.swift in Sources */,
 				8DED45602A8D99470025EC7F /* FooterData.swift in Sources */,

@@ -7,6 +7,7 @@
 
 import UIKit
 import SwiftEventBus
+import Alamofire
 
 class DiscoveryController: BaseMainController {
 
@@ -85,7 +86,65 @@ class DiscoveryController: BaseMainController {
                 self?.datum.append(FooterData())
                 
                 self?.tableView.reloadData()
+                
+                self?.loadSplashAd()
+
             }.disposed(by: rx.disposeBag)
+    }
+    
+    func loadSplashAd() {
+        DefaultRepository.shared
+            .splashAds()
+            .subscribe {[weak self] data in
+                self?.processSplashAd(data.data.data ?? [])
+            } _: { data, error in
+                return true
+            }.disposed(by: rx.disposeBag)
+
+    }
+    
+    func processSplashAd(_ data:[Ad]) {
+        if data.count > 0 {
+            prepareDownloadAd(data[0])
+        } else {
+            //获取广告信息,TODO 这样只能删除上一个广告,但没法删除全部,可以优化
+            if let _ = PreferenceUtil.getSplashAd() {
+                PreferenceUtil.setSplashAd(nil)
+            }
+        }
+    }
+    
+    func prepareDownloadAd(_ data:Ad) {
+        //保存
+        PreferenceUtil.setSplashAd(data)
+        
+        //判断文件是否存在，如果存在就不下载
+        let path = StorageUtil.adPath(data.icon)
+        if SuperFileUtil.exists(path.path) {
+            print("ad exist,skip downloaded \(data.icon!) \(path.path)")
+            return
+        }
+        
+        let reachability = Reachability(hostName: "www.ixuea.com")
+        let reachabilityStatus = reachability!.currentReachabilityStatus()
+        if reachabilityStatus == ReachableViaWiFi {
+            SuperFileUtil.mkdirs(path.deletingLastPathComponent().path)
+            
+            //wifi
+            downloadAd(data,path)
+        }
+    }
+    
+    func downloadAd(_ data: Ad, _ path: URL) {
+        let destination: DownloadRequest.Destination = { _, _ in
+            return (path, [.removePreviousFile, .createIntermediateDirectories])
+        }
+
+        AF.download(data.icon.absoluteURL(), to: destination).response { response in
+            if response.error == nil, let filePath = response.fileURL?.path {
+                print("ad downloaded success \(filePath)")
+            }
+        }
     }
     
     func processAdClick(_ data: Ad) {

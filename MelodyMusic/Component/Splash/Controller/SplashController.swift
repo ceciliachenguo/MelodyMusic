@@ -47,12 +47,14 @@ class SplashController: BaseLogicController {
     }
     
     override func initDatum() {
-        super.initDatum()
-        if DefaultPreferenceUtil.isAcceptTermsServiceAgreement() {
-            prepareNext()
-        } else {
-            showTermsServiceAgreementDialog()
-        }
+        //get rid of ads
+//        super.initDatum()
+//        if DefaultPreferenceUtil.isAcceptTermsServiceAgreement() {
+//            prepareNext()
+//        } else {
+//            showTermsServiceAgreementDialog()
+//        }
+        AppDelegate.shared.toLogin()
     }
     
     func prepareNext() {

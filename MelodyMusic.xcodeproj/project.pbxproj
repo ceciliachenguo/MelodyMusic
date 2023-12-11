@@ -11,6 +11,7 @@
 		8D3D06632B269D2F001B7F57 /* SuperFileUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3D06622B269D2F001B7F57 /* SuperFileUtil.swift */; };
 		8D3D066B2B26A347001B7F57 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3D06692B26A347001B7F57 /* Reachability.m */; };
 		8D3D066E2B26AAB7001B7F57 /* AdController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3D066D2B26AAB7001B7F57 /* AdController.swift */; };
+		8D3D06712B26BDAB001B7F57 /* SheetDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3D06702B26BDAB001B7F57 /* SheetDetailController.swift */; };
 		8D7944BE2A912A7100B0B6D9 /* SuperToolbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7944BD2A912A7100B0B6D9 /* SuperToolbarView.swift */; };
 		8D7E86632A6CE18F008580A9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8D7E86652A6CE18F008580A9 /* InfoPlist.strings */; };
 		8D7E86692A6CE5A1008580A9 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7E86682A6CE5A1008580A9 /* R.generated.swift */; };
@@ -150,6 +151,7 @@
 		8D3D06692B26A347001B7F57 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		8D3D066A2B26A347001B7F57 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		8D3D066D2B26AAB7001B7F57 /* AdController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdController.swift; sourceTree = "<group>"; };
+		8D3D06702B26BDAB001B7F57 /* SheetDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetDetailController.swift; sourceTree = "<group>"; };
 		8D7944BD2A912A7100B0B6D9 /* SuperToolbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperToolbarView.swift; sourceTree = "<group>"; };
 		8D7E86642A6CE18F008580A9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8D7E86662A6CE191008580A9 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
@@ -332,6 +334,14 @@
 			isa = PBXGroup;
 			children = (
 				8D3D066D2B26AAB7001B7F57 /* AdController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8D3D066F2B26BD81001B7F57 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8D3D06702B26BDAB001B7F57 /* SheetDetailController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -798,6 +808,7 @@
 		8DD33B802A6F74D000A34010 /* Sheet */ = {
 			isa = PBXGroup;
 			children = (
+				8D3D066F2B26BD81001B7F57 /* Controller */,
 				8DD33B812A6F74DA00A34010 /* Model */,
 			);
 			path = Sheet;
@@ -1423,6 +1434,7 @@
 				8D9E02582AB65896008DE778 /* InputCodeController.swift in Sources */,
 				8D3D06602B269B4E001B7F57 /* StorageUtil.swift in Sources */,
 				8DD33B8A2A6F80FF00A34010 /* BaseId.swift in Sources */,
+				8D3D06712B26BDAB001B7F57 /* SheetDetailController.swift in Sources */,
 				8DD33B882A6F809E00A34010 /* BaseModel.swift in Sources */,
 				8D9E018E2AA87433008DE778 /* UIViewControllerExtension.swift in Sources */,
 				8D7E86852A6D0CEB008580A9 /* GuideController.swift in Sources */,

@@ -260,8 +260,7 @@ extension DiscoveryController{
 // 实现歌单组协议
 extension DiscoveryController:SheetGroupDelegate{
     func sheetClick(data: Sheet) {
-//        print("SheetDetailController sheetClick \(data.title)")
-        navigationController?.pushViewController(LoginHomeController())
+        SheetDetailController.start(navigationController!, data.id)
     }
 }
 

@@ -21,6 +21,14 @@ class Song: BaseCommon {
     var user:User!
     var singer:User!
     
+    /// 歌词类型
+    var style:Int = 0
+    
+    /**
+     * 歌词内容
+     */
+    var lyric:String? = nil
+
     override func mapping(mapper: HelpingMapper) {
         super.mapping(mapper: mapper)
         mapper <<< self.clicksCount <-- "clicks_count"

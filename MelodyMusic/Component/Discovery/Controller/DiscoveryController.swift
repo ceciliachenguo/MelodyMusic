@@ -202,6 +202,7 @@ class DiscoveryController: BaseMainController {
     }
     
     func processSongClick(_ data:Song) {
+        startMusicPlayerController()
         print("DiscoveryController processSongClick \(data.title)")
     }
     

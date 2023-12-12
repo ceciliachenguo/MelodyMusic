@@ -18,6 +18,8 @@
 		8D3D067C2B26DBB6001B7F57 /* SongGroupHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3D067B2B26DBB6001B7F57 /* SongGroupHeaderView.swift */; };
 		8D3D067E2B26DBF6001B7F57 /* BaseTableViewHeaderFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3D067D2B26DBF6001B7F57 /* BaseTableViewHeaderFooterView.swift */; };
 		8D3D06812B26DDCE001B7F57 /* SongGroupData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3D06802B26DDCE001B7F57 /* SongGroupData.swift */; };
+		8D3D06852B27D218001B7F57 /* SimplePlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3D06842B27D218001B7F57 /* SimplePlayerController.swift */; };
+		8D3D06872B27D302001B7F57 /* BaseMusicPlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3D06862B27D302001B7F57 /* BaseMusicPlayerController.swift */; };
 		8D7944BE2A912A7100B0B6D9 /* SuperToolbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7944BD2A912A7100B0B6D9 /* SuperToolbarView.swift */; };
 		8D7E86632A6CE18F008580A9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8D7E86652A6CE18F008580A9 /* InfoPlist.strings */; };
 		8D7E86692A6CE5A1008580A9 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7E86682A6CE5A1008580A9 /* R.generated.swift */; };
@@ -164,6 +166,8 @@
 		8D3D067B2B26DBB6001B7F57 /* SongGroupHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongGroupHeaderView.swift; sourceTree = "<group>"; };
 		8D3D067D2B26DBF6001B7F57 /* BaseTableViewHeaderFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewHeaderFooterView.swift; sourceTree = "<group>"; };
 		8D3D06802B26DDCE001B7F57 /* SongGroupData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongGroupData.swift; sourceTree = "<group>"; };
+		8D3D06842B27D218001B7F57 /* SimplePlayerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimplePlayerController.swift; sourceTree = "<group>"; };
+		8D3D06862B27D302001B7F57 /* BaseMusicPlayerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseMusicPlayerController.swift; sourceTree = "<group>"; };
 		8D7944BD2A912A7100B0B6D9 /* SuperToolbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperToolbarView.swift; sourceTree = "<group>"; };
 		8D7E86642A6CE18F008580A9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8D7E86662A6CE191008580A9 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
@@ -388,6 +392,23 @@
 				8D3D06802B26DDCE001B7F57 /* SongGroupData.swift */,
 			);
 			path = UI;
+			sourceTree = "<group>";
+		};
+		8D3D06822B27D1F2001B7F57 /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				8D3D06832B27D1FA001B7F57 /* Controller */,
+			);
+			path = Player;
+			sourceTree = "<group>";
+		};
+		8D3D06832B27D1FA001B7F57 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8D3D06842B27D218001B7F57 /* SimplePlayerController.swift */,
+				8D3D06862B27D302001B7F57 /* BaseMusicPlayerController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		8D7944BC2A912A5000B0B6D9 /* Toolbar */ = {
@@ -636,6 +657,7 @@
 		8DA405C12A6CD3300033F979 /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				8D3D06822B27D1F2001B7F57 /* Player */,
 				8D9E025E2AB6697D008DE778 /* Password */,
 				8D9E02502AB655DC008DE778 /* Input */,
 				8D9E024C2AB5F72E008DE778 /* Register */,
@@ -1405,6 +1427,7 @@
 				8D9E02532AB655F9008DE778 /* InputUserIdentityController.swift in Sources */,
 				8DD33B692A6F392400A34010 /* YJHollowPageControl.m in Sources */,
 				8DD33B6F2A6F392400A34010 /* YJBannerViewFooter.m in Sources */,
+				8D3D06872B27D302001B7F57 /* BaseMusicPlayerController.swift in Sources */,
 				8D7E866E2A6CF007008580A9 /* SuperUIThemeExtension.swift in Sources */,
 				8D9E025D2AB6660F008DE778 /* CountDownUtil.swift in Sources */,
 				8DD33B912A6F836100A34010 /* BaseResponse.swift in Sources */,
@@ -1481,6 +1504,7 @@
 				8D9E01852AA85F42008DE778 /* BaseLoginController.swift in Sources */,
 				8D7E86732A6CF58D008580A9 /* BaseCommonController.swift in Sources */,
 				8DD33B992A6F86CA00A34010 /* Ad.swift in Sources */,
+				8D3D06852B27D218001B7F57 /* SimplePlayerController.swift in Sources */,
 				8D9E018A2AA861DA008DE778 /* PreferenceUtil.swift in Sources */,
 				8D9E01952AA8866A008DE778 /* UserDetailController.swift in Sources */,
 				8DD33B472A6F28B700A34010 /* DefaultPreferenceUtil.swift in Sources */,

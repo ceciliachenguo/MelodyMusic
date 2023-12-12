@@ -7,7 +7,7 @@
 
 import UIKit
 
-class BaseMainController: BaseTitleController {
+class BaseMainController: BaseMusicPlayerController {
 
     override func initViews() {
         super.initViews()

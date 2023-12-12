@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SheetDetailController: BaseTitleController {
+class SheetDetailController: BaseMusicPlayerController {
     
     var id:String!
     var data:Sheet!
@@ -100,7 +100,7 @@ class SheetDetailController: BaseTitleController {
     }
     
     func play(_ data:Song) {
-        
+        startMusicPlayerController()
     }
     
     override func viewDidLayoutSubviews() {
@@ -166,7 +166,15 @@ extension SheetDetailController {
         return 0
     }
     
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let groupData = datum[indexPath.section] as! SongGroupData
+        let data = groupData.datum[indexPath.row]
+        
+        let type = typeForItemAtData(data)
+        if type == .song {
+            play(data as! Song)
+        }
+    }
 }
 
 extension SheetDetailController {

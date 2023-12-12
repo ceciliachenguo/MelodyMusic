@@ -83,12 +83,16 @@ class SimplePlayerController: BaseTitleController {
         loopModelButtonView.setTitle("列表循环", for: .normal)
         loopModelButtonView.addTarget(self, action:#selector(onLoopModelClick(_:)), for: .touchUpInside)
         controlContainer.addSubview(loopModelButtonView)
+        
+        MusicPlayerManager.shared()
+            .play(uri: "http://srm.net/mp3/srm_buss_ii.mp3", data: Song())
     }
     
     @objc func onPreviousClick(_ sender:QMUIButton) {
     }
     
     @objc func onPlayClick(_ sender:QMUIButton) {
+        playOrPause()
     }
     
     @objc func onNextClick(_ sender:QMUIButton) {
@@ -98,6 +102,14 @@ class SimplePlayerController: BaseTitleController {
     @objc func onLoopModelClick(_ sender:QMUIButton) {
         
     }
+    
+    func playOrPause() {
+        if MusicPlayerManager.shared().isPlaying() {
+            MusicPlayerManager.shared().pause()
+        } else {
+            MusicPlayerManager.shared().resume()
+        }
+    }
 
     static func orientationContainer(_ orientation:TGOrientation = .horz) -> TGLinearLayout {
         let result = TGLinearLayout(orientation)
@@ -106,5 +118,4 @@ class SimplePlayerController: BaseTitleController {
         
         return result
     }
-    
 }

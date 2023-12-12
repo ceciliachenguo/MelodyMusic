@@ -7,13 +7,11 @@
 
 import Foundation
 
-class MusicPlayerManager {
+class MusicPlayerManager: NSObject {
     private static var instance:MusicPlayerManager?
     
-    /// 当前播放的音乐
     var data:Song?
     
-    /// 播放器
     private var player:AVPlayer!
     
     var status:PlayStatus = .none
@@ -22,23 +20,17 @@ class MusicPlayerManager {
     weak open var delegate:MusicPlayerManagerDelegate?{
         didSet{
             if let _ = self.delegate {
-                //有代理
-                
-                //判断是否有音乐在播放
                 if self.isPlaying() {
-                    //有音乐在播放
-                    
-                    //启动定时器
-//                    startPublishProgress()
+                    startPublishProgress()
                 }
             }else {
-                //没有代理
-                
-                //停止定时器
-//                stopPublishProgress()
+                pause()
+                stopPublishProgress()
             }
         }
     }
+    
+    var playTimeObserve: Any?
         
     /// 获取单例的播放管理器
     static func shared() -> MusicPlayerManager {
@@ -49,7 +41,8 @@ class MusicPlayerManager {
         return instance!
     }
     
-    private init() {
+    private override init() {
+        super.init()
         player = AVPlayer()
     }
     
@@ -75,6 +68,10 @@ class MusicPlayerManager {
         if let r = delegate {
             r.onPlaying(data: data)
         }
+        
+        initListeners()
+        
+        startPublishProgress()
     }
     
     /// 暂停
@@ -85,6 +82,10 @@ class MusicPlayerManager {
         if let r = delegate {
             r.onPaused(data: data!)
         }
+        
+        removeListeners()
+        
+        stopPublishProgress()
     }
     
     /// 继续播放
@@ -95,11 +96,83 @@ class MusicPlayerManager {
         if let r = delegate {
             r.onPlaying(data: data!)
         }
+        
+        initListeners()
+        
+        startPublishProgress()
     }
     
     func isPlaying() -> Bool {
         return status == .playing
     }
+    
+    func initListeners() {
+        //KVO方式监听播放状态
+        //KVC:Key-Value Coding,另一种获取对象字段的值，类似字典
+        //KVO:Key-Value Observing,建立在KVC基础上，能够观察一个字段值的改变
+        player.currentItem?.addObserver(self, forKeyPath: MusicPlayerManager.STATUS, options: .new, context: nil)
+        
+        //监听音乐缓冲状态
+        player.currentItem?.addObserver(self, forKeyPath: "loadedTimeRanges", options: .new, context: nil)
+        
+        //播放结束事件
+        NotificationCenter.default.addObserver(self, selector: #selector(onComplete(_:)), name: NSNotification.Name.AVPlayerItemDidPlayToEndTime, object: player.currentItem)
+    }
+    
+    private func removeListeners() {
+        player.currentItem?.removeObserver(self, forKeyPath: MusicPlayerManager.STATUS)
+        player.currentItem?.removeObserver(self, forKeyPath: "loadedTimeRanges")
+    }
+    
+    @objc func onComplete(_ sender:Notification) {
+
+    }
+    
+    /// KVO监听回调方法
+    override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
+        if MusicPlayerManager.STATUS == keyPath {
+            switch player.status {
+            case .readyToPlay:
+                self.data!.duration = Float(CMTimeGetSeconds(player.currentItem!.asset.duration))
+                
+                delegate?.onPrepared(data:data!)
+                
+            case .failed:
+                status = .error
+                
+                delegate?.onError(data: data!)
+            default:
+                status = .none
+            }
+        }
+    }
+    
+    func startPublishProgress() {
+        if let _ = playTimeObserve {
+            return
+        }
+        
+        //1/60 seconds
+        playTimeObserve = player.addPeriodicTimeObserver(forInterval: CMTime(value: CMTimeValue(1.0), timescale: 60), queue: DispatchQueue.main, using: { time in
+            self.data!.progress = Float(CMTimeGetSeconds(time))
+                        
+            guard let delegate = self.delegate else {
+                self.stopPublishProgress()
+                return
+            }
+            
+            delegate.onProgress(data: self.data!)
+        })
+    }
+    
+    func stopPublishProgress() {
+        if let playTimeObserve = playTimeObserve {
+            player.removeTimeObserver(playTimeObserve)
+            self.playTimeObserve = nil
+        }
+    }
+    
+    static let STATUS = "status"
 }
 
 

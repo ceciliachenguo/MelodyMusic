@@ -21,13 +21,14 @@ class Song: BaseCommon {
     var user:User!
     var singer:User!
     
-    /// 歌词类型
     var style:Int = 0
     
-    /**
-     * 歌词内容
-     */
     var lyric:String? = nil
+    
+    //in seconds
+    var duration:Float = 0
+    
+    var progress:Float = 0
 
     override func mapping(mapper: HelpingMapper) {
         super.mapping(mapper: mapper)

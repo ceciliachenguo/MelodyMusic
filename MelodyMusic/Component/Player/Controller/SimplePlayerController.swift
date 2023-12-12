@@ -82,8 +82,10 @@ class SimplePlayerController: BaseTitleController {
         loopModelButtonView.addTarget(self, action:#selector(onLoopModelClick(_:)), for: .touchUpInside)
         controlContainer.addSubview(loopModelButtonView)
         
+        let song = Song()
+        song.title = "test title music"
         MusicPlayerManager.shared()
-            .play(uri: "http://srm.net/mp3/srm_buss_ii.mp3", data: Song())
+            .play(uri: "http://srm.net/mp3/srm_buss_ii.mp3", data: song)
     }
     
     override func initDatum() {
@@ -162,7 +164,36 @@ class SimplePlayerController: BaseTitleController {
     }
     
     func initPlayData() {
+        showInitData()
+        
+        showDuration()
+
+        showProgress()
+        
         showMusicPlayStatus()
+    }
+    
+    func showInitData() {
+        let data = MusicPlayerManager.shared().data!
+        
+        title = data.title
+    }
+    
+    func showDuration() {
+        let duration = MusicPlayerManager.shared().data!.duration
+        if duration > 0 {
+            endView.text = SuperDateUtil.second2MinuteSecond(duration)
+            progressView.maximumValue = duration
+        }
+    }
+    
+    func showProgress() {
+        let progress = MusicPlayerManager.shared().data!.progress
+        
+        if (progress > 0) {
+            startView.text = SuperDateUtil.second2MinuteSecond(progress)
+            progressView.value = progress
+        }
     }
     
     func showMusicPlayStatus() {
@@ -201,7 +232,9 @@ class SimplePlayerController: BaseTitleController {
 // MARK: -  播放管理器代理
 extension SimplePlayerController:MusicPlayerManagerDelegate{
     func onPrepared(data: Song) {
-
+        showInitData()
+        
+        showDuration()
     }
     
     func onPaused(data: Song) {
@@ -213,7 +246,7 @@ extension SimplePlayerController:MusicPlayerManagerDelegate{
     }
     
     func onProgress(data: Song) {
-        
+        showProgress()
     }
     
     func onLyricReady(data: Song) {

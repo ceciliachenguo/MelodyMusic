@@ -25,4 +25,10 @@ class SuperDateUtil {
         return d.day!
     }
     
+    static func second2MinuteSecond(_ data:Float) -> String {
+        let minute = Int(data/60)
+        let second = Int(data) % 60
+        return String(format: "%02d:%02d",minute,second)
+    }
+    
 }

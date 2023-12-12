@@ -9,14 +9,12 @@ import UIKit
 import TangramKit
 
 class SimplePlayerController: BaseTitleController {
-//    private var lyricView:LyricListView!
     var startView:UILabel!
     var progressView:UISlider!
     var endView:UILabel!
     var playButtonView:QMUIButton!
     var loopModelButtonView:QMUIButton!
     
-    /// 是否按下了进度条
     var isTouchProgress = false
     
     override func initViews() {
@@ -88,6 +86,66 @@ class SimplePlayerController: BaseTitleController {
             .play(uri: "http://srm.net/mp3/srm_buss_ii.mp3", data: Song())
     }
     
+    override func initDatum() {
+        super.initDatum()
+    }
+    
+    override func initListeners() {
+        super.initListeners()
+        //监听应用进入前台了
+        NotificationCenter.default.addObserver(self, selector: #selector(onEnterForeground), name: UIApplication.didBecomeActiveNotification, object: nil)
+        
+        //监听应用进入后台了
+        NotificationCenter.default.addObserver(self, selector: #selector(onEnterBackground), name: UIApplication.willResignActiveNotification, object: nil)
+    }
+    
+    func setMusicPlayerDelegate() {
+        initPlayData()
+        MusicPlayerManager.shared().delegate = self
+    }
+    
+    func removeMusicPlayerDelegate() {
+        MusicPlayerManager.shared().delegate = nil
+    }
+    
+    @objc func onEnterForeground() {
+        initPlayData()
+        
+        setMusicPlayerDelegate()
+    }
+    
+    /// 进入后台了
+    @objc func onEnterBackground() {
+        removeMusicPlayerDelegate()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        setMusicPlayerDelegate()
+        
+        print("SimplePlayerController viewWillAppear")
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        setMusicPlayerDelegate()
+        
+        print("SimplePlayerController viewDidAppear")
+        
+        initPlayData()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        print("SimplePlayerController viewWillDisappear")
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        print("SimplePlayerController viewDidDisappear")
+        removeMusicPlayerDelegate()
+    }
+    
     @objc func onPreviousClick(_ sender:QMUIButton) {
     }
     
@@ -103,12 +161,32 @@ class SimplePlayerController: BaseTitleController {
         
     }
     
+    func initPlayData() {
+        showMusicPlayStatus()
+    }
+    
+    func showMusicPlayStatus() {
+        if MusicPlayerManager.shared().isPlaying() {
+            showPauseStatus()
+        } else {
+            showPlayStatus()
+        }
+    }
+    
     func playOrPause() {
         if MusicPlayerManager.shared().isPlaying() {
             MusicPlayerManager.shared().pause()
         } else {
             MusicPlayerManager.shared().resume()
         }
+    }
+    
+    func showPlayStatus() {
+        playButtonView.setTitle("播放", for: .normal)
+    }
+    
+    func showPauseStatus() {
+        playButtonView.setTitle("暂停", for: .normal)
     }
 
     static func orientationContainer(_ orientation:TGOrientation = .horz) -> TGLinearLayout {
@@ -117,5 +195,32 @@ class SimplePlayerController: BaseTitleController {
         result.tg_height.equal(.wrap)
         
         return result
+    }
+}
+
+// MARK: -  播放管理器代理
+extension SimplePlayerController:MusicPlayerManagerDelegate{
+    func onPrepared(data: Song) {
+
+    }
+    
+    func onPaused(data: Song) {
+        showPlayStatus()
+    }
+    
+    func onPlaying(data: Song) {
+        showPauseStatus()
+    }
+    
+    func onProgress(data: Song) {
+        
+    }
+    
+    func onLyricReady(data: Song) {
+
+    }
+    
+    func onError(data: Song) {
+        
     }
 }

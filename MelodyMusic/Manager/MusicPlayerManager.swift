@@ -17,6 +17,28 @@ class MusicPlayerManager {
     private var player:AVPlayer!
     
     var status:PlayStatus = .none
+    
+    /// 代理对象，目的是将不同的状态分发出去
+    weak open var delegate:MusicPlayerManagerDelegate?{
+        didSet{
+            if let _ = self.delegate {
+                //有代理
+                
+                //判断是否有音乐在播放
+                if self.isPlaying() {
+                    //有音乐在播放
+                    
+                    //启动定时器
+//                    startPublishProgress()
+                }
+            }else {
+                //没有代理
+                
+                //停止定时器
+//                stopPublishProgress()
+            }
+        }
+    }
         
     /// 获取单例的播放管理器
     static func shared() -> MusicPlayerManager {
@@ -49,6 +71,10 @@ class MusicPlayerManager {
         player.replaceCurrentItem(with: item)
         
         player.play()
+        
+        if let r = delegate {
+            r.onPlaying(data: data)
+        }
     }
     
     /// 暂停
@@ -56,12 +82,19 @@ class MusicPlayerManager {
         status = .pause
         player.pause()
         
+        if let r = delegate {
+            r.onPaused(data: data!)
+        }
     }
     
     /// 继续播放
     func resume() {
         status = .playing
         player.play()
+        
+        if let r = delegate {
+            r.onPlaying(data: data!)
+        }
     }
     
     func isPlaying() -> Bool {
@@ -78,3 +111,18 @@ enum PlayStatus {
     case completion
     case error
 }
+
+protocol MusicPlayerManagerDelegate:NSObjectProtocol {
+    func onPrepared(data:Song)
+    
+    func onPaused(data:Song)
+    
+    func onPlaying(data:Song)
+    
+    func onProgress(data:Song)
+    
+    func onLyricReady(data:Song)
+    
+    func onError(data:Song)
+}
+

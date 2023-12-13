@@ -106,6 +106,11 @@ class MusicPlayerManager: NSObject {
         return status == .playing
     }
     
+    func seekTo(_ data:Float)  {
+        let positionTime = CMTime(seconds: Double(data), preferredTimescale: 1)
+        player.seek(to: positionTime)
+    }
+    
     func initListeners() {
         //KVO方式监听播放状态
         //KVC:Key-Value Coding,另一种获取对象字段的值，类似字典

@@ -99,6 +99,33 @@ class SimplePlayerController: BaseTitleController {
         
         //监听应用进入后台了
         NotificationCenter.default.addObserver(self, selector: #selector(onEnterBackground), name: UIApplication.willResignActiveNotification, object: nil)
+        
+        //进度条拖拽监听
+        progressView.addTarget(self, action: #selector(progressChanged(_:)), for: .valueChanged)
+        progressView.addTarget(self, action: #selector(progressTouchDown(_:)), for: .touchDown)
+        progressView.addTarget(self, action: #selector(progressTouchUp(_:)), for: .touchUpInside)
+        progressView.addTarget(self, action: #selector(progressTouchUp(_:)), for: .touchUpOutside)
+
+    }
+    
+    /// 进度条拖拽回调
+    @objc func progressChanged(_ sender:UISlider) {
+        //将拖拽进度显示到界面
+        //用户就很方便的知道自己拖拽到什么位置
+        startView.text = SuperDateUtil.second2MinuteSecond(sender.value)
+
+        //音乐切换到拖拽位置播放
+        MusicPlayerManager.shared().seekTo(sender.value)
+    }
+
+    /// 进度条按下
+    @objc func progressTouchDown(_ sender:UISlider) {
+        isTouchProgress=true
+    }
+
+    /// 进度条抬起
+    @objc func progressTouchUp(_ sender:UISlider) {
+        isTouchProgress=false
     }
     
     func setMusicPlayerDelegate() {
@@ -188,6 +215,10 @@ class SimplePlayerController: BaseTitleController {
     }
     
     func showProgress() {
+        if isTouchProgress {
+            return
+        }
+        
         let progress = MusicPlayerManager.shared().data!.progress
         
         if (progress > 0) {

@@ -100,6 +100,9 @@ class SheetDetailController: BaseMusicPlayerController {
     }
     
     func play(_ data:Song) {
+        MusicListManager.shared().setDatum(self.data.songs!)
+        MusicListManager.shared().play(data)
+        
         startMusicPlayerController()
     }
     

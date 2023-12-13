@@ -10,7 +10,7 @@ import Foundation
 class MusicPlayerManager: NSObject {
     private static var instance:MusicPlayerManager?
     
-    var data:Song?
+    private var data:Song?
     
     private var player:AVPlayer!
     

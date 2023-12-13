@@ -202,8 +202,10 @@ class DiscoveryController: BaseMainController {
     }
     
     func processSongClick(_ data:Song) {
+        MusicListManager.shared().setDatum([data])
+        MusicListManager.shared().play(data)
+        
         startMusicPlayerController()
-        print("DiscoveryController processSongClick \(data.title)")
     }
     
     func typeForItemAtData(_ data: Any) -> MyStyle {

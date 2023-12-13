@@ -13,7 +13,7 @@ class Song: BaseCommon {
     
     var title:String!
     var icon:String?
-    var url:String!
+    var uri:String!
     
     var clicksCount:Int = 0
     var commentsCount:Int = 0

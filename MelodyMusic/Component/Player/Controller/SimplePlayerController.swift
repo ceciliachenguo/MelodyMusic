@@ -82,10 +82,10 @@ class SimplePlayerController: BaseTitleController {
         loopModelButtonView.addTarget(self, action:#selector(onLoopModelClick(_:)), for: .touchUpInside)
         controlContainer.addSubview(loopModelButtonView)
         
-        let song = Song()
-        song.title = "test title music"
-        MusicPlayerManager.shared()
-            .play(uri: "http://srm.net/mp3/srm_buss_ii.mp3", data: song)
+//        let song = Song()
+//        song.title = "test title music"
+//        MusicPlayerManager.shared()
+//            .play(uri: "http://srm.net/mp3/srm_buss_ii.mp3", data: song)
     }
     
     override func initDatum() {
@@ -201,13 +201,13 @@ class SimplePlayerController: BaseTitleController {
     }
     
     func showInitData() {
-        let data = MusicPlayerManager.shared().data!
+        let data = MusicListManager.shared().data!
         
         title = data.title
     }
     
     func showDuration() {
-        let duration = MusicPlayerManager.shared().data!.duration
+        let duration = MusicListManager.shared().data!.duration
         if duration > 0 {
             endView.text = SuperDateUtil.second2MinuteSecond(duration)
             progressView.maximumValue = duration
@@ -219,7 +219,7 @@ class SimplePlayerController: BaseTitleController {
             return
         }
         
-        let progress = MusicPlayerManager.shared().data!.progress
+        let progress = MusicListManager.shared().data!.progress
         
         if (progress > 0) {
             startView.text = SuperDateUtil.second2MinuteSecond(progress)
@@ -237,9 +237,9 @@ class SimplePlayerController: BaseTitleController {
     
     func playOrPause() {
         if MusicPlayerManager.shared().isPlaying() {
-            MusicPlayerManager.shared().pause()
+            MusicListManager.shared().pause()
         } else {
-            MusicPlayerManager.shared().resume()
+            MusicListManager.shared().resume()
         }
     }
     
